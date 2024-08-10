@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Machine Learning on Wyatt Johnston</title>
-    <link>https://wyattj37.github.io/blog/tags/machine-learning/</link>
+    <link>https://wyattj37.github.io/new-blog/tags/machine-learning/</link>
     <description>Recent content in Machine Learning on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 11 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://wyattj37.github.io/blog/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wyattj37.github.io/new-blog/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How Much HRV Matters in Calcuating WHOOP Recovery Scores</title>
-      <link>https://wyattj37.github.io/blog/posts/how-much-hrv-matters-in-calcuating-whoop-recovery-scores/</link>
+      <link>https://wyattj37.github.io/new-blog/posts/how-much-hrv-matters-in-calcuating-whoop-recovery-scores/</link>
       <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyattj37.github.io/blog/posts/how-much-hrv-matters-in-calcuating-whoop-recovery-scores/</guid>
+      <guid>https://wyattj37.github.io/new-blog/posts/how-much-hrv-matters-in-calcuating-whoop-recovery-scores/</guid>
       <description>&lt;p&gt;Heart rate variability (HRV) is the primary metric that the WHOOP fitness band uses to calculate your recovery. In this article I look at just how much HRV contributes to recovery, plus how a high HRV variance can make things tricky.&lt;/p&gt;</description>
     </item>
   </channel>

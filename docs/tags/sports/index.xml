@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sports on Wyatt Johnston</title>
-    <link>https://wyattj37.github.io/blog/tags/sports/</link>
+    <link>https://wyattj37.github.io/new-blog/tags/sports/</link>
     <description>Recent content in Sports on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 09 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://wyattj37.github.io/blog/tags/sports/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wyattj37.github.io/new-blog/tags/sports/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>When to Bring Out Your Kicker (Or Runningback) on 4th &amp; Goal</title>
-      <link>https://wyattj37.github.io/blog/posts/when-to-bring-out-your-kicker-or-runningback-on-4th-goal/</link>
+      <link>https://wyattj37.github.io/new-blog/posts/when-to-bring-out-your-kicker-or-runningback-on-4th-goal/</link>
       <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyattj37.github.io/blog/posts/when-to-bring-out-your-kicker-or-runningback-on-4th-goal/</guid>
+      <guid>https://wyattj37.github.io/new-blog/posts/when-to-bring-out-your-kicker-or-runningback-on-4th-goal/</guid>
       <description>&lt;p&gt;In November 2023, Texans running back Dare Ogunbowale attempted a field goal in a real NFL game. I wanted to figure out whether or not this was the right move, so I made a win probability calculator for 4th and Goal situations that could be applied to that game and any others.&lt;/p&gt;</description>
     </item>
   </channel>
