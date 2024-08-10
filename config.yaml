@@ -1,7 +1,8 @@
 baseURL: https://wyattj37.github.io/new-blog/
 languageCode: en-us
 title: Wyatt Johnston
-theme: mini
+theme: 
+   - github.com/nodejh/hugo-theme-mini
 publishDir: "docs"
 
 # Default content language, support en (English) / zh (Chinese) / nl (Dutch) / fr (French) / es (Spanish) / da (Danish), default 'en'

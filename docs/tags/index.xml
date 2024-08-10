@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Wyatt Johnston</title>
-    <link>https://wyattj37.github.io/new-blog/tags/</link>
+    <link>http://localhost:1313/new-blog/tags/</link>
     <description>Recent content in Tags on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 11 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://wyattj37.github.io/new-blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/new-blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Health</title>
-      <link>https://wyattj37.github.io/new-blog/tags/health/</link>
+      <link>http://localhost:1313/new-blog/tags/health/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://wyattj37.github.io/new-blog/tags/health/</guid>
+      <guid>http://localhost:1313/new-blog/tags/health/</guid>
       <description></description>
     </item>
     <item>
       <title>Machine Learning</title>
-      <link>https://wyattj37.github.io/new-blog/tags/machine-learning/</link>
+      <link>http://localhost:1313/new-blog/tags/machine-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://wyattj37.github.io/new-blog/tags/machine-learning/</guid>
+      <guid>http://localhost:1313/new-blog/tags/machine-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>NFL</title>
-      <link>https://wyattj37.github.io/new-blog/tags/nfl/</link>
+      <link>http://localhost:1313/new-blog/tags/nfl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://wyattj37.github.io/new-blog/tags/nfl/</guid>
+      <guid>http://localhost:1313/new-blog/tags/nfl/</guid>
       <description></description>
     </item>
     <item>
       <title>Sports</title>
-      <link>https://wyattj37.github.io/new-blog/tags/sports/</link>
+      <link>http://localhost:1313/new-blog/tags/sports/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://wyattj37.github.io/new-blog/tags/sports/</guid>
+      <guid>http://localhost:1313/new-blog/tags/sports/</guid>
       <description></description>
     </item>
     <item>
       <title>Drinking Games</title>
-      <link>https://wyattj37.github.io/new-blog/tags/drinking-games/</link>
+      <link>http://localhost:1313/new-blog/tags/drinking-games/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://wyattj37.github.io/new-blog/tags/drinking-games/</guid>
+      <guid>http://localhost:1313/new-blog/tags/drinking-games/</guid>
       <description></description>
     </item>
   </channel>
