@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
+    <title>When to Bring Out Your Kicker (Or Runningback) on 4th &amp; Goal | Wyatt Johnston</title>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="In November 2023, Texans running back Dare Ogunbowale attempted a field goal in a real NFL game. I wanted to figure out whether or not this was the right move, so I made a win probability calculator for 4th and Goal situations that could be applied to that game and any others.">
+<meta name="generator" content="Hugo 0.128.0">
+
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+ 
+  
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=your-google-analytics-id"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'your-google-analytics-id');
+        }
+      </script>
+    
+  
+
+
+
+
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+	
+		<a href="/"> <span class="arrow">←</span>Home</a>
+	
+	<a href="/posts">Archive</a>
+	<a href="/tags">Tags</a>
+	<a href="/about">About</a>
+
+	
+
+	
+</nav>
+
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">When to Bring Out Your Kicker (Or Runningback) on 4th &amp; Goal</h1>
+
+    <div class="tip">
+        <time datetime="2024-07-09 00:00:00 &#43;0000 UTC">Jul 9, 2024</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          865 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          5 minute read
+        </span>
+    </div>
+
+    
+    
+        
+  
+
+
+    
+
+
+    <div class="content">
+      <p>In November 2023, Texans running back Dare Ogunbowale attempted a field goal in a real NFL game. I wanted to figure out whether or not this was the right move, so I made a win probability calculator for 4th and Goal situations that could be applied to that game and any others.</p>
+<h1 id="the-texans-game">The Texans Game <a href="#the-texans-game" class="anchor">🔗</a></h1><p>With 14:11 to go in the 4th quarter, the Texans are down 1 to the Buccaneers. They face 4th and goal from the 9 yard line. The Texans kicker is out with an injury, so their options are between trotting out running back Dare Ogunbowale to attempt a 26 yarder, or go for the touchdown. Using Pro Football Reference’s win <a href="https://www.pro-football-reference.com/boxscores/win_prob.cgi" target="_blank" rel="noopener">probability calculator</a>, the probabilities for a Texans win are as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Result</th>
+<th>Probability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field goal is missed</td>
+<td>45.8%</td>
+</tr>
+<tr>
+<td>Field goal is made</td>
+<td>61.9%</td>
+</tr>
+<tr>
+<td>Touchdown is missed</td>
+<td>49.8%</td>
+</tr>
+<tr>
+<td>Touchdown is made*</td>
+<td>81.6%</td>
+</tr>
+</tbody>
+</table>
+<p>Note that the win probability is slightly higher for missing a touchdown than missing a field goal. This is because when a field goal is missed the ball is turned over to the other team at the spot of where the kick took place, which would give the Buccaneers a few more yards.</p>
+<p>It’s an interesting situation. Teams convert on 4th and 9 about <a href="https://www.sportingnews.com/us/nfl/news/nfl-fourth-down-conversion-chart-rate-by-distance/vofkeub6xwms6imajxqkfipp#:~:text=4th%20down%20conversion%20rate%20by%20distance&amp;text=Based%20on%20data%20going%20back,still%20gaps%20near%20the%20top." target="_blank" rel="noopener">30% of the time</a>. Using the previous win probabilities, we can find out how confident the Texans need to be in Ogunbowale’s ability to knock down a 26 yarder using the following system:</p>
+<p>$$
+61.9x + 45.8(1 - x) &gt; 81.5y + 49.8(1 - y)
+$$</p>
+<p>Where x is the probability Ogunbowale hits the field goal and y is the probability they score a touchdown. If that statement is true, the field goal is preferable as the win probability of the attempted-kick-scenario as a whole is higher. Here is a plot of the same inequality, where green means &ldquo;go for it&rdquo; and red means &ldquo;kick the ball&rdquo;.</p>
+<div style="text-align: center;">
+  <img src="/images/kicking/WinProb1.png" style="width:75%;">
+</div>
+<p>Looking at the plot, if the Texans really do convert the 9 yard touchdown 30% of the time, it is more effective for them to kick the field goal as long as Ogunbowale converts at 85% or higher from 26 yards out. If the Texans offense is a little more efficient, say scoring a touchdown 35% of the time, Ogunbowale needs to be an almost perfect 95%. If the Texans are slightly less efficient, say scoring 25% of the time, Ogunbowale only needs to convert at a 75% rate.</p>
+<p>Depending on how the Texans feel about their offensive productivity at the moment, they could go either way. In the game, they opted to go for it and scored a touchdown (and got the 2 point conversion). I don’t think anyone could argue with the decision either way. After all, who’s to say how efficient a running back kicker is from 26 yards.</p>
+<p>What does not make sense is what happens later in the game. Now the game is tied up with 8:45 to go in the 4th quarter. In a very similar scenario, the Texans have 4th and goal from the 11. Let’s reevaluate the win probabilities given the possible outcomes of kicking or scoring a touchdown:</p>
+<table>
+<thead>
+<tr>
+<th>Result</th>
+<th>Probability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field goal is missed</td>
+<td>51.6%</td>
+</tr>
+<tr>
+<td>Field goal is made</td>
+<td>60.3%</td>
+</tr>
+<tr>
+<td>Touchdown is missed</td>
+<td>55.5%</td>
+</tr>
+<tr>
+<td>Touchdown is made*</td>
+<td>90.1%</td>
+</tr>
+</tbody>
+</table>
+<p>Just looking at probabilities, it’s clear two things have happened compared to last time they had the ball. First, a made field goal is less helpful. Second, a made touchdown is more helpful. So even though the end zone is 2 yards further this time, a touchdown is much more important. One would assume that if the Texans didn’t bring out the running back kicker last time, surely they wouldn’t kick it now. Using the updated inequality plot:</p>
+<div style="text-align: center;">
+  <img src="/images/kicking/WinProb2.png" style="width:75%;">
+</div>
+<p>We actually see that even if they are 100% sure Ogunbowale will hit the field goal, as long as they convert the touchdown 14% of the time they should not kick the ball. And if we discount Ogunbowale to a modest, but hopeful, 85% from 28 yards, they only need to score the touchdown 10% of the time to be more efficient going for it. For refernce teams convert on 4th and 11 about 27% of the time. So go for it, right?</p>
+<p>They bring out Ogunbowale anyways. He strikes it dead between the posts. Baker Mayfield and the Buccaneers get the ball back and drive down to score a touchdown, regaining a 4 point lead. But, with 46 seconds left, a 75 yard touchdown drive from Stroud wins the game for the Texans.</p>
+<h1 id="the-calculator">The Calculator <a href="#the-calculator" class="anchor">🔗</a></h1><p>So the Texans game is not a great advertisement for the 4th and Goal calculator. The calculator, as of now, is very simple. All it does is generate the plts</p>
+<p>*The “touchdown made” win probability is the average of the probabilities after a touchdown + 2 pt conversion and touchdown + no 2 pt conversion. This lacks something in sophistication but for these two particular situations the outcome does not change all that much.</p>
+<p>THREE VERSIONS OF CALCULATOR. ONE LIKE THIS WITH NO INPUT. ONE WITH LEAGUE AVERAGES THAT RETURNS GO FOR IT OR DON&rsquo;T. ONE WITH ONE INPUT THAT GIVES YOU THE THRESHHOLD OF THE OHTER.</p>
+    </div>
+
+    
+        <div class="tags">
+            
+                <a href="http://localhost:1313/blog/tags/sports">sports</a>
+            
+                <a href="http://localhost:1313/blog/tags/nfl">NFL</a>
+            
+        </div>
+    
+    
+    
+
+</section>
+
+
+    </main>
+    
+    <footer id="footer">
+    
+
+    <div class="copyright">
+    
+       © Copyright 
+       2024 
+       <span class="split">
+        <svg fill="#bbbbbb" width="15" height="15" version="1.1" id="heart-15" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 15 15">
+  <path d="M13.91,6.75c-1.17,2.25-4.3,5.31-6.07,6.94c-0.1903,0.1718-0.4797,0.1718-0.67,0C5.39,12.06,2.26,9,1.09,6.75&#xA;&#x9;C-1.48,1.8,5-1.5,7.5,3.45C10-1.5,16.48,1.8,13.91,6.75z"/>
+</svg>
+       </span>
+       Wyatt Johnston
+    
+    </div>
+
+    
+      <div class="powerby">
+        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+      </div>
+    
+</footer>
+
+
+
+  </body>
+</html>

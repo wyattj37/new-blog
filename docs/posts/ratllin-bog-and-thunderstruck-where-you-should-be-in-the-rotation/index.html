@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Ratllin&#39; Bog and Thunderstruck: Where You Should Be in the Rotation | Wyatt Johnston</title>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="Limiting the damage at the pregame.">
+<meta name="generator" content="Hugo 0.128.0">
+
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+ 
+  
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=your-google-analytics-id"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'your-google-analytics-id');
+        }
+      </script>
+    
+  
+
+
+
+
+
+
+
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+	
+		<a href="/"> <span class="arrow">←</span>Home</a>
+	
+	<a href="/posts">Archive</a>
+	<a href="/tags">Tags</a>
+	<a href="/about">About</a>
+
+	
+
+	
+</nav>
+
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">Ratllin&#39; Bog and Thunderstruck: Where You Should Be in the Rotation</h1>
+
+    <div class="tip">
+        <time datetime="2024-01-03 00:00:00 &#43;0000 UTC">Jan 3, 2024</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          226 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          2 minute read
+        </span>
+    </div>
+
+    
+    
+        
+  
+
+
+    
+
+
+    <div class="content">
+      <p>Use these charts to find the optimal spot in the Rattlin&rsquo; Bog or Thunderstruck rotation to minimize the damage.</p>
+<h1 id="overview">Overview <a href="#overview" class="anchor">🔗</a></h1><p>These are two similar games, the rules of which can be found here (Rattlin&rsquo; Bog) and here (Thunderstruck). You can select the number of participants in the dropdown menu. The player that begins is Player 1, the next Player 2, and so on. The player(s) with the longest rounds are highlighted in red. All that was required to produce these charts was recording the times of each round, storing them in a list and looping through. That process and the list of round lengths can be found on GitHub.</p>
+<h1 id="rattlin-bog">Rattlin&rsquo; Bog <a href="#rattlin-bog" class="anchor">🔗</a></h1><div>
+  <select id="imageSelectorRB" onchange="showImageRB()">
+    <option value="" disabled>Select an image</option>
+    <option value="2Players.png">2 Players</option>
+    <option value="3Players.png">3 Players</option>
+    <option value="4Players.png">4 Players</option>
+    <option value="5Players.png">5 Players</option>
+    <option value="6Players.png">6 Players</option>
+    <option value="7Players.png">7 Players</option>
+    <option value="8Players.png">8 Players</option>
+    <option value="9Players.png">9 Players</option>
+    <option value="10Players.png">10 Players</option>
+    <option value="11Players.png">11 Players</option>
+    <option value="12Players.png">12 Players</option>
+    <option value="13Players.png">13 Players</option>
+    <option value="14Players.png">14 Players</option>
+  </select>
+</div>
+<div>
+  <img id="selectedImageRB" src="" alt="Selected Image" style="display:none; width:100%; max-width:600px;" />
+</div>
+<script>
+function showImageRB() {
+  var selectorRB = document.getElementById('imageSelectorRB');
+  var selectedImageRB = document.getElementById('selectedImageRB');
+  var imagePathRB = '/images/rattlin-bog/' + selectorRB.value;
+
+  if (selectorRB.value) {
+    selectedImageRB.src = imagePathRB;
+    selectedImageRB.style.display = 'block';
+  } else {
+    selectedImageRB.style.display = 'none';
+  }
+}
+
+window.addEventListener('load', function() {
+  var selectorRB = document.getElementById('imageSelectorRB');
+  selectorRB.value = '5Players.png'; // Set this to your default image value
+  showImageRB();
+});
+</script>
+<h1 id="thunderstruck">Thunderstruck <a href="#thunderstruck" class="anchor">🔗</a></h1><div>
+  <select id="imageSelectorTS" onchange="showImageTS()">
+    <option value="" disabled>Select an image</option>
+    <option value="2Players.png">2 Players</option>
+    <option value="3Players.png">3 Players</option>
+    <option value="4Players.png">4 Players</option>
+    <option value="5Players.png">5 Players</option>
+    <option value="6Players.png">6 Players</option>
+    <option value="7Players.png">7 Players</option>
+    <option value="8Players.png">8 Players</option>
+    <option value="9Players.png">9 Players</option>
+    <option value="10Players.png">10 Players</option>
+    <option value="11Players.png">11 Players</option>
+    <option value="12Players.png">12 Players</option>
+    <option value="13Players.png">13 Players</option>
+    <option value="14Players.png">14 Players</option>
+  </select>
+</div>
+<div>
+  <img id="selectedImageTS" src="" alt="Selected Image" style="display:none; width:100%; max-width:600px;" />
+</div>
+<script>
+function showImageTS() {
+  var selectorTS = document.getElementById('imageSelectorTS');
+  var selectedImageTS = document.getElementById('selectedImageTS');
+  var imagePathTS = '/images/thunderstruck/' + selectorTS.value;
+
+  if (selectorTS.value) {
+    selectedImageTS.src = imagePathTS;
+    selectedImageTS.style.display = 'block';
+  } else {
+    selectedImageTS.style.display = 'none';
+  }
+}
+
+window.addEventListener('load', function() {
+  var selectorTS = document.getElementById('imageSelectorTS');
+  selectorTS.value = '5Players.png'; // Set this to your default image value
+  showImageTS();
+});
+</script>
+<p>As a note, Thunderstruck is not a very equal game. Two players usually take the brunt of the drinking time. And in the case of 4 players, avoid being the 4th. Also, there is one sneaky &ldquo;thunder&rdquo; around the middle of the song that is easily missed, at which point the charts are inaccurate.</p>
+    </div>
+
+    
+        <div class="tags">
+            
+                <a href="https://wyattj37.github.io/blog/tags/drinking-games">drinking games</a>
+            
+        </div>
+    
+    
+    
+
+</section>
+
+
+    </main>
+    
+    <footer id="footer">
+    
+
+    <div class="copyright">
+    
+       © Copyright 
+       2024 
+       <span class="split">
+        <svg fill="#bbbbbb" width="15" height="15" version="1.1" id="heart-15" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 15 15">
+  <path d="M13.91,6.75c-1.17,2.25-4.3,5.31-6.07,6.94c-0.1903,0.1718-0.4797,0.1718-0.67,0C5.39,12.06,2.26,9,1.09,6.75&#xA;&#x9;C-1.48,1.8,5-1.5,7.5,3.45C10-1.5,16.48,1.8,13.91,6.75z"/>
+</svg>
+       </span>
+       Wyatt Johnston
+    
+    </div>
+
+    
+      <div class="powerby">
+        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+      </div>
+    
+</footer>
+
+
+
+  </body>
+</html>
