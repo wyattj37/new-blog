@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Health on Wyatt Johnston</title>
-    <link>wyatt-johnston.com/tags/health/</link>
+    <link>http://wyatt-johnston.com/tags/health/</link>
     <description>Recent content in Health on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 11 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="wyatt-johnston.com/tags/health/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://wyatt-johnston.com/tags/health/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How Much HRV Matters in Calcuating WHOOP Recovery Scores</title>
-      <link>wyatt-johnston.com/posts/how-much-hrv-matters-in-calcuating-whoop-recovery-scores/</link>
+      <link>http://wyatt-johnston.com/posts/how-much-hrv-matters-in-calcuating-whoop-recovery-scores/</link>
       <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>wyatt-johnston.com/posts/how-much-hrv-matters-in-calcuating-whoop-recovery-scores/</guid>
+      <guid>http://wyatt-johnston.com/posts/how-much-hrv-matters-in-calcuating-whoop-recovery-scores/</guid>
       <description>&lt;p&gt;Heart rate variability (HRV) is the primary metric that the WHOOP fitness band uses to calculate your recovery. In this article I look at just how much HRV contributes to recovery, plus how a high HRV variance can make things tricky.&lt;/p&gt;</description>
     </item>
   </channel>
