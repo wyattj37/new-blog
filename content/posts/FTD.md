@@ -13,7 +13,7 @@ Turning a light-hearted, fun drinking game into a math problem.
 The rules to the game can be found [here](https://www.drinkinggames.co.uk/fuck-the-dealer-drinking-game.php). In this version of the game, the first guess is worth 5 drinks to the dealer if correct, and the second is worth 2. If the second guess is wrong, the guesser drinks the difference. For simplificaiton, I'll first look at a version where every guess is just worth one drink, and then return to the original.
 
 # Making Guesses in The Simple Version
-In the simple version, everything worth one drink, all the guesser wants to do is be correct on either the first or second guess. In order to do that optimally, the process is as follows: identify the three most available cards left in the deck. Make your first guess the middle card of those three. Your second guess will be one of the other two cards based on whether you are told higher or lower.
+In the simple version, where every guess is worth one drink, all the guesser wants to do is be correct on either the first or second guess. In order to do that optimally, the process is as follows: identify the three most available cards left in the deck. Make your first guess the middle card of those three. Your second guess will be one of the other two cards based on whether you are told higher or lower.
 
 As an example, suppose there were four 2s, three Jacks, and two Queens unaccounted for. And suppose there is only one of every other card unaccounted for. Your first guess would be Jack, because that is the middle of the three most likely cards. Based on whether you are told higher or lower, you would then guess Queen or 2, respectively.
 
@@ -32,7 +32,7 @@ $$
 because there is only one of our “lower” guess (the Ace). So the most likely card is not always the best guess.
 
 # Making Guesses in the More Common Version
-Back to the version where the first guess is worth 5 drinks to the dealer, the second is worth 2, and the guesser drinks the difference if wrong twice. Now the problem is not as simple as being right on either the first or second guess. In an effort to get the dealer more screwed, you are incentivized to guess a more likely card first despite it not necessarily maximizing your chances of being right overall. In an effort to drink less if your second guess is wrong, you are incentized to make a guess where the difference is potentially smaller.
+Back to the version where the first guess is worth 5 drinks to the dealer, the second is worth 2, and the guesser drinks the difference if wrong twice. Now the problem is not as simple as being right on either the first or second guess. In an effort to get the dealer more screwed, you are incentivized to guess a more likely card first despite it not necessarily maximizing your chances of being right overall. In an effort to drink less if your second guess is wrong, you are incentized to make guesses where the difference is smaller.
 
 How to balance the goal of maximizing drinks to the dealer and minimizing drinks to yourself? We can assign a positive value to drinks taken by the dealer and a negative value to drinks taken by the guesser, then find the expected value of each potential combination of guesses. The only final problem to remedy is that a drink taken may not be equal in value to a drink given. In the code I’ve included a “selflessness” weight that assigns how much you value giving drinks to the dealer compared to taking 1 drink. For example, if you don’t care about giving drinks to the dealer that much, and taking 1 drink is equal in value to you as giving 5 drinks, the weight would be 1/5 = 0.2. If you really value giving out drinks and each 1 given drink is worth 5 taken drinks, the weight would be 5/1 = 5.
 
@@ -63,11 +63,11 @@ $$
 EV_{\text{guesser}}  = P(\neg g1) \cdot [(Hval - Fval) \cdot P(higher) \cdot P(\neg g2,h) + (Fval - Lval) \cdot P(lower) \cdot P(\neg g2,l) ]
 $$
 
-We can plug these two values back into the total EV equation and get the value we want.
+I could get into why that is but I can't imagine who would care. We can plug these two values back into the total EV equation and get the value we want.
 
 # Using the Guess Calculator
 In the code found on GitHub, the cards are represented as a list of how many are left in the deck. So if there are 4 Aces and 1 King left in the deck, the cards list should be updated to [4,0,0,…1]. That is the only input necessary to run the function which returns the optimal guesses in the form [first_guess, lower_guess, higher_guess]. The selflessness coefficient can be tweaked as well to the preference of the user.
 
 The code cycles through each combination of two guesses, calculates the EV, and stores the set of guesses that produces the highest value. There are relatively few combinations, so brute-forcing all of them runs perfectly quick and nothing fancier is required.
 
-As a note, unless the selflessness weight is very high, the code will usually suggest playing it safe with 3 cards near each other as the guesses. In some cases it will even accept defeat and suggest sets of guesses with cards no longer in the deck. This makes intuitive sense in that guaranteeing 1 drink is sometimes better than risking a small chance of 4 or 5 or up to 12 drinks. Depending on the order of the guesses, the code might also suggest a 100% chance of 1 drink as opposed to a 50% chance of 2 drinks, so I included a step that prefers at least some probability of 0 drinks if possible.
+As a note, unless the selflessness weight is very high, the code will usually suggest playing it safe with 3 cards near each other as the guesses. In some cases it will even accept defeat and suggest sets of guesses with cards no longer in the deck. This makes intuitive sense in that guaranteeing 1 drink is sometimes better than risking a small chance of 4 or 5 or up to 12 drinks. There were initially some situations in which the calculator opted for a 100% chance of 1 drink over a 50% chance of 2 drinks, so I included a step to prefer the higher variance option because you might as well live a little.
