@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head><script src="/new-blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=new-blog/livereload" data-no-instant defer></script>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>How Much HRV Matters in Calcuating WHOOP Recovery Scores | Wyatt Johnston</title>
 
     <meta charset="utf-8">
@@ -13,11 +13,11 @@
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
 
-<link rel="stylesheet" href="http://localhost:1313/new-blog/css/style.css">
+<link rel="stylesheet" href="http://localhost:1313/css/style.css">
 
 
 
-<link rel="shortcut icon" href="http://localhost:1313/new-blog/images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://localhost:1313/images/favicon.ico" type="image/x-icon" />
 
  
   
@@ -53,11 +53,11 @@
   <body>
     <nav class="navigation">
 	
-		<a href="http://localhost:1313/new-blog/"> <span class="arrow">←</span>Home</a>
+		<a href="http://localhost:1313/"> <span class="arrow">←</span>Home</a>
 	
-	<a href="http://localhost:1313/new-blog/posts">Archive</a>
-	<a href="http://localhost:1313/new-blog/tags">Tags</a>
-	<a href="http://localhost:1313/new-blog/about">About</a>
+	<a href="http://localhost:1313/posts">Archive</a>
+	<a href="http://localhost:1313/tags">Tags</a>
+	<a href="http://localhost:1313/about">About</a>
 
 	
 
@@ -77,7 +77,7 @@
           ·
         </span>
         <span>
-          764 words
+          763 words
         </span>
         <span class="split">
           ·
@@ -99,7 +99,7 @@
     <div class="content">
       <p>Heart rate variability (HRV) is the primary metric that the WHOOP fitness band uses to calculate your recovery. In this article I look at just how much HRV contributes to recovery, plus how a high HRV variance can make things tricky.</p>
 <h1 id="what-is-a-whoop-recovery-score">What is a WHOOP Recovery Score <a href="#what-is-a-whoop-recovery-score" class="anchor">🔗</a></h1><p>The WHOOP fitness band is a product that tracks your activity throughout the day by measuring primarily your heart rate. In addition, and more importantly, it tracks your recovery during sleep. The WHOOP website (and my personal experience) will tell you HRV is the primary contributer to calculating recovery. What exactly HRV is and why it&rsquo;s so important is something I surely will explain worse than WHOOP themselves, so find out more about that <a href="https://www.whoop.com/us/en/thelocker/heart-rate-variability-hrv/" target="_blank" rel="noopener">here</a>.</p>
-<p>Luckily WHOOP allows you to export your data, which includes a daily value for quite a few metrics. These include resting heart rate, blood oxygen %, energy burned in calories, time in bed, light sleep, REM sleep, and more. All of these features, including HRV, are inputs to the model that calculates recovery score. By using this data, something of a crude recreation of the recovery score model can be made. Of course it won&rsquo;t be perfect, but by using data from both myself and a friend, it suffices to provide some useful insight as to how HRV specifically plays its part.</p>
+<p>Luckily WHOOP allows you to export your data, which includes a daily value for quite a few metrics. These include resting heart rate, blood oxygen %, energy burned in calories, time in bed, light sleep, REM sleep, and more. All of these features, including HRV, are inputs to the model that calculates recovery score. By using this data, something of a crude recreation of the recovery score model can be made. Of course it won&rsquo;t be perfect, but by using data from both myself and a friend, it suffices to provide some useful insight as to how HRV plays its part.</p>
 <h1 id="investigating-the-features">Investigating the Features <a href="#investigating-the-features" class="anchor">🔗</a></h1><p>I&rsquo;ll use a few different methods to find out the relative importance of each of the features. The first is a linear regression with L1 regularization. Using this shows which features have coefficients that don&rsquo;t trend to 0, and that can gives a decent idea of which handful of features are of the most importance. The next is using a GBM model and extracting the feature importance, measured on the contribution to reducing error. The last is permutation importance. This is newer to me, but, as I understand, the function shuffles the feature values of a model randomly and the more important features are the ones which cause the model to perform worst when shuffled.</p>
 <p>The code for each of these can be found on GitHub. I don&rsquo;t link my own data because that feels sort of weird to put online, but if you are a WHOOP user you can put the filepath to your own &ldquo;phisiological_cycles.csv&rdquo; from the WHOOP data export. The results I found are similar amongst each of the different approaches. The LR with L1 regularization shows HRV is about 9 times as impactful as the next most important feature (light sleep duration) out of 5 contribution features. The GBM feature importance has HRV as accounting for 90% of the importance with light sleep duration at 4.3%. The permutation importance calcualtes HRV at about 97% for both the GBM and linear model.</p>
 <h1 id="the-potential-problem-with-a-high-hrv-variance">The (Potential) Problem With a High HRV Variance <a href="#the-potential-problem-with-a-high-hrv-variance" class="anchor">🔗</a></h1><p>What&rsquo;s unique, and potentially misleading, about my particular data is that my HRV has a very high variance. This is due to, let&rsquo;s say, lifestyle choices. Because an n=1 sample size is bad practice, I also use another WHOOP user&rsquo;s data to assemble a doubly robust n=2 sample size. For reference, this WHOOP user&rsquo;s HRV variance is calculated to be 303.3, whereas mine is 1981.2. Using the same methods as before on the lower variance HRV dataset, it was seen that HRV played a smaller, albeit still majority, role in recovery score. The LR coefficient of HRV was about 5.5 times higher than the next, and the GBM significance was only 75%. Seemingly because the models trained with this data could not rely so heavily on HRV, the test performance was also lower.</p>
@@ -110,9 +110,9 @@
     
         <div class="tags">
             
-                <a href="http://localhost:1313/new-blog/tags/machine-learning">Machine Learning</a>
+                <a href="http://localhost:1313/tags/machine-learning">Machine Learning</a>
             
-                <a href="http://localhost:1313/new-blog/tags/health">Health</a>
+                <a href="http://localhost:1313/tags/health">Health</a>
             
         </div>
     

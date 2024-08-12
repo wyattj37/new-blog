@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Wyatt Johnston</title>
-    <link>http://localhost:1313/new-blog/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 11 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/new-blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How Much HRV Matters in Calcuating WHOOP Recovery Scores</title>
-      <link>http://localhost:1313/new-blog/posts/how-much-hrv-matters-in-calcuating-whoop-recovery-scores/</link>
+      <link>http://localhost:1313/posts/how-much-hrv-matters-in-calcuating-whoop-recovery-scores/</link>
       <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/new-blog/posts/how-much-hrv-matters-in-calcuating-whoop-recovery-scores/</guid>
+      <guid>http://localhost:1313/posts/how-much-hrv-matters-in-calcuating-whoop-recovery-scores/</guid>
       <description>&lt;p&gt;Heart rate variability (HRV) is the primary metric that the WHOOP fitness band uses to calculate your recovery. In this article I look at just how much HRV contributes to recovery, plus how a high HRV variance can make things tricky.&lt;/p&gt;</description>
     </item>
     <item>
       <title>When to Bring Out Your Kicker (Or Runningback) on 4th &amp; Goal</title>
-      <link>http://localhost:1313/new-blog/posts/when-to-bring-out-your-kicker-or-runningback-on-4th-goal/</link>
+      <link>http://localhost:1313/posts/when-to-bring-out-your-kicker-or-runningback-on-4th-goal/</link>
       <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/new-blog/posts/when-to-bring-out-your-kicker-or-runningback-on-4th-goal/</guid>
+      <guid>http://localhost:1313/posts/when-to-bring-out-your-kicker-or-runningback-on-4th-goal/</guid>
       <description>&lt;p&gt;In November 2023, Texans running back Dare Ogunbowale attempted a field goal in a real NFL game. I wanted to figure out whether or not this was the right move, so I made a win probability calculator for 4th and Goal situations that could be applied to that game and any others.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Game Theory and Probabilistic Strategies in &#39;(Screw) the Dealer&#39;</title>
-      <link>http://localhost:1313/new-blog/posts/game-theory-and-probabilistic-strategies-in-screw-the-dealer/</link>
+      <link>http://localhost:1313/posts/game-theory-and-probabilistic-strategies-in-screw-the-dealer/</link>
       <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/new-blog/posts/game-theory-and-probabilistic-strategies-in-screw-the-dealer/</guid>
+      <guid>http://localhost:1313/posts/game-theory-and-probabilistic-strategies-in-screw-the-dealer/</guid>
       <description>&lt;p&gt;Turning a light-hearted, fun drinking game into a math problem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Riding the Bus: A Ballistics Report via Monte Carlo Simulation</title>
-      <link>http://localhost:1313/new-blog/posts/riding-the-bus-a-ballistics-report-via-monte-carlo-simulation/</link>
+      <link>http://localhost:1313/posts/riding-the-bus-a-ballistics-report-via-monte-carlo-simulation/</link>
       <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/new-blog/posts/riding-the-bus-a-ballistics-report-via-monte-carlo-simulation/</guid>
+      <guid>http://localhost:1313/posts/riding-the-bus-a-ballistics-report-via-monte-carlo-simulation/</guid>
       <description>&lt;p&gt;How many drinks will a person take while riding the bus? Spoiler: it&amp;rsquo;s a lot.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ratllin&#39; Bog and Thunderstruck: Where You Should Be in the Rotation</title>
-      <link>http://localhost:1313/new-blog/posts/ratllin-bog-and-thunderstruck-where-you-should-be-in-the-rotation/</link>
+      <link>http://localhost:1313/posts/ratllin-bog-and-thunderstruck-where-you-should-be-in-the-rotation/</link>
       <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/new-blog/posts/ratllin-bog-and-thunderstruck-where-you-should-be-in-the-rotation/</guid>
+      <guid>http://localhost:1313/posts/ratllin-bog-and-thunderstruck-where-you-should-be-in-the-rotation/</guid>
       <description>&lt;p&gt;Use these charts to find the optimal spot in the Rattlin&amp;rsquo; Bog or Thunderstruck rotation to minimize the damage.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -8,7 +8,7 @@ tags = [
 +++
 Use these charts to find the optimal spot in the Rattlin' Bog or Thunderstruck rotation to minimize the damage.  <!--more-->
 # Overview
-These are two similar games, the rules of which can be found here (Rattlin' Bog) and here (Thunderstruck). You can select the number of participants in the dropdown menu. The player that begins is Player 1, the next Player 2, and so on. The player(s) with the longest rounds are highlighted in red. All that was required to produce these charts was recording the times of each round, storing them in a list and looping through. That process and the list of round lengths can be found on GitHub. 
+These are two similar games - in Rattlin' Bog a player's turn lasts the duration of the song's verse which gets increasingly long. In Thunderstruck, a player's turn lasts from one use of "thunder" in the song to the next. You can select the number of participants in the dropdown menu. The player that begins is Player 1, the next Player 2, and so on. The player(s) with the longest rounds are highlighted in red. I recorded the times of each round, stored them in a list and looped through to create the charts.
 
 # Rattlin' Bog
 <div>
@@ -100,4 +100,4 @@ window.addEventListener('load', function() {
 });
 </script>
 
-As a note, Thunderstruck is not a very equal game. Two players usually take the brunt of the drinking time. And in the case of 4 players, avoid being the 4th. Also, there is one sneaky "thunder" around the middle of the song that is easily missed, at which point the charts are inaccurate.
+As a note, Thunderstruck is not a very equal game. Two players usually take the brunt of the drinking time. And in the case of 4 players, avoid being the 4th. Also, there is one subtle "thunder" around the middle of the song that is easily missed, at which point the charts would be inaccurate.

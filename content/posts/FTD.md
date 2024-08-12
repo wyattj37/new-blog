@@ -6,7 +6,7 @@ tags = [
 ]
 math = true
 +++
-Turning a light-hearted, fun drinking game into a math problem.
+Turning a light-hearted game into a math problem.
 
 <!--more-->
 # Overview of the Game
