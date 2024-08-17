@@ -9,10 +9,10 @@
     <lastBuildDate>Thu, 11 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wyatt-johnston.com/tags/health/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>HRV and Other Feature Importance in the WHOOP Recovery Model</title>
-      <link>https://wyatt-johnston.com/posts/hrv-and-other-feature-importance-in-the-whoop-recovery-model/</link>
+      <title>HRV and the WHOOP Recovery Model: Estimating Feature Importance</title>
+      <link>https://wyatt-johnston.com/posts/hrv-and-the-whoop-recovery-model-estimating-feature-importance/</link>
       <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/hrv-and-other-feature-importance-in-the-whoop-recovery-model/</guid>
+      <guid>https://wyatt-johnston.com/posts/hrv-and-the-whoop-recovery-model-estimating-feature-importance/</guid>
       <description>&lt;p&gt;Heart rate variability (HRV) is the primary metric that the WHOOP fitness band uses to calculate your recovery. In this article I look at just how much HRV contributes to recovery, plus how a high HRV variance can make things tricky.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,5 +1,5 @@
 +++
-title = "HRV and Other Feature Importance in the WHOOP Recovery Model"
+title = "HRV and the WHOOP Recovery Model: Estimating Feature Importance"
 date = "2024-07-11"
 tags = [
     "Machine Learning",

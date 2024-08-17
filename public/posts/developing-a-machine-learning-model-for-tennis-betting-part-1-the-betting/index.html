@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Developing a Machine Learning Model for Tennis Betting Part 1: The Betting | Wyatt Johnston</title>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="Deploying the model built in Part 1 to a betting scheme to see what kind of money can (hypothetically) be made.">
+<meta name="generator" content="Hugo 0.128.0">
+
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="stylesheet" href="http://localhost:1313/css/style.css">
+
+
+
+<link rel="shortcut icon" href="http://localhost:1313/images/favicon.ico" type="image/x-icon" />
+
+ 
+  
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=your-google-analytics-id"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'your-google-analytics-id');
+        }
+      </script>
+    
+  
+
+
+
+
+
+
+
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+	
+		<a href="http://localhost:1313/"> <span class="arrow">←</span>Home</a>
+	
+	<a href="http://localhost:1313/posts">Archive</a>
+	<a href="http://localhost:1313/tags">Tags</a>
+	<a href="http://localhost:1313/about">About</a>
+
+	
+
+	
+</nav>
+
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">Developing a Machine Learning Model for Tennis Betting Part 1: The Betting</h1>
+
+    <div class="tip">
+        <time datetime="2024-08-15 00:00:00 &#43;0000 UTC">Aug 15, 2024</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          245 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          2 minute read
+        </span>
+    </div>
+
+    
+    
+        
+  
+
+
+    
+
+
+    <div class="content">
+      <p>Deploying the model built in Part 1 to a betting scheme to see what kind of money can (hypothetically) be made.</p>
+<h1 id="choosing-the-timeframe-and-model-usage">Choosing the Timeframe and Model Usage <a href="#choosing-the-timeframe-and-model-usage" class="anchor">🔗</a></h1><p>I’ll be using the years 2021-2024 for testing betting strategies. In order to keep the model from seeing any data from the future, I will use the same method in part 1, but only train the model up to the end of 2020. Then, make bets based on that model for the next few weeks, then retrain the model using the matches that just happened, and repeat. I’m interested in re-training the model at the start of every tournament, but I will maybe come back to that another time.</p>
+<h1 id="the-data">The Data <a href="#the-data" class="anchor">🔗</a></h1><h1 id="the-betting-strategy">The Betting Strategy <a href="#the-betting-strategy" class="anchor">🔗</a></h1><p>The <a href="https://en.wikipedia.org/wiki/Kelly_criterion" target="_blank" rel="noopener">Kelly criterion</a> is a method of bet sizing which has been popular for a long time. In essence, you want to bet more on games where you either stand to win a lot or have a high probability of winning, and bet less otherwise. The formula, in which f* is a fraction of your bankroll, is given by:</p>
+<div style="text-align: center;">
+  <img src="http://localhost:1313/images/tennis/kelly.png" style="width:50%;">
+</div>
+<p>There are two variations of the Kelly criterion that I will be testing. The first is the Half-Kelly, which just divides the formula above by two. Simple enough - smaller bets are more prudent. The other variation comes from a <a href="https://www.researchgate.net/publication/262425087_Optimal_Betting_Under_Parameter_Uncertainty_Improving_the_Kelly_Criterion" target="_blank" rel="noopener">paper by Baker and Mchale</a>. I recommend you check it out, it’s a bit dense for getting into here. But the formula for f* becomes:</p>
+<div style="text-align: center;">
+  <img src="http://localhost:1313/images/tennis/kelly2.png" style="width:50%;">
+</div>
+    </div>
+
+    
+        <div class="tags">
+            
+                <a href="http://localhost:1313/tags/sports">sports</a>
+            
+                <a href="http://localhost:1313/tags/betting">betting</a>
+            
+                <a href="http://localhost:1313/tags/machine-learning">machine learning</a>
+            
+        </div>
+    
+    
+    
+
+</section>
+
+
+    </main>
+    
+    <footer id="footer">
+    
+
+    <div class="copyright">
+    
+       © Copyright 
+       2024 
+       <span class="split">
+        <svg fill="#bbbbbb" width="15" height="15" version="1.1" id="heart-15" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 15 15">
+  <path d="M13.91,6.75c-1.17,2.25-4.3,5.31-6.07,6.94c-0.1903,0.1718-0.4797,0.1718-0.67,0C5.39,12.06,2.26,9,1.09,6.75&#xA;&#x9;C-1.48,1.8,5-1.5,7.5,3.45C10-1.5,16.48,1.8,13.91,6.75z"/>
+</svg>
+       </span>
+       Wyatt Johnston
+    
+    </div>
+
+    
+      <div class="powerby">
+        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+      </div>
+    
+</footer>
+
+
+
+  </body>
+</html>

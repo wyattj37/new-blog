@@ -2,28 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://wyatt-johnston.com/posts/</loc>
+    <lastmod>2024-08-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wyatt-johnston.com/</loc>
+    <lastmod>2024-08-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wyatt-johnston.com/tags/betting/</loc>
+    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wyatt-johnston.com/tags/machine-learning/</loc>
+    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</loc>
+    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wyatt-johnston.com/tags/sports/</loc>
+    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wyatt-johnston.com/tags/</loc>
+    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://wyatt-johnston.com/tags/health/</loc>
     <lastmod>2024-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wyatt-johnston.com/posts/hrv-and-other-feature-importance-in-the-whoop-recovery-model/</loc>
-    <lastmod>2024-07-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wyatt-johnston.com/tags/machine-learning/</loc>
-    <lastmod>2024-07-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wyatt-johnston.com/posts/</loc>
-    <lastmod>2024-07-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wyatt-johnston.com/tags/</loc>
-    <lastmod>2024-07-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wyatt-johnston.com/</loc>
+    <loc>https://wyatt-johnston.com/posts/hrv-and-the-whoop-recovery-model-estimating-feature-importance/</loc>
     <lastmod>2024-07-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wyatt-johnston.com/tags/nfl/</loc>
-    <lastmod>2024-07-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wyatt-johnston.com/tags/sports/</loc>
     <lastmod>2024-07-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wyatt-johnston.com/posts/when-to-bring-out-your-kicker-or-runningback-on-4th-goal/</loc>
