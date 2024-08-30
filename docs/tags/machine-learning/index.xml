@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Machine Learning on Wyatt Johnston</title>
-    <link>https://wyatt-johnston.com/tags/machine-learning/</link>
+    <link>http://localhost:1313/tags/machine-learning/</link>
     <description>Recent content in Machine Learning on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 14 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://wyatt-johnston.com/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Making a Machine Learning Model for Tennis Betting Part 1: The Model</title>
-      <link>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</link>
+      <link>http://localhost:1313/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</guid>
+      <guid>http://localhost:1313/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</guid>
       <description>&lt;p&gt;Creating a machine learning model that predicts tennis matches efficiently enough to bet on them profitably.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HRV and the WHOOP Recovery Model: Estimating Feature Importance</title>
-      <link>https://wyatt-johnston.com/posts/hrv-and-the-whoop-recovery-model-estimating-feature-importance/</link>
+      <link>http://localhost:1313/posts/hrv-and-the-whoop-recovery-model-estimating-feature-importance/</link>
       <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/hrv-and-the-whoop-recovery-model-estimating-feature-importance/</guid>
+      <guid>http://localhost:1313/posts/hrv-and-the-whoop-recovery-model-estimating-feature-importance/</guid>
       <description>&lt;p&gt;Heart rate variability (HRV) is the primary metric that the WHOOP fitness band uses to calculate your recovery. In this article I look at just how much HRV contributes to recovery, plus how a high HRV variance can make things tricky.&lt;/p&gt;</description>
     </item>
   </channel>

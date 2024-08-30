@@ -7,7 +7,7 @@ tags = [
 ]
 +++
 
-How many drinks will a person take while riding the bus? Spoiler: it's a lot. <!--more-->
+How many drinks will a person take while riding the bus? In short: a lot. <!--more-->
 
 # How it Works
 You can find the rules to the game [here](https://drinkinggamezone.com/drinking-games/ride-the-bus/). The linked article explains the initial phases of the game, as well, but I will mostly be looking at the final phase - the riding of the bus.  The only discrepancy is that this article claims the bus ride [stops at the end of the deck](https://www.amazon.com/Charmin-Ultra-Bathroom-Tissue-White/dp/B086D4VR9M). In the version of the game studied hereafter, at that point the deck is reshuffled and the bus starts back up, only stopping after 4 consecutive correct answers.

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <title>Wyatt Johnston</title>
+    <title>Volleyball Data Analytics App | Wyatt Johnston</title>
 
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 <meta name="viewport" content="width=device-width,minimum-scale=1">
-<meta name="description" content="My Blog">
+<meta name="description" content="A Shiny app I made to investigate a volleyball team&rsquo;s performance.">
 <meta name="generator" content="Hugo 0.128.0">
 
 
@@ -46,11 +46,6 @@
 
 
 
-  
-    <link href="http://localhost:1313/tags/index.xml" rel="alternate" type="application/rss+xml" title="Wyatt Johnston" />
-    <link href="http://localhost:1313/tags/index.xml" rel="feed" type="application/rss+xml" title="Wyatt Johnston" />
-  
-
 
 
   </head>
@@ -72,77 +67,59 @@
 
     <main class="main">
       
-<header class="profile">
+
+<section id="single">
+    <h1 class="title">Volleyball Data Analytics App</h1>
+
+    <div class="tip">
+        <time datetime="2024-08-20 00:00:00 &#43;0000 UTC">Aug 20, 2024</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          543 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          3 minute read
+        </span>
+    </div>
+
     
-        <img class="avatar" alt="avatar" src="http://localhost:1313/images/avatar.png" />
+    
+        
+  
+
+
     
 
-    <h1>Wyatt Johnston</h1>
+
+    <div class="content">
+      <p>A Shiny app I made to investigate a volleyball team&rsquo;s performance.</p>
+<h1 id="check-out-the-app">Check Out the App <a href="#check-out-the-app" class="anchor">🔗</a></h1><p>You can find the link to the app <a href="https://wyattjohn.shinyapps.io/fake_vb/" target="_blank" rel="noopener">here</a>.</p>
+<p>The keen eye might notice there are only four players, two of which have been dead for centuries and none of which play college volleyball. I scrambled some real games played and created the two of us as players to demonstrate how the app works. Just imagine that the pages include lots of real players from lots of real college teams. I stripped the actual data used on the app because the team I worked with will be using it hopefully to their competitive advantage. Granted there&rsquo;s a ~0% chance of a volleyball coach being a reader of my blog, but you never know.</p>
+<h1 id="on-volleyball-analytics-in-general">On Volleyball Analytics in General <a href="#on-volleyball-analytics-in-general" class="anchor">🔗</a></h1><p>First and foremost, if you are interested in programming and volleyball analytics, check out <a href="https://github.com/openvolley/datavolley" target="_blank" rel="noopener">datavolley</a> on Github. The match data I used was processed as a datavolley file (.dvw), which can be loaded in using the library as list of each moment in the game and about 80 of its describing characteristics. For example, the line that describes the serve which starts the game would include things like the home team, the visiting team, the location of the serve, the quality of the serve, the name of ther server, the score &ldquo;0-0&rdquo;, and so on.</p>
+<p>Given all the categories there are lots of ways to group things when creating a visualization. Commonly statistics are used to describe the location and quality of a hit and then grouped either by player, team, date, or some combination of those. You can imagine the relevance of these sorts of visualizations: How often does a team attack from this spot? Where does a player serve to most? How is a player performing over time? Those are the sorts of things you see on the app.</p>
+<h1 id="on-making-the-app">On Making the App <a href="#on-making-the-app" class="anchor">🔗</a></h1><p>Because datavolley is available as a package for R on Github, the app was made using Shiny. I wasn&rsquo;t all that familiar with R or the Shiny package (or any other R package for that matter) prior to starting work on this project, so those both took some time to get comfortable with. The biggest challenge, even more so than figuring out R and the libraries, wound up being trying to handle all the data. Every shot of every point of every game played by every team in the conference was loaded in and used. Which is quite a lot of data.</p>
+<p>For all those points being loaded in and used, the &ldquo;loaded in&rdquo; part was the culprit of most issues. Loading the .dvw files took time, and, more importantly, more memory than my free Shiny account would allow. I wound up making a second R script that would load in the files locally, try and shave them down as much as possible (getting rid of useless fields or matches), and then save them into the app&rsquo;s directory. When the app loaded it would then just store what was saved in the directory as a variable to be used in all the other features. When it&rsquo;s just four players though the jumping through hoops is limited, which was another reason for making the fake app.</p>
+    </div>
+
+    
+        <div class="tags">
+            
+                <a href="http://localhost:1313/tags/sports">sports</a>
+            
+                <a href="http://localhost:1313/tags/data-analytics">data analytics</a>
+            
+        </div>
     
     
-      <h2>Engineering Student at UIUC</h2>
     
-</header>
-<section id="tags">
-      
-      
-          
-              <span class="tag">
-                  <a href="http://localhost:1313/tags/drinking-games">
-                    DRINKING GAMES <span>(3)</span>
-                </a>
-              </span>
-          
-      
-          
-              <span class="tag">
-                  <a href="http://localhost:1313/tags/sports">
-                    SPORTS <span>(3)</span>
-                </a>
-              </span>
-          
-      
-          
-              <span class="tag">
-                  <a href="http://localhost:1313/tags/machine-learning">
-                    MACHINE LEARNING <span>(2)</span>
-                </a>
-              </span>
-          
-      
-          
-              <span class="tag">
-                  <a href="http://localhost:1313/tags/betting">
-                    BETTING <span>(1)</span>
-                </a>
-              </span>
-          
-      
-          
-              <span class="tag">
-                  <a href="http://localhost:1313/tags/data-analytics">
-                    DATA ANALYTICS <span>(1)</span>
-                </a>
-              </span>
-          
-      
-          
-              <span class="tag">
-                  <a href="http://localhost:1313/tags/health">
-                    HEALTH <span>(1)</span>
-                </a>
-              </span>
-          
-      
-          
-              <span class="tag">
-                  <a href="http://localhost:1313/tags/nfl">
-                    NFL <span>(1)</span>
-                </a>
-              </span>
-          
-      
+
 </section>
+
 
     </main>
     

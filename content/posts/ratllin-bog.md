@@ -8,7 +8,7 @@ tags = [
 +++
 Use these charts to find the optimal spot in the Rattlin' Bog or Thunderstruck rotation to minimize the damage.  <!--more-->
 # Overview
-These are two similar games - in Rattlin' Bog a player's turn lasts the duration of the song's verse which gets increasingly long. In Thunderstruck, a player's turn lasts from one use of "thunder" in the song to the next. You can select the number of participants in the dropdown menu. The player that begins is Player 1, the next Player 2, and so on. The player(s) with the longest rounds are highlighted in red. I recorded the times of each round, stored them in a list and looped through to create the charts.
+These are two similar games - in Rattlin' Bog a player's turn lasts the duration of the song's verse which gets increasingly long. In Thunderstruck, a player's turn lasts from one use of "thunder" in the song to the next. You can select the number of participants in the dropdown menu. The player that begins is Player 1, the next Player 2, and so on. The player(s) with the longest rounds are highlighted in red.
 
 # Rattlin' Bog
 <div>
