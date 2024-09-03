@@ -5,6 +5,7 @@ description = "Limiting the damage at the pregame."
 tags = [
     "drinking games"
 ]
+draft = true
 +++
 Use these charts to find the optimal spot in the Rattlin' Bog or Thunderstruck rotation to minimize the damage.  <!--more-->
 # Overview

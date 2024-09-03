@@ -6,7 +6,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 <meta name="viewport" content="width=device-width,minimum-scale=1">
-<meta name="description" content="How many drinks will a person take while riding the bus? Spoiler: it&rsquo;s a lot.">
+<meta name="description" content="How many drinks will a person take while riding the bus? In short: a lot.">
 <meta name="generator" content="Hugo 0.128.0">
 
 
@@ -97,7 +97,7 @@
 
 
     <div class="content">
-      <p>How many drinks will a person take while riding the bus? Spoiler: it&rsquo;s a lot.</p>
+      <p>How many drinks will a person take while riding the bus? In short: a lot.</p>
 <h1 id="how-it-works">How it Works <a href="#how-it-works" class="anchor">🔗</a></h1><p>You can find the rules to the game <a href="https://drinkinggamezone.com/drinking-games/ride-the-bus/" target="_blank" rel="noopener">here</a>. The linked article explains the initial phases of the game, as well, but I will mostly be looking at the final phase - the riding of the bus.  The only discrepancy is that this article claims the bus ride <a href="https://www.amazon.com/Charmin-Ultra-Bathroom-Tissue-White/dp/B086D4VR9M" target="_blank" rel="noopener">stops at the end of the deck</a>. In the version of the game studied hereafter, at that point the deck is reshuffled and the bus starts back up, only stopping after 4 consecutive correct answers.</p>
 <h1 id="the-approach">The Approach <a href="#the-approach" class="anchor">🔗</a></h1><p>My approach was to build a simulation of the game, then run the simulation a bunch of times and track the results. Or a Monte Carlo simulation if you&rsquo;re feeling fancy. The code is available on my GitHub for an in-depth look, but essentially a list of integers acts as a deck of cards and the computer makes guesses just like a person would. If the computer gets it wrong, it takes a sip (drink_count++) and the round goes back to &ldquo;red or black&rdquo;.</p>
 <p>How does the computer determine what guess to make? Just like a person, it makes the more likely guess. If there is a low card during the &ldquo;Higher/Lower&rdquo; round, it guesses higher. If the cards during &ldquo;Inside/Outide&rdquo; are far apart, it guesses inside. In addition to this, I added a feature called the &ldquo;memory&rdquo; that keeps track of some number of the previous cards turned over. This influences the computer&rsquo;s guess, i.e. if the memory is set to store the last 3 cards, and all 3 were red cards, it will choose black on the next &ldquo;Red/Black&rdquo; round. In theory, this is meant to mimic the way a human can use seeing the previous cards to their advantage. In practice, a participant is unlikely to play the game this accurately. But, as will be discussed later, the memory has a surprisingly small impact on the success of the round anyways.</p>

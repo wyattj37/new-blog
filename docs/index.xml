@@ -6,8 +6,15 @@
     <description>Recent content on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wyatt-johnston.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making a Machine Learning Model for Tennis Betting Part 2: The Betting (Work in Progress)</title>
+      <link>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting-work-in-progress/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting-work-in-progress/</guid>
+      <description>&lt;p&gt;Deploying the model built in Part 1 to a betting scheme to see what kind of money can (hypothetically) be made.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Volleyball Data Analytics App</title>
       <link>https://wyatt-johnston.com/posts/volleyball-data-analytics-app/</link>
@@ -49,13 +56,6 @@
       <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
       <guid>https://wyatt-johnston.com/posts/riding-the-bus-a-ballistics-report-via-monte-carlo-simulation/</guid>
       <description>&lt;p&gt;How many drinks will a person take while riding the bus? In short: a lot.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Ratllin&#39; Bog and Thunderstruck: Where You Should Be in the Rotation</title>
-      <link>https://wyatt-johnston.com/posts/ratllin-bog-and-thunderstruck-where-you-should-be-in-the-rotation/</link>
-      <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/ratllin-bog-and-thunderstruck-where-you-should-be-in-the-rotation/</guid>
-      <description>&lt;p&gt;Use these charts to find the optimal spot in the Rattlin&amp;rsquo; Bog or Thunderstruck rotation to minimize the damage.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

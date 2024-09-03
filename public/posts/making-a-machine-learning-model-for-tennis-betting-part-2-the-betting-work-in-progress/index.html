@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <title>Making a Machine Learning Model for Tennis Betting Part 2: The Betting | Wyatt Johnston</title>
+    <title>Making a Machine Learning Model for Tennis Betting Part 2: The Betting (Work in Progress) | Wyatt Johnston</title>
 
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
@@ -69,7 +69,7 @@
       
 
 <section id="single">
-    <h1 class="title">Making a Machine Learning Model for Tennis Betting Part 2: The Betting</h1>
+    <h1 class="title">Making a Machine Learning Model for Tennis Betting Part 2: The Betting (Work in Progress)</h1>
 
     <div class="tip">
         <time datetime="2024-09-01 00:00:00 &#43;0000 UTC">Sep 1, 2024</time>
@@ -77,7 +77,7 @@
           ·
         </span>
         <span>
-          429 words
+          588 words
         </span>
         <span class="split">
           ·
@@ -98,7 +98,7 @@
 
     <div class="content">
       <p>Deploying the model built in Part 1 to a betting scheme to see what kind of money can (hypothetically) be made.</p>
-<h1 id="choosing-the-timeframe-and-model-usage">Choosing the Timeframe and Model Usage <a href="#choosing-the-timeframe-and-model-usage" class="anchor">🔗</a></h1><p>I’ll be using the years 2021-2024 for testing betting strategies. In order to keep the model from seeing any data from the future, I will use the same method in part 1, but only train the model up to the end of 2020. Then, make bets based on that model for the handful of matches, then retrain the model using the matches that just happened, and repeat. I’m interested in re-training the model at the start of every tournament, but I will maybe come back to that another time.</p>
+<h1 id="choosing-the-timeframe-and-model-usage">Choosing the Timeframe and Model Usage <a href="#choosing-the-timeframe-and-model-usage" class="anchor">🔗</a></h1><p>I’ll be using the neural network from part 1 and the years 2021-2024 for testing betting strategies. In order to keep the model from seeing any data from the future, I will only train it on matches from the past. Every 1000 bets made I will retrain the model to include the matches that &ldquo;just happened&rdquo;. I’m interested in re-training the model at the start of every tournament (as opposed to an arbitrary number like every 1000 matches), but I will come back to that another time.</p>
 <h1 id="the-data">The Data <a href="#the-data" class="anchor">🔗</a></h1><p>The betting odds data comes from <a href="http://www.tennis-data.co.uk/alldata.php" target="_blank" rel="noopener">here</a>. The files were sort of a hassle to combine because the tournament names and player names aren&rsquo;t stored the same, so some matches were lost when combining the betting data with the model data. Also the ATP Tour match data was more robust than the betting odds data, so the matches which didn&rsquo;t overlap were also lost. I&rsquo;ll be using the best odds given for either the favorite or underdog, as I imagine any good sports bettor would. It&rsquo;s important to be careful of keeping the odds data separated from the feature data, as a mixture of the two would obviously lead to biased results.</p>
 <h1 id="the-betting-strategy">The Betting Strategy <a href="#the-betting-strategy" class="anchor">🔗</a></h1><p>The <a href="https://en.wikipedia.org/wiki/Kelly_criterion" target="_blank" rel="noopener">Kelly criterion</a> is a method of bet sizing which has been popular for a long time. In essence, you want to bet more on games where you either stand to win a lot or have a high probability of winning, and bet less otherwise. The formula, in which f* is a fraction of your bankroll, is given by:</p>
 <div style="text-align: center;">
@@ -109,7 +109,12 @@
   <img src="http://localhost:1313/images/tennis/kelly2.png" style="width:40%;">
 </div>
 <p>You&rsquo;ll notice the σ term, wich represents the error variance of the predictions. Different values for this parameter will have to be expiremented with to see which yields the best results.</p>
-<p>The last component of the betting strategy is when to make a bet. You don&rsquo;t want to bet on everything, only matches in which your estimated probability from the model differs significantly enough from the bookmaker&rsquo;s odds to be profitable.</p>
+<p>The last component of the betting strategy is when to make a bet. You don&rsquo;t have to bet on everything - choosing to skip matches below a confidence threshhold can  only matches in which your estimated probability from the model differs significantly enough from the bookmaker&rsquo;s odds to be profitable.</p>
+<h1 id="oops-data-leak">Oops! Data Leak <a href="#oops-data-leak" class="anchor">🔗</a></h1><p>Remember when I said it was important to keep the model from training on matches it was going to predict? Well I messed that up. Or I created the greatest tennis betting model ever with 140x returns. But I definitely messed it up. Here&rsquo;s what my simulated bankroll(starting at 10,000) over time looked like:</p>
+<div style="text-align: center;">
+  <img src="http://localhost:1313/images/tennis/bad-graph.png" style="width:80%;">
+</div>
+<p>For the first 2000 matches it does about how you&rsquo;d expect: some ups and downs but hovering around even. Then comes a seemingly impossible climb including some huge upswings all the way up to 140,000. What I&rsquo;m assuming happened is whenever that second re-training occurred a handful of matches from the future leaked into the training matches. The model was therefore extremely confident on these matches and made huge, correct bets. I&rsquo;ll have to revisit the way I sorted and merged the betting line data and the match data. Back to the drawing board&hellip;</p>
     </div>
 
     

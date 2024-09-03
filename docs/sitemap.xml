@@ -2,29 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wyatt-johnston.com/tags/data-analytics/</loc>
-    <lastmod>2024-08-20T00:00:00+00:00</lastmod>
+    <loc>https://wyatt-johnston.com/tags/betting/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wyatt-johnston.com/tags/machine-learning/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting-work-in-progress/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wyatt-johnston.com/posts/</loc>
-    <lastmod>2024-08-20T00:00:00+00:00</lastmod>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wyatt-johnston.com/tags/sports/</loc>
-    <lastmod>2024-08-20T00:00:00+00:00</lastmod>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wyatt-johnston.com/tags/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wyatt-johnston.com/</loc>
+    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wyatt-johnston.com/tags/data-analytics/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wyatt-johnston.com/posts/volleyball-data-analytics-app/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wyatt-johnston.com/</loc>
-    <lastmod>2024-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wyatt-johnston.com/tags/betting/</loc>
-    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wyatt-johnston.com/tags/machine-learning/</loc>
-    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</loc>
     <lastmod>2024-08-14T00:00:00+00:00</lastmod>
@@ -49,9 +52,6 @@
   </url><url>
     <loc>https://wyatt-johnston.com/posts/riding-the-bus-a-ballistics-report-via-monte-carlo-simulation/</loc>
     <lastmod>2024-06-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wyatt-johnston.com/posts/ratllin-bog-and-thunderstruck-where-you-should-be-in-the-rotation/</loc>
-    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wyatt-johnston.com/about/</loc>
   </url><url>
