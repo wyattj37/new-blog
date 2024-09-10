@@ -2,7 +2,7 @@
 title = "Game Theory and Probabilistic Strategies in '(Screw) the Dealer'"
 date = "2024-07-03"
 tags = [
-    "drinking games"
+    "games"
 ]
 math = true
 +++

@@ -3,7 +3,7 @@ author = "Hugo Authors"
 title = "Riding the Bus: A Ballistics Report via Monte Carlo Simulation"
 date = "2024-06-30"
 tags = [
-    "drinking games"
+    "games"
 ]
 +++
 

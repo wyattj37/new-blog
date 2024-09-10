@@ -77,7 +77,7 @@
           ·
         </span>
         <span>
-          588 words
+          592 words
         </span>
         <span class="split">
           ·
@@ -109,12 +109,12 @@
   <img src="https://wyatt-johnston.com/images/tennis/kelly2.png" style="width:40%;">
 </div>
 <p>You&rsquo;ll notice the σ term, wich represents the error variance of the predictions. Different values for this parameter will have to be expiremented with to see which yields the best results.</p>
-<p>The last component of the betting strategy is when to make a bet. You don&rsquo;t have to bet on everything - choosing to skip matches below a confidence threshhold can  only matches in which your estimated probability from the model differs significantly enough from the bookmaker&rsquo;s odds to be profitable.</p>
-<h1 id="oops-data-leak">Oops! Data Leak <a href="#oops-data-leak" class="anchor">🔗</a></h1><p>Remember when I said it was important to keep the model from training on matches it was going to predict? Well I messed that up. Or I created the greatest tennis betting model ever with 140x returns. But I definitely messed it up. Here&rsquo;s what my simulated bankroll(starting at 10,000) over time looked like:</p>
+<p>The last component of the betting strategy is when to make a bet. You don&rsquo;t have to bet on everything - as the predicted odds near the bookmaker&rsquo;s odds the bet size will get quite small, but we can also choose just to pass over these bets and be more prudent.</p>
+<h1 id="oops-data-leak">Oops! Data Leak <a href="#oops-data-leak" class="anchor">🔗</a></h1><p>Remember when I said it was important to keep the model from training on matches it was going to predict? Well I messed that up. Or I created the greatest tennis betting model ever with 140x returns. But I definitely messed it up. Here&rsquo;s what my simulated bankroll (starting at 10,000) over time looked like:</p>
 <div style="text-align: center;">
   <img src="https://wyatt-johnston.com/images/tennis/bad-graph.png" style="width:80%;">
 </div>
-<p>For the first 2000 matches it does about how you&rsquo;d expect: some ups and downs but hovering around even. Then comes a seemingly impossible climb including some huge upswings all the way up to 140,000. What I&rsquo;m assuming happened is whenever that second re-training occurred a handful of matches from the future leaked into the training matches. The model was therefore extremely confident on these matches and made huge, correct bets. I&rsquo;ll have to revisit the way I sorted and merged the betting line data and the match data. Back to the drawing board&hellip;</p>
+<p>For the first 2000 matches it does about how you&rsquo;d expect: some ups and downs, maybe squeaking out a small profit. Then comes a seemingly impossible climb including some huge upswings all the way up to 140,000. What I&rsquo;m assuming happened is whenever that second re-trainin occurred, a handful of matches from the future leaked into the training matches. The model was therefore extremely confident on these matches and made huge, correct bets. I&rsquo;ll have to revisit the way I sorted and merged the betting line data and the match data. Back to the drawing board&hellip;</p>
     </div>
 
     
@@ -157,6 +157,17 @@
         </g>
     </g>
 </svg>
+    </a>
+
+    <a class="symbol" href="https://linkedin.com/in/wyatt-d-johnston" rel="me" target="_blank">
+        
+        <svg width="28" height="28" fill="#bbbbbb" viewBox="0 0 500 500">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="500" height="500" fill="#bbbbbb" rx="50"/>
+    <path fill="#FFF" d="M154.703 100.183c-19.121 0-34.689 15.565-34.703 34.701 0 19.136 15.568 34.704 34.703 34.704 19.128 0 34.688-15.568 34.688-34.704 0-19.134-15.561-34.701-34.688-34.701zm26.045 83.348h-52.094a4.488 4.488 0 0 0-4.488 4.489v167.675a4.488 4.488 0 0 0 4.488 4.488h52.093a4.49 4.49 0 0 0 4.489-4.488V188.02a4.486 4.486 0 0 0-4.488-4.489zm133.176-1.974c-19.064 0-35.817 5.805-46.04 15.271v-8.808c0-2.48-2.01-4.489-4.489-4.489h-49.971a4.489 4.489 0 0 0-4.489 4.489v167.675a4.488 4.488 0 0 0 4.489 4.488h52.044a4.49 4.49 0 0 0 4.489-4.488v-82.957c0-23.802 4.378-38.555 26.227-38.555 21.526.026 23.137 15.846 23.137 39.977v81.535a4.489 4.489 0 0 0 4.49 4.488h52.068a4.489 4.489 0 0 0 4.488-4.488v-91.977c-.001-38.253-7.553-82.161-66.443-82.161z"/>
+  </g>
+</svg>
+
     </a>
 
 

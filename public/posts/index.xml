@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Well/We&#39;ll/We(?)ll</title>
+      <link>http://localhost:1313/posts/well/well/well/</link>
+      <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/well/well/well/</guid>
+      <description>&lt;p&gt;Predicting whether sentences beginning with &amp;ldquo;Well&amp;rdquo; should be autocorrected to &amp;ldquo;We&amp;rsquo;ll&amp;rdquo; or not.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Making a Machine Learning Model for Tennis Betting Part 2: The Betting (Work in Progress)</title>
       <link>http://localhost:1313/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting-work-in-progress/</link>
@@ -56,13 +63,6 @@
       <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/riding-the-bus-a-ballistics-report-via-monte-carlo-simulation/</guid>
       <description>&lt;p&gt;How many drinks will a person take while riding the bus? In short: a lot.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Ratllin&#39; Bog and Thunderstruck: Where You Should Be in the Rotation</title>
-      <link>http://localhost:1313/posts/ratllin-bog-and-thunderstruck-where-you-should-be-in-the-rotation/</link>
-      <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ratllin-bog-and-thunderstruck-where-you-should-be-in-the-rotation/</guid>
-      <description>&lt;p&gt;Use these charts to find the optimal spot in the Rattlin&amp;rsquo; Bog or Thunderstruck rotation to minimize the damage.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

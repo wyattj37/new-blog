@@ -2,25 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/betting/</loc>
-    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/machine-learning/</loc>
+    <lastmod>2024-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/nlp/</loc>
+    <lastmod>2024-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/well/well/well/</loc>
+    <lastmod>2024-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-09-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/betting/</loc>
     <lastmod>2024-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting-work-in-progress/</loc>
     <lastmod>2024-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/sports/</loc>
-    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-09-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2024-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/data-analytics/</loc>
@@ -38,23 +44,20 @@
     <loc>http://localhost:1313/posts/hrv-and-the-whoop-recovery-model-estimating-feature-importance/</loc>
     <lastmod>2024-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/nfl/</loc>
+    <loc>http://localhost:1313/tags/football/</loc>
     <lastmod>2024-07-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/when-to-bring-out-your-kicker-or-runningback-on-4th-goal/</loc>
     <lastmod>2024-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/drinking-games/</loc>
+    <loc>http://localhost:1313/posts/game-theory-and-probabilistic-strategies-in-screw-the-dealer/</loc>
     <lastmod>2024-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/game-theory-and-probabilistic-strategies-in-screw-the-dealer/</loc>
+    <loc>http://localhost:1313/tags/games/</loc>
     <lastmod>2024-07-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/riding-the-bus-a-ballistics-report-via-monte-carlo-simulation/</loc>
     <lastmod>2024-06-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/ratllin-bog-and-thunderstruck-where-you-should-be-in-the-rotation/</loc>
-    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>

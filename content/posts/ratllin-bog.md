@@ -3,7 +3,7 @@ title = "Ratllin' Bog and Thunderstruck: Where You Should Be in the Rotation"
 date = "2024-01-03"
 description = "Limiting the damage at the pregame."
 tags = [
-    "drinking games"
+    "games"
 ]
 draft = true
 +++

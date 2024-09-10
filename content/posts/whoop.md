@@ -2,8 +2,8 @@
 title = "HRV and the WHOOP Recovery Model: Estimating Feature Importance"
 date = "2024-07-11"
 tags = [
-    "Machine Learning",
-    "Health"
+    "machine learning",
+    "health"
 ]
 +++
 Heart rate variability (HRV) is the primary metric that the WHOOP fitness band uses to calculate your recovery. In this article I look at just how much HRV contributes to recovery, plus how a high HRV variance can make things tricky.

@@ -3,7 +3,7 @@ title = "When to Bring Out Your Kicker (Or Runningback) on 4th & Goal"
 date = "2024-07-09"
 tags = [
     "sports",
-    "NFL"
+    "football"
 ]
 math = true
 +++

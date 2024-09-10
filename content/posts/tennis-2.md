@@ -30,13 +30,13 @@ There are two variations of the Kelly criterion that I will be testing. The firs
 
 You'll notice the σ term, wich represents the error variance of the predictions. Different values for this parameter will have to be expiremented with to see which yields the best results.
 
-The last component of the betting strategy is when to make a bet. You don't have to bet on everything - choosing to skip matches below a confidence threshhold can  only matches in which your estimated probability from the model differs significantly enough from the bookmaker's odds to be profitable.
+The last component of the betting strategy is when to make a bet. You don't have to bet on everything - as the predicted odds near the bookmaker's odds the bet size will get quite small, but we can also choose just to pass over these bets and be more prudent.
 
 # Oops! Data Leak
-Remember when I said it was important to keep the model from training on matches it was going to predict? Well I messed that up. Or I created the greatest tennis betting model ever with 140x returns. But I definitely messed it up. Here's what my simulated bankroll(starting at 10,000) over time looked like:
+Remember when I said it was important to keep the model from training on matches it was going to predict? Well I messed that up. Or I created the greatest tennis betting model ever with 140x returns. But I definitely messed it up. Here's what my simulated bankroll (starting at 10,000) over time looked like:
 
 <div style="text-align: center;">
   <img src="/images/tennis/bad-graph.png" style="width:80%;">
 </div>
 
-For the first 2000 matches it does about how you'd expect: some ups and downs but hovering around even. Then comes a seemingly impossible climb including some huge upswings all the way up to 140,000. What I'm assuming happened is whenever that second re-training occurred a handful of matches from the future leaked into the training matches. The model was therefore extremely confident on these matches and made huge, correct bets. I'll have to revisit the way I sorted and merged the betting line data and the match data. Back to the drawing board...
+For the first 2000 matches it does about how you'd expect: some ups and downs, maybe squeaking out a small profit. Then comes a seemingly impossible climb including some huge upswings all the way up to 140,000. What I'm assuming happened is whenever that second re-trainin occurred, a handful of matches from the future leaked into the training matches. The model was therefore extremely confident on these matches and made huge, correct bets. I'll have to revisit the way I sorted and merged the betting line data and the match data. Back to the drawing board...
