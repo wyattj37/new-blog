@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <title>Wyatt Johnston</title>
+    <title>Well, We&#39;ll, We(?)ll | Wyatt Johnston</title>
 
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 <meta name="viewport" content="width=device-width,minimum-scale=1">
-<meta name="description" content="My Blog">
+<meta name="description" content="Using NLP and ML techniques to determine whether sentences containing &lsquo;well&rsquo; should be autocorrected to &lsquo;we&rsquo;ll&rsquo;.">
 <meta name="generator" content="Hugo 0.128.0">
 
 
@@ -46,11 +46,6 @@
 
 
 
-  
-    <link href="http://localhost:1313/tags/index.xml" rel="alternate" type="application/rss+xml" title="Wyatt Johnston" />
-    <link href="http://localhost:1313/tags/index.xml" rel="feed" type="application/rss+xml" title="Wyatt Johnston" />
-  
-
 
 
   </head>
@@ -72,93 +67,58 @@
 
     <main class="main">
       
-<header class="profile">
+
+<section id="single">
+    <h1 class="title">Well, We&#39;ll, We(?)ll</h1>
+
+    <div class="tip">
+        <time datetime="2024-09-10 00:00:00 &#43;0000 UTC">Sep 10, 2024</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          327 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          2 minute read
+        </span>
+    </div>
+
     
-        <img class="avatar" alt="avatar" src="http://localhost:1313/images/avatar.png" />
+    
+        
+  
+
+
     
 
-    <h1>Wyatt Johnston</h1>
+
+    <div class="content">
+      <p>Using NLP and ML techniques to determine whether sentences containing &lsquo;well&rsquo; should be autocorrected to &lsquo;we&rsquo;ll&rsquo;.</p>
+<h1 id="background">Background <a href="#background" class="anchor">🔗</a></h1><p>When I&rsquo;m typing on my phone, I pretty much never use apostrophes - I leave the insertion of those entirely up to autocorrect. While autocorrect does this accurately for the most part, I noticed it struggles on correcting &ldquo;well&rdquo; to &ldquo;we&rsquo;ll&rdquo;, especially at the beginning of a sentence. Of course at the beginning of the sentence there is no context, but one would think several words down the line the correction could be more accurate. I wanted to investigate how much better a language model could perform than standard autocorrect, and how each added word of context improves that performance.</p>
+<h1 id="collecting-the-data">Collecting the Data <a href="#collecting-the-data" class="anchor">🔗</a></h1><p>I&rsquo;m not sure if you&rsquo;ve heard, but language processing is something of a hot topic these days. Lucky for me, that means there&rsquo;s lots of data out there to use. I opted for a collection of <a href="https://www.kaggle.com/datasets/rtatman/blog-authorship-corpus" target="_blank" rel="noopener">blogs</a> for two reasons. First, blogs are more likely to be written in the first person, which might include some first person plural like &ldquo;we&rsquo;ll&rdquo;. Second, they are more likely to be grammatically correct then something like a dataset of text messages.</p>
+<p>I used the spacy library which provides lots of useful tools for separating sentences and finding which ones contain or start with certain words. As is typical for dealing with lots of data, the process is time-intensive. Patience is a virtue. When it&rsquo;s all said and done I&rsquo;m working with 19113 sentences starting with &ldquo;well&rdquo; and 896 sentences starting with &ldquo;we&rsquo;ll&rdquo;.</p>
+<h1 id="the-prediction-task">The Prediction Task <a href="#the-prediction-task" class="anchor">🔗</a></h1><p>Once all of the sentences are collected, I indicate which ones contain &ldquo;we&rsquo;ll&rdquo; and then remove the apostrophe. I then decide how many words after the &ldquo;well&rdquo; to include (starting with 1) and then remove the rest. As it&rsquo;s much more common for a sentence to start with &ldquo;well&rdquo; than &ldquo;we&rsquo;ll&rdquo;, with 0 added context guessing no apostrophe would be the best move.</p>
+<p>I haven&rsquo;t</p>
+    </div>
+
+    
+        <div class="tags">
+            
+                <a href="http://localhost:1313/tags/nlp">nlp</a>
+            
+                <a href="http://localhost:1313/tags/machine-learning">machine learning</a>
+            
+        </div>
     
     
-      <h2>Engineering Student at UIUC</h2>
     
-</header>
-<section id="tags">
-      
-      
-          
-              <span class="tag">
-                  <a href="http://localhost:1313/tags/sports">
-                    SPORTS <span>(4)</span>
-                </a>
-              </span>
-          
-      
-          
-              <span class="tag">
-                  <a href="http://localhost:1313/tags/machine-learning">
-                    MACHINE LEARNING <span>(3)</span>
-                </a>
-              </span>
-          
-      
-          
-              <span class="tag">
-                  <a href="http://localhost:1313/tags/betting">
-                    BETTING <span>(2)</span>
-                </a>
-              </span>
-          
-      
-          
-              <span class="tag">
-                  <a href="http://localhost:1313/tags/games">
-                    GAMES <span>(2)</span>
-                </a>
-              </span>
-          
-      
-          
-              <span class="tag">
-                  <a href="http://localhost:1313/tags/combinatorics">
-                    COMBINATORICS <span>(1)</span>
-                </a>
-              </span>
-          
-      
-          
-              <span class="tag">
-                  <a href="http://localhost:1313/tags/data-analytics">
-                    DATA ANALYTICS <span>(1)</span>
-                </a>
-              </span>
-          
-      
-          
-              <span class="tag">
-                  <a href="http://localhost:1313/tags/football">
-                    FOOTBALL <span>(1)</span>
-                </a>
-              </span>
-          
-      
-          
-              <span class="tag">
-                  <a href="http://localhost:1313/tags/health">
-                    HEALTH <span>(1)</span>
-                </a>
-              </span>
-          
-      
-          
-              <span class="tag">
-                  <a href="http://localhost:1313/tags/math">
-                    MATH <span>(1)</span>
-                </a>
-              </span>
-          
-      
+
 </section>
+
 
     </main>
     

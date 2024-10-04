@@ -6,14 +6,14 @@
     <description>Recent content in Posts on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Well/We&#39;ll/We(?)ll</title>
-      <link>http://localhost:1313/posts/well/well/well/</link>
-      <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/well/well/well/</guid>
-      <description>&lt;p&gt;Predicting whether sentences beginning with &amp;ldquo;Well&amp;rdquo; should be autocorrected to &amp;ldquo;We&amp;rsquo;ll&amp;rdquo; or not.&lt;/p&gt;</description>
+      <title>Deranged Probability Puzzle</title>
+      <link>http://localhost:1313/posts/deranged-probability-puzzle/</link>
+      <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/deranged-probability-puzzle/</guid>
+      <description>&lt;p&gt;Attempting a &amp;ldquo;deadly&amp;rdquo; probability problem with combinatorics.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Making a Machine Learning Model for Tennis Betting Part 2: The Betting (Work in Progress)</title>

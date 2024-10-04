@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wyatt-johnston.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deranged Probability Puzzle</title>
+      <link>https://wyatt-johnston.com/posts/deranged-probability-puzzle/</link>
+      <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/posts/deranged-probability-puzzle/</guid>
+      <description>&lt;p&gt;Attempting a &amp;ldquo;deadly&amp;rdquo; probability problem with combinatorics.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Making a Machine Learning Model for Tennis Betting Part 2: The Betting (Work in Progress)</title>
       <link>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting-work-in-progress/</link>

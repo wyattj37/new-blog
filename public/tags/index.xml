@@ -6,20 +6,20 @@
     <description>Recent content in Tags on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Machine Learning</title>
-      <link>http://localhost:1313/tags/machine-learning/</link>
+      <title>Combinatorics</title>
+      <link>http://localhost:1313/tags/combinatorics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/machine-learning/</guid>
+      <guid>http://localhost:1313/tags/combinatorics/</guid>
       <description></description>
     </item>
     <item>
-      <title>Nlp</title>
-      <link>http://localhost:1313/tags/nlp/</link>
+      <title>Math</title>
+      <link>http://localhost:1313/tags/math/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/nlp/</guid>
+      <guid>http://localhost:1313/tags/math/</guid>
       <description></description>
     </item>
     <item>
@@ -27,6 +27,13 @@
       <link>http://localhost:1313/tags/betting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/betting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine Learning</title>
+      <link>http://localhost:1313/tags/machine-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/machine-learning/</guid>
       <description></description>
     </item>
     <item>
