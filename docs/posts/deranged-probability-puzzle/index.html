@@ -83,7 +83,7 @@
           ·
         </span>
         <span>
-          1213 words
+          1217 words
         </span>
         <span class="split">
           ·
@@ -104,7 +104,7 @@
 
     <div class="content">
       <p>Attempting a &ldquo;deadly&rdquo; probability problem with combinatorics.</p>
-<h1 id="the-problem">The Problem <a href="#the-problem" class="anchor">🔗</a></h1><p>I stumbled across the website Brain Stellar, a collection of sorts of strategy and probability puzzles. I saw that one problem, <a href="https://brainstellar.com/puzzles/1008" target="_blank" rel="noopener">here</a>, was one of four marked as &ldquo;deadly&rdquo; and no solution was given, only an attempt by the author. Naturally I had to give it a go myself.</p>
+<h1 id="the-problem">The Problem <a href="#the-problem" class="anchor">🔗</a></h1><p>I stumbled across the website Brain Stellar, a collection of strategy and probability puzzles. I saw that a particular problem, <a href="https://brainstellar.com/puzzles/1008" target="_blank" rel="noopener">here</a>, was one of four marked as &ldquo;deadly&rdquo;. In addition, no solution was given, only an incomplete attempt by the author. After quite a bit of toiling here&rsquo;s what I have to show.</p>
 <h1 id="my-approach">My Approach <a href="#my-approach" class="anchor">🔗</a></h1><p>The aim of the problem is to find the probability that starting with N shooters, we end up with 1 survivor. We will call this probability P(N). This probability is the sum of P over all possible states we can move to from N, multiplied by the probability that we will move to that state. We will call that probability, of moving from state N to state N - k, p(N - k). For example, in the case N = 4, there will be at most 4 people shot, k = 4, and at least 2 people shot (no self-shots allowed), k = 2. So:</p>
 <p>$$
 P(4) = P(3)p(4 - 1) + P(2)p(4 - 2) + P(1)p(4 - 3) + P(0)p(4 - 4)
