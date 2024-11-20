@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data Analytics on Wyatt Johnston</title>
-    <link>https://wyatt-johnston.com/tags/data-analytics/</link>
+    <link>http://localhost:1313/tags/data-analytics/</link>
     <description>Recent content in Data Analytics on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 20 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://wyatt-johnston.com/tags/data-analytics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/data-analytics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Volleyball Data Analytics App</title>
-      <link>https://wyatt-johnston.com/posts/volleyball-data-analytics-app/</link>
+      <link>http://localhost:1313/posts/volleyball-data-analytics-app/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/volleyball-data-analytics-app/</guid>
+      <guid>http://localhost:1313/posts/volleyball-data-analytics-app/</guid>
       <description>&lt;p&gt;A Shiny app I made to investigate a volleyball team&amp;rsquo;s performance.&lt;/p&gt;</description>
     </item>
   </channel>

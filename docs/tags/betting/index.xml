@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Betting on Wyatt Johnston</title>
-    <link>https://wyatt-johnston.com/tags/betting/</link>
+    <link>http://localhost:1313/tags/betting/</link>
     <description>Recent content in Betting on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://wyatt-johnston.com/tags/betting/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/betting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Making a Machine Learning Model for Tennis Betting Part 2: The Betting (Work in Progress)</title>
-      <link>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting-work-in-progress/</link>
+      <link>http://localhost:1313/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting-work-in-progress/</link>
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting-work-in-progress/</guid>
+      <guid>http://localhost:1313/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting-work-in-progress/</guid>
       <description>&lt;p&gt;Deploying the model built in Part 1 to a betting scheme to see what kind of money can (hypothetically) be made.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Making a Machine Learning Model for Tennis Betting Part 1: The Model</title>
-      <link>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</link>
+      <link>http://localhost:1313/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</guid>
+      <guid>http://localhost:1313/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</guid>
       <description>&lt;p&gt;Creating a machine learning model that predicts tennis matches efficiently enough to bet on them profitably.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,5 +1,5 @@
 +++
-title = "Deranged Probability Puzzle"
+title = "Derangements, Stirling Numbers, and Counting"
 date = "2024-10-03"
 tags = [
     "combinatorics",
@@ -122,5 +122,5 @@ $$
 \binom{N}{k} \cdot (k - i)^i \cdot \text{Perm}(N-k, i) \cdot k^{(N - k - i)} \cdot \left( D(k - i) + D(k - 2i) \cdot (k-2)^i + D(k - 3i) \cdot (k-3)^i + \ldots \right)
 $$
 
-# The Problem with the Problem
-This formula seems to work for calculating the P(N) for k = 2,3,4,5,6. However, after that, it begins to break down. I've come to realize that it's because there are duplicate cases when it comes to choosing spots for the free options and non-free options excluded from derangements. To be continued...
+# Counting Duplicates
+This formula will work just fine for calculating the P(N) for k = 2,3,4,5,6. However, after that, it begins to break down. This is because there are duplicate cases when it comes to choosing spots for the free options and non-free options excluded from derangements. Therefore, the next step is to count these duplicates and remove them from the total count.

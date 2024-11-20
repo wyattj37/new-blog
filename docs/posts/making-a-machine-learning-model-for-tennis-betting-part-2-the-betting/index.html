@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <title>Volleyball Data Analytics App | Wyatt Johnston</title>
+    <title>Making a Machine Learning Model for Tennis Betting Part 2: The Betting | Wyatt Johnston</title>
 
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 <meta name="viewport" content="width=device-width,minimum-scale=1">
-<meta name="description" content="A Shiny app I made to investigate a volleyball team&rsquo;s performance.">
+<meta name="description" content="Deploying the model built in Part 1 to a betting scheme to see what kind of money can (hypothetically) be made.">
 <meta name="generator" content="Hugo 0.128.0">
 
 
@@ -69,10 +69,10 @@
       
 
 <section id="single">
-    <h1 class="title">Volleyball Data Analytics App</h1>
+    <h1 class="title">Making a Machine Learning Model for Tennis Betting Part 2: The Betting</h1>
 
     <div class="tip">
-        <time datetime="2024-08-20 00:00:00 &#43;0000 UTC">Aug 20, 2024</time>
+        <time datetime="2024-09-01 00:00:00 &#43;0000 UTC">Sep 1, 2024</time>
         <span class="split">
           ·
         </span>
@@ -97,13 +97,20 @@
 
 
     <div class="content">
-      <p>A Shiny app I made to investigate a volleyball team&rsquo;s performance.</p>
-<h1 id="check-out-the-app">Check Out the App <a href="#check-out-the-app" class="anchor">🔗</a></h1><p>You can find the link to the app <a href="https://wyattjohn.shinyapps.io/fake_vb/" target="_blank" rel="noopener">here</a>.</p>
-<p>The keen eye might notice there are only four players, two of which have been dead for centuries and none of which play college volleyball. I scrambled some real games played and created the two of us as players to demonstrate how the app works. Just imagine that the pages include lots of real players from lots of real college teams. I stripped the actual data used on the app because the team I worked with will be using it hopefully to their competitive advantage. Granted there&rsquo;s a ~0% chance of a volleyball coach being a reader of my blog, but you never know.</p>
-<h1 id="on-volleyball-analytics-in-general">On Volleyball Analytics in General <a href="#on-volleyball-analytics-in-general" class="anchor">🔗</a></h1><p>First and foremost, if you are interested in programming and volleyball analytics, check out <a href="https://github.com/openvolley/datavolley" target="_blank" rel="noopener">datavolley</a> on Github. The match data I used was processed as a datavolley file (.dvw), which can be loaded in using the library as list of each moment in the game and about 80 of its describing characteristics. For example, the line that describes the serve which starts the game would include things like the home team, the visiting team, the location of the serve, the quality of the serve, the name of ther server, the score &ldquo;0-0&rdquo;, and so on.</p>
-<p>Given all the categories there are lots of ways to group things when creating a visualization. Commonly statistics are used to describe the location and quality of a hit and then grouped either by player, team, date, or some combination of those. You can imagine the relevance of these sorts of visualizations: How often does a team attack from this spot? Where does a player serve to most? How is a player performing over time? Those are the sorts of things you see on the app.</p>
-<h1 id="on-making-the-app">On Making the App <a href="#on-making-the-app" class="anchor">🔗</a></h1><p>Because datavolley is available as a package for R on Github, the app was made using Shiny. I wasn&rsquo;t all that familiar with R or the Shiny package (or any other R package for that matter) prior to starting work on this project, so those both took some time to get comfortable with. The biggest challenge, even more so than figuring out R and the libraries, wound up being trying to handle all the data. Every shot of every point of every game played by every team in the conference was loaded in and used. Which is quite a lot of data.</p>
-<p>For all those points being loaded in and used, the &ldquo;loaded in&rdquo; part was the culprit of most issues. Loading the .dvw files took time, and, more importantly, more memory than my free Shiny account would allow. I wound up making a second R script that would load in the files locally, try and shave them down as much as possible (getting rid of useless fields or matches), and then save them into the app&rsquo;s directory. When the app loaded it would then just store what was saved in the directory as a variable to be used in all the other features. When it&rsquo;s just four players though the jumping through hoops is limited, which was another reason for making the fake app.</p>
+      <p>Deploying the model built in Part 1 to a betting scheme to see what kind of money can (hypothetically) be made.</p>
+<h1 id="choosing-the-timeframe-and-model-usage">Choosing the Timeframe and Model Usage <a href="#choosing-the-timeframe-and-model-usage" class="anchor">🔗</a></h1><p>I’ll be using the neural network from part 1 and the years 2021-2024 for testing betting strategies. In order to keep the model from seeing any data from the future, I will only train it on matches from the past. Every 1000 bets made I will retrain the model to include the matches that &ldquo;just happened&rdquo;. I’m interested in re-training the model at the start of every tournament (as opposed to an arbitrary number like every 1000 matches), but I will come back to that another time.</p>
+<h1 id="the-data">The Data <a href="#the-data" class="anchor">🔗</a></h1><p>The betting odds data comes from <a href="http://www.tennis-data.co.uk/alldata.php" target="_blank" rel="noopener">here</a>. The files were a bit of a hassle to combine because the tournament names and player names aren&rsquo;t stored the same, so some matches were lost when combining the betting data with the model data. Also the ATP Tour match data was more robust than the betting odds data, so the matches which didn&rsquo;t overlap were also lost. I&rsquo;ll be using the best odds given for either the favorite or underdog, as I imagine any good sports bettor would. It&rsquo;s important to be careful of keeping the odds data separated from the feature data, as a mixture of the two would obviously lead to biased results.</p>
+<h1 id="the-betting-strategy">The Betting Strategy <a href="#the-betting-strategy" class="anchor">🔗</a></h1><p>The <a href="https://en.wikipedia.org/wiki/Kelly_criterion" target="_blank" rel="noopener">Kelly criterion</a> is a method of bet sizing which has been popular for a long time. In essence, you want to bet more on games where you either stand to win a lot or have a high probability of winning, and bet less otherwise. The formula, in which f* is a fraction of your bankroll, is given by:</p>
+<div style="text-align: center;">
+  <img src="http://localhost:1313/images/tennis/kelly.png" style="width:35%;">
+</div>
+<p>There are two variations of the Kelly criterion that I will be testing. The first is the Half-Kelly, which just divides the formula above by two. Simple enough - smaller bets are more prudent. The other variation comes from a <a href="https://www.researchgate.net/publication/262425087_Optimal_Betting_Under_Parameter_Uncertainty_Improving_the_Kelly_Criterion" target="_blank" rel="noopener">paper by Baker and Mchale</a>. I recommend you check it out, it’s a bit dense for getting into here. But the formula for f* (k*) becomes:</p>
+<div style="text-align: center;">
+  <img src="http://localhost:1313/images/tennis/kelly2.png" style="width:40%;">
+</div>
+<p>You&rsquo;ll notice the σ term, wich represents the error variance of the predictions. Different values for this parameter will have to be expiremented with to see which yields the best results.</p>
+<p>The last component of the betting strategy is when to make a bet. You don&rsquo;t have to bet on everything - as the predicted odds near the bookmaker&rsquo;s odds the bet size will get quite small, but we can also choose just to pass over these bets and be more prudent.</p>
+<h1 id="the-data-revisited">The Data, Revisited <a href="#the-data-revisited" class="anchor">🔗</a></h1><p>Remember when I said that combining the data was a bit of a hassle? Well, it&rsquo;s actually a lot of a hassle. Not only are the names of the tournaments stored differently, but one dataset stores the beginning date of the tournament whereas the other uses the specific match the date was played on. Combined with the fact some players play each other often, or even multiple times at the same tournament (in different years of course), this is more of a headache than I anticipated. These problems are not the end of the world, but they will require some perseverance.</p>
     </div>
 
     
@@ -111,7 +118,9 @@
             
                 <a href="http://localhost:1313/tags/sports">sports</a>
             
-                <a href="http://localhost:1313/tags/data-analytics">data analytics</a>
+                <a href="http://localhost:1313/tags/betting">betting</a>
+            
+                <a href="http://localhost:1313/tags/machine-learning">machine learning</a>
             
         </div>
     
