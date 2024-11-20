@@ -2,7 +2,7 @@ baseURL: https://wyatt-johnston.com
 languageCode: en-us
 title: Wyatt Johnston
 theme: mini
-publishDir: "docs"
+# publishDir: "docs"
 canonifyurls: true
 
 # Default content language, support en (English) / zh (Chinese) / nl (Dutch) / fr (French) / es (Spanish) / da (Danish), default 'en'

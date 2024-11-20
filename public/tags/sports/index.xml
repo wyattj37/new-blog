@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sports on Wyatt Johnston</title>
-    <link>http://localhost:1313/tags/sports/</link>
+    <link>https://wyatt-johnston.com/tags/sports/</link>
     <description>Recent content in Sports on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sports/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wyatt-johnston.com/tags/sports/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Making a Machine Learning Model for Tennis Betting Part 2: The Betting (Work in Progress)</title>
-      <link>http://localhost:1313/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting-work-in-progress/</link>
+      <title>Making a Machine Learning Model for Tennis Betting Part 2: The Betting</title>
+      <link>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting/</link>
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting-work-in-progress/</guid>
+      <guid>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting/</guid>
       <description>&lt;p&gt;Deploying the model built in Part 1 to a betting scheme to see what kind of money can (hypothetically) be made.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Volleyball Data Analytics App</title>
-      <link>http://localhost:1313/posts/volleyball-data-analytics-app/</link>
+      <link>https://wyatt-johnston.com/posts/volleyball-data-analytics-app/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/volleyball-data-analytics-app/</guid>
+      <guid>https://wyatt-johnston.com/posts/volleyball-data-analytics-app/</guid>
       <description>&lt;p&gt;A Shiny app I made to investigate a volleyball team&amp;rsquo;s performance.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Making a Machine Learning Model for Tennis Betting Part 1: The Model</title>
-      <link>http://localhost:1313/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</link>
+      <link>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</link>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</guid>
+      <guid>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</guid>
       <description>&lt;p&gt;Creating a machine learning model that predicts tennis matches efficiently enough to bet on them profitably.&lt;/p&gt;</description>
     </item>
     <item>
       <title>When to Bring Out Your Kicker (Or Runningback) on 4th &amp; Goal</title>
-      <link>http://localhost:1313/posts/when-to-bring-out-your-kicker-or-runningback-on-4th-goal/</link>
+      <link>https://wyatt-johnston.com/posts/when-to-bring-out-your-kicker-or-runningback-on-4th-goal/</link>
       <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/when-to-bring-out-your-kicker-or-runningback-on-4th-goal/</guid>
+      <guid>https://wyatt-johnston.com/posts/when-to-bring-out-your-kicker-or-runningback-on-4th-goal/</guid>
       <description>&lt;p&gt;In November 2023, Texans running back Dare Ogunbowale attempted a field goal in a real NFL game. I wanted to figure out whether or not this was the right move, so I made a win probability calculator for 4th and Goal situations that could be applied to that game and any others.&lt;/p&gt;</description>
     </item>
   </channel>

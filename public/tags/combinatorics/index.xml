@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Combinatorics on Wyatt Johnston</title>
-    <link>http://localhost:1313/tags/combinatorics/</link>
+    <link>https://wyatt-johnston.com/tags/combinatorics/</link>
     <description>Recent content in Combinatorics on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 03 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/combinatorics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wyatt-johnston.com/tags/combinatorics/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Deranged Probability Puzzle</title>
-      <link>http://localhost:1313/posts/deranged-probability-puzzle/</link>
+      <title>Derangements, Stirling Numbers, and Counting</title>
+      <link>https://wyatt-johnston.com/posts/derangements-stirling-numbers-and-counting/</link>
       <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/deranged-probability-puzzle/</guid>
+      <guid>https://wyatt-johnston.com/posts/derangements-stirling-numbers-and-counting/</guid>
       <description>&lt;p&gt;Attempting a &amp;ldquo;deadly&amp;rdquo; probability problem with combinatorics.&lt;/p&gt;</description>
     </item>
   </channel>

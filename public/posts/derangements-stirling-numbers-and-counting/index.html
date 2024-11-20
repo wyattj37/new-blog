@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Derangements, Stirling Numbers, and Counting | Wyatt Johnston</title>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="Attempting a &ldquo;deadly&rdquo; probability problem with combinatorics.">
+<meta name="generator" content="Hugo 0.128.0">
+
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="stylesheet" href="https://wyatt-johnston.com/css/style.css">
+
+
+
+<link rel="shortcut icon" href="https://wyatt-johnston.com/images/favicon.ico" type="image/x-icon" />
+
+ 
+  
+  
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=your-google-analytics-id"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'your-google-analytics-id');
+        }
+      </script>
+    
+  
+
+
+
+
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+	
+		<a href="https://wyatt-johnston.com/"> <span class="arrow">←</span>Home</a>
+	
+	<a href="https://wyatt-johnston.com/posts">Archive</a>
+	<a href="https://wyatt-johnston.com/tags">Tags</a>
+	<a href="https://wyatt-johnston.com/about">About</a>
+
+	
+
+	
+</nav>
+
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">Derangements, Stirling Numbers, and Counting</h1>
+
+    <div class="tip">
+        <time datetime="2024-10-03 00:00:00 &#43;0000 UTC">Oct 3, 2024</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          1224 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          6 minute read
+        </span>
+    </div>
+
+    
+    
+        
+  
+
+
+    
+
+
+    <div class="content">
+      <p>Attempting a &ldquo;deadly&rdquo; probability problem with combinatorics.</p>
+<h1 id="the-problem">The Problem <a href="#the-problem" class="anchor">🔗</a></h1><p>I stumbled across the website Brain Stellar, a collection of strategy and probability puzzles. I saw that a particular problem, <a href="https://brainstellar.com/puzzles/1008" target="_blank" rel="noopener">here</a>, was one of four marked as &ldquo;deadly&rdquo;. In addition, no solution was given, only an incomplete attempt by the author. After quite a bit of toiling here&rsquo;s what I have to show.</p>
+<h1 id="my-approach">My Approach <a href="#my-approach" class="anchor">🔗</a></h1><p>The aim of the problem is to find the probability that starting with N shooters, we end up with 1 survivor. We will call this probability P(N). This probability is the sum of P over all possible states we can move to from N, multiplied by the probability that we will move to that state. We will call that probability, of moving from state N to state N - k, p(N - k). For example, in the case N = 4, there will be at most 4 people shot, k = 4, and at least 2 people shot (no self-shots allowed), k = 2. So:</p>
+<p>$$
+P(4) = P(3)p(4 - 1) + P(2)p(4 - 2) + P(1)p(4 - 3) + P(0)p(4 - 4)
+$$</p>
+<p>Note that the base cases are:</p>
+<p>One survivor:
+$$
+P(1) = 1
+$$</p>
+<p>No survivors:
+$$
+P(0) = 0
+$$</p>
+<p>And in the case of 2 shooters, they must both shoot each other.
+$$
+P(2) = 0
+$$</p>
+<p>Therefore, in order to calculate P(N), we must first calculate P(3), P(4), &hellip;, P(N-1).</p>
+<p>Because P(N) will be found iteratively, the trouble comes in calculating p(N - k). In order to find p(N - k), we need to find all possible ways that the N people can shoot k, and then divide by the total arrangement of shootings. The total arrangement is simple enough; there are N shooters and N - 1 possible targets for each, or $$N^{(N-1)}$$ But how many ways can N people shoot k of themselves? There&rsquo;s the rub.</p>
+<h1 id="derangements-and-stirling-numbers">Derangements and Stirling Numbers <a href="#derangements-and-stirling-numbers" class="anchor">🔗</a></h1><p>We can think about the problem as having N distinct objects and sorting them into k distinct non-empty sets. Luckily, there are <a href="https://en.wikipedia.org/wiki/Stirling_numbers_of_the_second_kind" target="_blank" rel="noopener">Stirling numbers of the second kind</a>, which describe how many ways to sort N distinct objects into k non-empty sets. All that we need to do to adjust this to make the k sets distinct is to assign each of them a label. That&rsquo;s easy enough: we are choosing k assignments for k sets, and we can multiply our S(N,k) (denoting the Stirling numbers of the second kind) by k!. However, there is still one more pesky condition: no self-shots are allowed.</p>
+<p>In this way, the problem resembles finding <a href="https://en.wikipedia.org/wiki/Derangement" target="_blank" rel="noopener">derangements</a>, or &ldquo;permutations of the elements of a set in which no element appears in its original position.&rdquo; But this only gives us the number of ways to sort n elements into n sets with one element each, and we have more elements than sets which of course can contain multiple elements. So the answer to counting our possible arrangements lies somewhere in the middle of these two methods.</p>
+<h1 id="attempting-a-solution">Attempting a Solution <a href="#attempting-a-solution" class="anchor">🔗</a></h1><p>In order to find all the arrangements that work, it would make sense to find all possible arrangements, which I mentioned was $$ k! S(N, k) $$ and then subtract the arrangements that do not work. The arrangements that do not work are the ones in which a set contains the same labeled element (self-shot). Let&rsquo;s walk through an example and see how we might approach this. Here is what it looks like for N = 5, k = 3.</p>
+<table>
+<thead>
+<tr>
+<th>Choice 1</th>
+<th>Choice 2</th>
+<th>Choice 3</th>
+<th>Options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>Let&rsquo;s consider the case of 1 self-shot: we will place 1 into Choice 1 to represent this.</p>
+<table>
+<thead>
+<tr>
+<th>Choice 1</th>
+<th>Choice 2</th>
+<th>Choice 3</th>
+<th>Options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>How many ways can we now fill up the rest of the choice columns so that they each have at least one entry? It seems like we are back to Stirling numbers of the second kind: we need to fill the other k = 2 bins with the remaining N = 4 options. That would, however, only leave us with the cases where exactly option 1 is in the choice 1 column. Additionally, we are faced with the same problem once again in that S(4,2) will give us options in which 2 is in the choice 2 column, or 3 is in the choice 3 column, and we are only considering the case of 1 violation.</p>
+<p>Things get messy from there. Let&rsquo;s try again.</p>
+<h1 id="re-attempting-a-solution">Re-attempting a Solution <a href="#re-attempting-a-solution" class="anchor">🔗</a></h1><p>This time, let&rsquo;s turn to derangements and try to count all ways that we can create a valid arrangement. After some analysis, the arrangements can be broken up into how many choices are only filled with &ldquo;free&rdquo; options, that is, options that do not have a corresponding choice column. The case where there are no choices filled with only free options might look something like this:</p>
+<table>
+<thead>
+<tr>
+<th>Choice 1</th>
+<th>Choice 2</th>
+<th>Choice 3</th>
+<th>Options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>And then we can place options 4 and 5 however we please. How can we make the arrangement of 1, 2, and 3? The derangements of 3 items, or (D(3)). So the number of valid solutions from here comes to</p>
+<p>$$
+D(3) \cdot 3^2
+$$</p>
+<p>Written more generally:</p>
+<p>$$
+D(k) \cdot k^{N-k}
+$$</p>
+<p>Alright, how about whenever 1 choice is filled with only &ldquo;free&rdquo; options? Consider if we give choice 3 this condition. First, we must choose at least one free option to fill its column, of which there are (N-k) options. Let&rsquo;s choose option 5. Options 1 and 2 are now constrained to only the remaining choices, which in this case are also 1 and 2. We are actually just making another derangement out of the remaining non-free options, of which there are (D(k - 1)) possibilities. In this case, there is only one of these. Now our table looks like this:</p>
+<table>
+<thead>
+<tr>
+<th>Choice 1</th>
+<th>Choice 2</th>
+<th>Choice 3</th>
+<th>Options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>5</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>We are left with option 3, which can go to any of the (k - 1) = 2, remaining choices, and 4, which can go to any of the k = 3 remaining choices. All in all, the total options are:</p>
+<p>$$
+(N-k) \cdot D(k-1) \cdot (k-1) \cdot k
+$$</p>
+<p>For the case where we are limiting i choices to be only filled with free options, this expression comes to:</p>
+<p>$$
+(k - i)^i \cdot \text{Perm}(N-k, i) \cdot k^{(N - k - i)} \cdot \left( D(k - i) + D(k - 2i) \cdot (k-2)^i + D(k - 3i) \cdot (k-3)^i + \ldots \right)
+$$</p>
+<p>We also need to consider that originally we chose a group of k out of N to be the ones shot, which brings us to:</p>
+<p>$$
+\binom{N}{k} \cdot (k - i)^i \cdot \text{Perm}(N-k, i) \cdot k^{(N - k - i)} \cdot \left( D(k - i) + D(k - 2i) \cdot (k-2)^i + D(k - 3i) \cdot (k-3)^i + \ldots \right)
+$$</p>
+<h1 id="counting-duplicates">Counting Duplicates <a href="#counting-duplicates" class="anchor">🔗</a></h1><p>This formula will work just fine for calculating the P(N) for k = 2,3,4,5,6. However, after that, it begins to break down. This is because there are duplicate cases when it comes to choosing spots for the free options and non-free options excluded from derangements. Therefore, the next step is to count these duplicates and remove them from the total count.</p>
+    </div>
+
+    
+        <div class="tags">
+            
+                <a href="https://wyatt-johnston.com/tags/combinatorics">combinatorics</a>
+            
+                <a href="https://wyatt-johnston.com/tags/math">math</a>
+            
+        </div>
+    
+    
+    
+
+</section>
+
+
+    </main>
+    
+    <footer id="footer">
+    
+        <div id="social">
+
+
+    <a class="symbol" href="https://github.com/wyattj37" rel="me" target="_blank">
+        
+        <svg fill="#bbbbbb" width="28" height="28"  viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>Github</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Social-Icons---Rounded-Black" transform="translate(-264.000000, -939.000000)">
+            <g id="Github" transform="translate(264.000000, 939.000000)">
+                <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" id="Rounded" fill="#bbbbbb"></path>
+                <path d="M35.9985,13 C22.746,13 12,23.7870921 12,37.096644 C12,47.7406712 18.876,56.7718301 28.4145,59.9584121 C29.6145,60.1797862 30.0525,59.4358488 30.0525,58.7973276 C30.0525,58.2250681 30.0315,56.7100863 30.0195,54.6996482 C23.343,56.1558981 21.9345,51.4693938 21.9345,51.4693938 C20.844,48.6864054 19.2705,47.9454799 19.2705,47.9454799 C17.091,46.4500754 19.4355,46.4801943 19.4355,46.4801943 C21.843,46.6503662 23.1105,48.9634994 23.1105,48.9634994 C25.2525,52.6455377 28.728,51.5823398 30.096,50.9649018 C30.3135,49.4077535 30.9345,48.3460615 31.62,47.7436831 C26.2905,47.1352808 20.688,45.0691228 20.688,35.8361671 C20.688,33.2052792 21.6225,31.0547881 23.1585,29.3696344 C22.911,28.7597262 22.0875,26.3110578 23.3925,22.9934585 C23.3925,22.9934585 25.4085,22.3459017 29.9925,25.4632101 C31.908,24.9285993 33.96,24.6620468 36.0015,24.6515052 C38.04,24.6620468 40.0935,24.9285993 42.0105,25.4632101 C46.5915,22.3459017 48.603,22.9934585 48.603,22.9934585 C49.9125,26.3110578 49.089,28.7597262 48.8415,29.3696344 C50.3805,31.0547881 51.309,33.2052792 51.309,35.8361671 C51.309,45.0917119 45.6975,47.1292571 40.3515,47.7256117 C41.2125,48.4695491 41.9805,49.9393525 41.9805,52.1877301 C41.9805,55.4089489 41.9505,58.0067059 41.9505,58.7973276 C41.9505,59.4418726 42.3825,60.1918338 43.6005,59.9554002 C53.13,56.7627944 60,47.7376593 60,37.096644 C60,23.7870921 49.254,13 35.9985,13" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+    </a>
+
+    <a class="symbol" href="https://linkedin.com/in/wyatt-d-johnston" rel="me" target="_blank">
+        
+        <svg width="28" height="28" fill="#bbbbbb" viewBox="0 0 500 500">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="500" height="500" fill="#bbbbbb" rx="50"/>
+    <path fill="#FFF" d="M154.703 100.183c-19.121 0-34.689 15.565-34.703 34.701 0 19.136 15.568 34.704 34.703 34.704 19.128 0 34.688-15.568 34.688-34.704 0-19.134-15.561-34.701-34.688-34.701zm26.045 83.348h-52.094a4.488 4.488 0 0 0-4.488 4.489v167.675a4.488 4.488 0 0 0 4.488 4.488h52.093a4.49 4.49 0 0 0 4.489-4.488V188.02a4.486 4.486 0 0 0-4.488-4.489zm133.176-1.974c-19.064 0-35.817 5.805-46.04 15.271v-8.808c0-2.48-2.01-4.489-4.489-4.489h-49.971a4.489 4.489 0 0 0-4.489 4.489v167.675a4.488 4.488 0 0 0 4.489 4.488h52.044a4.49 4.49 0 0 0 4.489-4.488v-82.957c0-23.802 4.378-38.555 26.227-38.555 21.526.026 23.137 15.846 23.137 39.977v81.535a4.489 4.489 0 0 0 4.49 4.488h52.068a4.489 4.489 0 0 0 4.488-4.488v-91.977c-.001-38.253-7.553-82.161-66.443-82.161z"/>
+  </g>
+</svg>
+
+    </a>
+
+
+</div>
+
+    
+
+    <div class="copyright">
+    
+       © Copyright 
+       2024 
+       <span class="split">
+        <svg fill="#bbbbbb" width="15" height="15" version="1.1" id="heart-15" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 15 15">
+  <path d="M13.91,6.75c-1.17,2.25-4.3,5.31-6.07,6.94c-0.1903,0.1718-0.4797,0.1718-0.67,0C5.39,12.06,2.26,9,1.09,6.75&#xA;&#x9;C-1.48,1.8,5-1.5,7.5,3.45C10-1.5,16.48,1.8,13.91,6.75z"/>
+</svg>
+       </span>
+       Wyatt Johnston
+    
+    </div>
+
+    
+      <div class="powerby">
+        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+      </div>
+    
+</footer>
+
+
+
+  </body>
+</html>

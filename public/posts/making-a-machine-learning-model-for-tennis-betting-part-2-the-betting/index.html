@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <title>Making a Machine Learning Model for Tennis Betting Part 2: The Betting | Wyatt Johnston</title>
 
     <meta charset="utf-8">
@@ -13,11 +13,11 @@
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
 
-<link rel="stylesheet" href="http://localhost:1313/css/style.css">
+<link rel="stylesheet" href="https://wyatt-johnston.com/css/style.css">
 
 
 
-<link rel="shortcut icon" href="http://localhost:1313/images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="https://wyatt-johnston.com/images/favicon.ico" type="image/x-icon" />
 
  
   
@@ -53,11 +53,11 @@
   <body>
     <nav class="navigation">
 	
-		<a href="http://localhost:1313/"> <span class="arrow">←</span>Home</a>
+		<a href="https://wyatt-johnston.com/"> <span class="arrow">←</span>Home</a>
 	
-	<a href="http://localhost:1313/posts">Archive</a>
-	<a href="http://localhost:1313/tags">Tags</a>
-	<a href="http://localhost:1313/about">About</a>
+	<a href="https://wyatt-johnston.com/posts">Archive</a>
+	<a href="https://wyatt-johnston.com/tags">Tags</a>
+	<a href="https://wyatt-johnston.com/about">About</a>
 
 	
 
@@ -77,7 +77,7 @@
           ·
         </span>
         <span>
-          429 words
+          543 words
         </span>
         <span class="split">
           ·
@@ -98,28 +98,29 @@
 
     <div class="content">
       <p>Deploying the model built in Part 1 to a betting scheme to see what kind of money can (hypothetically) be made.</p>
-<h1 id="choosing-the-timeframe-and-model-usage">Choosing the Timeframe and Model Usage <a href="#choosing-the-timeframe-and-model-usage" class="anchor">🔗</a></h1><p>I’ll be using the years 2021-2024 for testing betting strategies. In order to keep the model from seeing any data from the future, I will use the same method in part 1, but only train the model up to the end of 2020. Then, make bets based on that model for the handful of matches, then retrain the model using the matches that just happened, and repeat. I’m interested in re-training the model at the start of every tournament, but I will maybe come back to that another time.</p>
-<h1 id="the-data">The Data <a href="#the-data" class="anchor">🔗</a></h1><p>The betting odds data comes from <a href="http://www.tennis-data.co.uk/alldata.php" target="_blank" rel="noopener">here</a>. The files were sort of a hassle to combine because the tournament names and player names aren&rsquo;t stored the same, so some matches were lost when combining the betting data with the model data. Also the ATP Tour match data was more robust than the betting odds data, so the matches which didn&rsquo;t overlap were also lost. I&rsquo;ll be using the best odds given for either the favorite or underdog, as I imagine any good sports bettor would. It&rsquo;s important to be careful of keeping the odds data separated from the feature data, as a mixture of the two would obviously lead to biased results.</p>
+<h1 id="choosing-the-timeframe-and-model-usage">Choosing the Timeframe and Model Usage <a href="#choosing-the-timeframe-and-model-usage" class="anchor">🔗</a></h1><p>I’ll be using the neural network from part 1 and the years 2021-2024 for testing betting strategies. In order to keep the model from seeing any data from the future, I will only train it on matches from the past. Every 1000 bets made I will retrain the model to include the matches that &ldquo;just happened&rdquo;. I’m interested in re-training the model at the start of every tournament (as opposed to an arbitrary number like every 1000 matches), but I will come back to that another time.</p>
+<h1 id="the-data">The Data <a href="#the-data" class="anchor">🔗</a></h1><p>The betting odds data comes from <a href="http://www.tennis-data.co.uk/alldata.php" target="_blank" rel="noopener">here</a>. The files were a bit of a hassle to combine because the tournament names and player names aren&rsquo;t stored the same, so some matches were lost when combining the betting data with the model data. Also the ATP Tour match data was more robust than the betting odds data, so the matches which didn&rsquo;t overlap were also lost. I&rsquo;ll be using the best odds given for either the favorite or underdog, as I imagine any good sports bettor would. It&rsquo;s important to be careful of keeping the odds data separated from the feature data, as a mixture of the two would obviously lead to biased results.</p>
 <h1 id="the-betting-strategy">The Betting Strategy <a href="#the-betting-strategy" class="anchor">🔗</a></h1><p>The <a href="https://en.wikipedia.org/wiki/Kelly_criterion" target="_blank" rel="noopener">Kelly criterion</a> is a method of bet sizing which has been popular for a long time. In essence, you want to bet more on games where you either stand to win a lot or have a high probability of winning, and bet less otherwise. The formula, in which f* is a fraction of your bankroll, is given by:</p>
 <div style="text-align: center;">
-  <img src="http://localhost:1313/images/tennis/kelly.png" style="width:35%;">
+  <img src="https://wyatt-johnston.com/images/tennis/kelly.png" style="width:35%;">
 </div>
 <p>There are two variations of the Kelly criterion that I will be testing. The first is the Half-Kelly, which just divides the formula above by two. Simple enough - smaller bets are more prudent. The other variation comes from a <a href="https://www.researchgate.net/publication/262425087_Optimal_Betting_Under_Parameter_Uncertainty_Improving_the_Kelly_Criterion" target="_blank" rel="noopener">paper by Baker and Mchale</a>. I recommend you check it out, it’s a bit dense for getting into here. But the formula for f* (k*) becomes:</p>
 <div style="text-align: center;">
-  <img src="http://localhost:1313/images/tennis/kelly2.png" style="width:40%;">
+  <img src="https://wyatt-johnston.com/images/tennis/kelly2.png" style="width:40%;">
 </div>
 <p>You&rsquo;ll notice the σ term, wich represents the error variance of the predictions. Different values for this parameter will have to be expiremented with to see which yields the best results.</p>
-<p>The last component of the betting strategy is when to make a bet. You don&rsquo;t want to bet on everything, only matches in which your estimated probability from the model differs significantly enough from the bookmaker&rsquo;s odds to be profitable.</p>
+<p>The last component of the betting strategy is when to make a bet. You don&rsquo;t have to bet on everything - as the predicted odds near the bookmaker&rsquo;s odds the bet size will get quite small, but we can also choose just to pass over these bets and be more prudent.</p>
+<h1 id="the-data-revisited">The Data, Revisited <a href="#the-data-revisited" class="anchor">🔗</a></h1><p>Remember when I said that combining the data was a bit of a hassle? Well, it&rsquo;s actually a lot of a hassle. Not only are the names of the tournaments stored differently, but one dataset stores the beginning date of the tournament whereas the other uses the specific match the date was played on. Combined with the fact some players play each other often, or even multiple times at the same tournament (in different years of course), this is more of a headache than I anticipated. These problems are not the end of the world, but they will require some perseverance.</p>
     </div>
 
     
         <div class="tags">
             
-                <a href="http://localhost:1313/tags/sports">sports</a>
+                <a href="https://wyatt-johnston.com/tags/sports">sports</a>
             
-                <a href="http://localhost:1313/tags/betting">betting</a>
+                <a href="https://wyatt-johnston.com/tags/betting">betting</a>
             
-                <a href="http://localhost:1313/tags/machine-learning">machine learning</a>
+                <a href="https://wyatt-johnston.com/tags/machine-learning">machine learning</a>
             
         </div>
     
@@ -152,6 +153,17 @@
         </g>
     </g>
 </svg>
+    </a>
+
+    <a class="symbol" href="https://linkedin.com/in/wyatt-d-johnston" rel="me" target="_blank">
+        
+        <svg width="28" height="28" fill="#bbbbbb" viewBox="0 0 500 500">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="500" height="500" fill="#bbbbbb" rx="50"/>
+    <path fill="#FFF" d="M154.703 100.183c-19.121 0-34.689 15.565-34.703 34.701 0 19.136 15.568 34.704 34.703 34.704 19.128 0 34.688-15.568 34.688-34.704 0-19.134-15.561-34.701-34.688-34.701zm26.045 83.348h-52.094a4.488 4.488 0 0 0-4.488 4.489v167.675a4.488 4.488 0 0 0 4.488 4.488h52.093a4.49 4.49 0 0 0 4.489-4.488V188.02a4.486 4.486 0 0 0-4.488-4.489zm133.176-1.974c-19.064 0-35.817 5.805-46.04 15.271v-8.808c0-2.48-2.01-4.489-4.489-4.489h-49.971a4.489 4.489 0 0 0-4.489 4.489v167.675a4.488 4.488 0 0 0 4.489 4.488h52.044a4.49 4.49 0 0 0 4.489-4.488v-82.957c0-23.802 4.378-38.555 26.227-38.555 21.526.026 23.137 15.846 23.137 39.977v81.535a4.489 4.489 0 0 0 4.49 4.488h52.068a4.489 4.489 0 0 0 4.488-4.488v-91.977c-.001-38.253-7.553-82.161-66.443-82.161z"/>
+  </g>
+</svg>
+
     </a>
 
 
