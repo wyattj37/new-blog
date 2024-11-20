@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Games on Wyatt Johnston</title>
-    <link>http://localhost:1313/tags/games/</link>
+    <link>https://wyatt-johnston.com/tags/games/</link>
     <description>Recent content in Games on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/games/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wyatt-johnston.com/tags/games/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Game Theory and Probabilistic Strategies in &#39;(Screw) the Dealer&#39;</title>
-      <link>http://localhost:1313/posts/game-theory-and-probabilistic-strategies-in-screw-the-dealer/</link>
+      <title>Game Theory and Probabilistic Strategies in &#39;Screw the Dealer&#39;</title>
+      <link>https://wyatt-johnston.com/posts/game-theory-and-probabilistic-strategies-in-screw-the-dealer/</link>
       <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/game-theory-and-probabilistic-strategies-in-screw-the-dealer/</guid>
+      <guid>https://wyatt-johnston.com/posts/game-theory-and-probabilistic-strategies-in-screw-the-dealer/</guid>
       <description>&lt;p&gt;Turning a light-hearted game into a math problem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Riding the Bus: A Ballistics Report via Monte Carlo Simulation</title>
-      <link>http://localhost:1313/posts/riding-the-bus-a-ballistics-report-via-monte-carlo-simulation/</link>
+      <link>https://wyatt-johnston.com/posts/riding-the-bus-a-ballistics-report-via-monte-carlo-simulation/</link>
       <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/riding-the-bus-a-ballistics-report-via-monte-carlo-simulation/</guid>
-      <description>&lt;p&gt;How many drinks will a person take while riding the bus? In short: a lot.&lt;/p&gt;</description>
+      <guid>https://wyatt-johnston.com/posts/riding-the-bus-a-ballistics-report-via-monte-carlo-simulation/</guid>
+      <description>&lt;p&gt;How many long will a person take take to ride the bus? In short: a while.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

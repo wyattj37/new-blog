@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <title>Making a Machine Learning Model for Tennis Betting Part 2: The Betting | Wyatt Johnston</title>
 
     <meta charset="utf-8">
@@ -13,11 +13,11 @@
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
 
-<link rel="stylesheet" href="http://localhost:1313/css/style.css">
+<link rel="stylesheet" href="https://wyatt-johnston.com/css/style.css">
 
 
 
-<link rel="shortcut icon" href="http://localhost:1313/images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="https://wyatt-johnston.com/images/favicon.ico" type="image/x-icon" />
 
  
   
@@ -53,11 +53,11 @@
   <body>
     <nav class="navigation">
 	
-		<a href="http://localhost:1313/"> <span class="arrow">←</span>Home</a>
+		<a href="https://wyatt-johnston.com/"> <span class="arrow">←</span>Home</a>
 	
-	<a href="http://localhost:1313/posts">Archive</a>
-	<a href="http://localhost:1313/tags">Tags</a>
-	<a href="http://localhost:1313/about">About</a>
+	<a href="https://wyatt-johnston.com/posts">Archive</a>
+	<a href="https://wyatt-johnston.com/tags">Tags</a>
+	<a href="https://wyatt-johnston.com/about">About</a>
 
 	
 
@@ -102,11 +102,11 @@
 <h1 id="the-data">The Data <a href="#the-data" class="anchor">🔗</a></h1><p>The betting odds data comes from <a href="http://www.tennis-data.co.uk/alldata.php" target="_blank" rel="noopener">here</a>. The files were a bit of a hassle to combine because the tournament names and player names aren&rsquo;t stored the same, so some matches were lost when combining the betting data with the model data. Also the ATP Tour match data was more robust than the betting odds data, so the matches which didn&rsquo;t overlap were also lost. I&rsquo;ll be using the best odds given for either the favorite or underdog, as I imagine any good sports bettor would. It&rsquo;s important to be careful of keeping the odds data separated from the feature data, as a mixture of the two would obviously lead to biased results.</p>
 <h1 id="the-betting-strategy">The Betting Strategy <a href="#the-betting-strategy" class="anchor">🔗</a></h1><p>The <a href="https://en.wikipedia.org/wiki/Kelly_criterion" target="_blank" rel="noopener">Kelly criterion</a> is a method of bet sizing which has been popular for a long time. In essence, you want to bet more on games where you either stand to win a lot or have a high probability of winning, and bet less otherwise. The formula, in which f* is a fraction of your bankroll, is given by:</p>
 <div style="text-align: center;">
-  <img src="http://localhost:1313/images/tennis/kelly.png" style="width:35%;">
+  <img src="https://wyatt-johnston.com/images/tennis/kelly.png" style="width:35%;">
 </div>
 <p>There are two variations of the Kelly criterion that I will be testing. The first is the Half-Kelly, which just divides the formula above by two. Simple enough - smaller bets are more prudent. The other variation comes from a <a href="https://www.researchgate.net/publication/262425087_Optimal_Betting_Under_Parameter_Uncertainty_Improving_the_Kelly_Criterion" target="_blank" rel="noopener">paper by Baker and Mchale</a>. I recommend you check it out, it’s a bit dense for getting into here. But the formula for f* (k*) becomes:</p>
 <div style="text-align: center;">
-  <img src="http://localhost:1313/images/tennis/kelly2.png" style="width:40%;">
+  <img src="https://wyatt-johnston.com/images/tennis/kelly2.png" style="width:40%;">
 </div>
 <p>You&rsquo;ll notice the σ term, wich represents the error variance of the predictions. Different values for this parameter will have to be expiremented with to see which yields the best results.</p>
 <p>The last component of the betting strategy is when to make a bet. You don&rsquo;t have to bet on everything - as the predicted odds near the bookmaker&rsquo;s odds the bet size will get quite small, but we can also choose just to pass over these bets and be more prudent.</p>
@@ -116,11 +116,11 @@
     
         <div class="tags">
             
-                <a href="http://localhost:1313/tags/sports">sports</a>
+                <a href="https://wyatt-johnston.com/tags/sports">sports</a>
             
-                <a href="http://localhost:1313/tags/betting">betting</a>
+                <a href="https://wyatt-johnston.com/tags/betting">betting</a>
             
-                <a href="http://localhost:1313/tags/machine-learning">machine learning</a>
+                <a href="https://wyatt-johnston.com/tags/machine-learning">machine learning</a>
             
         </div>
     
