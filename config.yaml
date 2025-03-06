@@ -37,6 +37,7 @@ social:
   # e.g.
   github: https://github.com/wyattj37
   linkedin: https://linkedin.com/in/wyatt-d-johnston
+  email: mailto:wyattdj2@illinois.edu
 
   #twitter: your-twitter-link
   #stackoverflow: your-stackoverflow-link
@@ -76,9 +77,9 @@ params:
 
   # Extra links in navigation
   links:
-    ## e.g.
-    # - name: Project
-    #   path: /project
+    # e.g.
+    - name: Tutoring
+      path: /tutoring
 
   # You can put your custom css and js to `static` directory, or use remote css and js files which start with `http://` or `https://`
   customCSS:

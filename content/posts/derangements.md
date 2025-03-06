@@ -11,7 +11,7 @@ math = true
 Attempting a "deadly" probability problem with combinatorics. <!--more-->
 
 # The Problem
-I stumbled across the website Brain Stellar, a collection of strategy and probability puzzles. I saw that a particular problem, [here](https://brainstellar.com/puzzles/1008), was one of four marked as "deadly". In addition, no solution was given, only an incomplete attempt by the author. After quite a bit of toiling here's what I have to show.
+I stumbled across the website Brain Stellar, a collection of strategy and probability puzzles. I saw that a particular problem, [here](https://brainstellar.com/puzzles/1008), was one of four marked as "deadly". In addition, no solution was given, only an incomplete attempt by the author. After quite a bit of trouble here's what I have to show.
 
 # My Approach
 The aim of the problem is to find the probability that starting with N shooters, we end up with 1 survivor. We will call this probability P(N). This probability is the sum of P over all possible states we can move to from N, multiplied by the probability that we will move to that state. We will call that probability, of moving from state N to state N - k, p(N - k). For example, in the case N = 4, there will be at most 4 people shot, k = 4, and at least 2 people shot (no self-shots allowed), k = 2. So:
