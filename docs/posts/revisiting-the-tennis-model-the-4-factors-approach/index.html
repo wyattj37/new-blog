@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Wyatt Johnston</title>
+    <title>Revisiting the Tennis Model: The 4 Factors Approach | Wyatt Johnston</title>
 
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 <meta name="viewport" content="width=device-width,minimum-scale=1">
-<meta name="description" content="My Blog">
+<meta name="description" content="Foregoing newfangled learning methods and going back to the basics.">
 <meta name="generator" content="Hugo 0.128.0">
 
 
@@ -46,6 +46,18 @@
 
 
 
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+    onload="renderMathInElement(document.body, {
+        delimiters: [
+            { left: '$$', right: '$$', display: true },
+            { left: '$', right: '$', display: false },
+            { left: '\\(', right: '\\)', display: false }
+        ]
+    });"></script>
+
 
 
 
@@ -72,64 +84,59 @@
     <main class="main">
       
 
-<div id="page-404">
-  <div class="text">
-      
-          <h1>404 - Page Not Found</h1>
-      
+<section id="single">
+    <h1 class="title">Revisiting the Tennis Model: The 4 Factors Approach</h1>
 
-      
-          <div>The content you&#39;re looking for doesn&#39;t seem to exist.</div>
-      
+    <div class="tip">
+        <time datetime="2025-04-15 00:00:00 &#43;0000 UTC">Apr 15, 2025</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          499 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          3 minute read
+        </span>
     </div>
 
-  
-      <h2 class="read-more">Read more</h2> 
+    
+    
+        
   
 
-  
-
 
     
+
+
+    <div class="content">
+      <p>Foregoing newfangled learning methods and going back to the basics.</p>
+<h1 id="mild-success">Mild Success <a href="#mild-success" class="anchor">🔗</a></h1><p>In the past, I&rsquo;ve made a couple of posts about models I made for predicting tennis outcomes. The idea was to congregate information from matches, turn it into a giant set of features and throw the data into a machine learning library to train. The outcome, I hoped, would be a neural network encoded with all the answers. Which sort of happened but not really. The accuracy was sort of impressive, but the model was unstable. And it was clear that there were cases of the outputted probabilities just <em>feeling off</em>. With this sort of model, though, there&rsquo;s of course no way to see what&rsquo;s going on under the hood and tweak it.</p>
+<h1 id="a-new-approach-two-inspirations">A New Approach: Two Inspirations <a href="#a-new-approach-two-inspirations" class="anchor">🔗</a></h1><p>That brings me to my new approach. It seemed to me that a <a href="https://www.basketball-reference.com/about/factors.html" target="_blank" rel="noopener">Four Factors</a> type metric might make sense for tennis. Some way of segmenting the game into a few key stats. There are 4 outcomes of a tennis point: the server wins on the first serve, loses on the first serve, wins on the second serve, or loses on the second serve (I am counting aces as being included in the first category and double faults as being included in the last). If we had a good calculation of those 4 probabilities, we would be able to simulate tennis games quite effectively.</p>
+<p>Another inpsiration I&rsquo;ve been thinking about is the handicapping system proposed by Billy Walters in his memoir &ldquo;Gambler&rdquo;. The system he describes is for football, and begins with giving each team a power rating from -10 to 10. To find the point spread, you subtract the power ratings, then account for different factors that hold different point spread values. Home field advantage would be a positive point spread addition, while having to travel coast-to-coast would have a negative point spread effect. On top of that, he keeps a database with the value of each player in point-spread terms. In tennis terms, I am imagining using an ELO system - perfect for two players and I already have one implemented. Then, the ELO results can be adjusted based on factors like surface, handedness, etc. if it seems necessary.</p>
+<h1 id="making-the-new-model">Making the New Model <a href="#making-the-new-model" class="anchor">🔗</a></h1><p>As we start the first approach (the simulation approach), we need to broach an interesting problem. It&rsquo;s easy enough to calculate a player&rsquo;s win percentage on their 1st serve. Let&rsquo;s say it&rsquo;s 75% for Player 1. It&rsquo;s also easy enough to calcualte a player&rsquo;s win percentage returning their opponent&rsquo;s first serve. Let&rsquo;s say that&rsquo;s 30% for Player 2. When Player 1 serves to Player 2, though, which percentage do we use? They can&rsquo;t both be true.</p>
+<p>I am going to try and remedy this by calcualting a weighted average, where the weight assigned to each is a parameter learned through previous data. P(P1 wins 1st serve) = .75 $\cdot$ alpha + (1 - .30) $\cdot$ (1-alpha). I will do this for the alpha parameter</p>
+    </div>
+
+    
+        <div class="tags">
+            
+                <a href="https://wyatt-johnston.com/tags/sports">sports</a>
+            
+                <a href="https://wyatt-johnston.com/tags/betting">betting</a>
+            
+                <a href="https://wyatt-johnston.com/tags/statistics">statistics</a>
+            
+        </div>
     
     
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='https://wyatt-johnston.com/posts/derangements-stirling-numbers-and-counting/'>Derangements, Stirling Numbers, and Counting</a></h1>   
-            <div class="date">Oct 3, 2024</div>
-          </div>
-        </section>
     
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting/'>Making a Machine Learning Model for Tennis Betting Part 2: The Betting</a></h1>   
-            <div class="date">Sep 1, 2024</div>
-          </div>
-        </section>
-    
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='https://wyatt-johnston.com/posts/volleyball-data-analytics-app/'>Volleyball Data Analytics App</a></h1>   
-            <div class="date">Aug 20, 2024</div>
-          </div>
-        </section>
-    
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/'>Making a Machine Learning Model for Tennis Betting Part 1: The Model</a></h1>   
-            <div class="date">Aug 14, 2024</div>
-          </div>
-        </section>
-    
-</div>
+
+</section>
+
 
     </main>
     
