@@ -7,6 +7,7 @@ tags = [
     "betting",
     "statistics"
 ]
+draft = true
 +++
 Foregoing newfangled learning methods and going back to the basics.
 <!--more-->
