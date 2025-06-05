@@ -65,6 +65,8 @@ $$ \text{Minimum Win Rate} = \frac{56}{148} = \frac{14}{37} = .378 $$
 
 As a final note, in the 6-6 tiebreaker scenario, the same logic applies that you want to win as few points as possible. The lowest 5-set win percentage you can achieve with tiebreakers is 38.3%, and the lowest in 3-set with tiebreakers is 40.3%. Those are both assuming 7-5 tiebreaker scores (which are played first-to-7) and would increase as the tiebreak scores got higher.
 
+Per Reddit, "By percentage points won, the fewest points won by the winner is 44.3%, which was Martin Klizan over Alexandr Dolgopolov in Brisbane 2015 R16; 1-6, 7-6(6), 7-6(7). Klizan won 25 fewer points." For best-of-two sets this is really an impressive feat to win so badly, but we know it could have been worse.
+
 ## Ad Nauseam
 There's a few last interesting things to say about the function we're looking at. The first I'll mention is the intuition for why a low N is the minimum. Also, while the exact function we looked at was  $$ f(N) = \frac{\text{21N}}{\text{42N + 66}} $$
 
