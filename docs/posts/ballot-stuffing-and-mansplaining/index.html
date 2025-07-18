@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Wyatt Johnston</title>
+    <title>Ballot Stuffing and Mansplaining | Wyatt Johnston</title>
 
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 <meta name="viewport" content="width=device-width,minimum-scale=1">
-<meta name="description" content="My Blog">
+<meta name="description" content="Learning a few things about the web via voter fraud and the Lex Fridman podcast.">
 <meta name="generator" content="Hugo 0.128.0">
 
 
@@ -72,64 +72,70 @@
     <main class="main">
       
 
-<div id="page-404">
-  <div class="text">
-      
-          <h1>404 - Page Not Found</h1>
-      
+<section id="single">
+    <h1 class="title">Ballot Stuffing and Mansplaining</h1>
 
-      
-          <div>The content you&#39;re looking for doesn&#39;t seem to exist.</div>
-      
+    <div class="tip">
+        <time datetime="2025-07-16 00:00:00 &#43;0000 UTC">Jul 16, 2025</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          612 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          3 minute read
+        </span>
     </div>
 
-  
-      <h2 class="read-more">Read more</h2> 
+    
+    
+        
   
 
-  
-
 
     
-    
-    
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='https://wyatt-johnston.com/posts/derangements-stirling-numbers-and-counting/'>Derangements, Stirling Numbers, and Counting</a></h1>   
-            <div class="date">Oct 3, 2024</div>
-          </div>
-        </section>
-    
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting/'>Making a Machine Learning Model for Tennis Betting Part 2: The Betting</a></h1>   
-            <div class="date">Sep 1, 2024</div>
-          </div>
-        </section>
-    
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='https://wyatt-johnston.com/posts/volleyball-data-analytics-app/'>Volleyball Data Analytics App</a></h1>   
-            <div class="date">Aug 20, 2024</div>
-          </div>
-        </section>
-    
-        
-        
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/'>Making a Machine Learning Model for Tennis Betting Part 1: The Model</a></h1>   
-            <div class="date">Aug 14, 2024</div>
-          </div>
-        </section>
-    
+
+
+    <div class="content">
+      <p>Learning a few things about the web via voter fraud and the Lex Fridman podcast.</p>
+<h1 id="overview">Overview <a href="#overview" class="anchor">🔗</a></h1><p>There&rsquo;s a pair of things I worked on recently that had to do with browser interaction / web stuff / HTML / JavaScript, which was all fairly new to me. Neither of the projects were exceedingly interesting or involved on their own, so I&rsquo;ll throw them together here. The first is to do with automated voting for a recent sports all star game. The second is scraping podcasts transcripts to see Lex Fridman&rsquo;s mansplain rate.</p>
+<h1 id="ballot-stuffing">Ballot Stuffing <a href="#ballot-stuffing" class="anchor">🔗</a></h1><p>Some websites, like Google, will immediately flag you if they detect you are using a library like selenium to automate control of the browser. Other websites, like some popular all star voting platforms, will not do that. Which means that, if you wanted to, you could write a script that opens an incognito Chromium window and navigates to the URL of the voting site. Then, inspecting the web page, you could see what identifies the buttons you need to click in order to select and submit a vote. Using that information, you could complete the script by ordering those elements to be clicked, close out the page, and start anew.</p>
+<p>In order to do this repeatedly, it would help to have a lightweight computer laying around, like a Raspberry Pi. Depending on your internet speed, you could probably let the script run thousands of times during the duration of the voting period. Now it wouldn&rsquo;t be enough to completely overwhelm the tally with millions of extra votes - that would require a more sophisticated approach, I assume - but it&rsquo;s not nothing. In theory, you could find a moderately censored version of such a script on my GitHub.</p>
+<h1 id="mansplaining">Mansplaining <a href="#mansplaining" class="anchor">🔗</a></h1><p>Following the theme of parsing through HTML, the Lex Fridman podcast has uploaded the transcript of recent interviews to its website. Using the BeautifulSoup library, it&rsquo;s not so hard to take the entirety of the interview and get a word count for both Lex and the guest. With the word count you can see what percent of the conversation came from guest. This was on my mind because I was recently listening to an episode where the guest was a woman, and it seemed like Lex was doing more of the talking than I was used to hearing in other episodes. So, I took the transcript of the 9 most recent solo-woman guests and compared them to the 70 most recent solo-man guests. Here are the results in a box plot:</p>
+<div style="text-align: center;">
+  <img src="https://wyatt-johnston.com/images/webstuff/box_plot.png" style="width:80%;">
 </div>
+<p>And in a histogram:</p>
+<div style="text-align: center;">
+  <img src="https://wyatt-johnston.com/images/webstuff/histogram.png" style="width:80%;">
+</div>
+<p>As seen above, yes, the percentage of words spoken by the guest is in fact lower for woman guests. Using the same data to run a t-test on the sample means yields a p-value of .0154. That&rsquo;s quite significant, but of course the sample of guests that are women is small. Lex mostly hosts guests in STEM fields, in which women are underrepresented, so if there is a problem with the conversations worth discussing, there is a also systemic component worth discussing.</p>
+<p>While on the subject, the conversation most equally shared between Lex and the guest is Roman Yampolskiy. The most guest dominant conversations, both over 90% guest-leaning, came from Omar Suleiman 2 and Matthew Cox. And since we&rsquo;re already in the weeds, the longest conversations come just shy of 40,000 words with ThePrimeagen and Pieter Levels. Pieter apparently talks pretty fast because his interview is a whole 2 hours shorter.</p>
+<p>For what it&rsquo;s worth, here is the convsersation length data via box plot:</p>
+<div style="text-align: center;">
+  <img src="https://wyatt-johnston.com/images/webstuff/box_plot_length.png" style="width:80%;">
+</div>
+<p>The medians are within a hundred of each other, but the 20,000 - 40,000 word count range is almost entirely male.</p>
+    </div>
+
+    
+        <div class="tags">
+            
+                <a href="https://wyatt-johnston.com/tags/web-scraping">web scraping</a>
+            
+                <a href="https://wyatt-johnston.com/tags/browser-automation">browser automation</a>
+            
+        </div>
+    
+    
+    
+
+</section>
+
 
     </main>
     

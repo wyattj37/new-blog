@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web Scraping on Wyatt Johnston</title>
+    <link>https://wyatt-johnston.com/tags/web-scraping/</link>
+    <description>Recent content in Web Scraping on Wyatt Johnston</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://wyatt-johnston.com/tags/web-scraping/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ballot Stuffing and Mansplaining</title>
+      <link>https://wyatt-johnston.com/posts/ballot-stuffing-and-mansplaining/</link>
+      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/posts/ballot-stuffing-and-mansplaining/</guid>
+      <description>&lt;p&gt;Learning a few things about the web via voter fraud and the Lex Fridman podcast.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
