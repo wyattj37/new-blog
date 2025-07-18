@@ -5,6 +5,8 @@ tags = [
     "sports",
     "data analytics"
 ]
+featured = true
+weight = 4
 +++
 A Shiny app I made to investigate a volleyball team's performance. <!--more-->
 

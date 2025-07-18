@@ -257,6 +257,18 @@ nav.navigation a.button {
   margin: 0 auto;
 }
 
+/* home page */
+.featured-header {
+  font-size: 1.5rem;        /* bigger than post titles */
+  font-weight: 500;         /* bold */
+  color: #4A90E2;               /* Sky blue */
+  border-bottom: 3px solid #001F4D; /* A deeper blue underline */
+  padding-bottom: 0.1em;
+  margin-bottom: 1.0em;
+  text-transform: uppercase; /* optional for emphasis */
+  letter-spacing: 0.1em;    /* spacing between letters */
+}
+
 /* profile  */
 
 .profile {
@@ -266,15 +278,15 @@ nav.navigation a.button {
 
 .profile .avatar {
   display: inline-block;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 }
 
 .profile h1 {
   font-weight: 400;
   letter-spacing: 0px;
-  font-size: 20px;
+  font-size: 25px;
   color: #404040;
   margin-bottom: 0;
   margin-top: 0;
@@ -284,6 +296,7 @@ nav.navigation a.button {
   font-size: 20px;
   font-weight: 300;
   color: #757575;
+  margin-bottom: 40px;
   margin-top: 0;
 }
 

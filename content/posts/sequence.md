@@ -6,6 +6,8 @@ tags = [
     "card games",
     "board games"
 ]
+featured = true
+weight = 2
 +++
 Making the worst possible AI that can win at the game Sequence.
 <!--more-->

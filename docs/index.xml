@@ -9,6 +9,34 @@
     <lastBuildDate>Wed, 16 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wyatt-johnston.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>The Birthday Problem for Last Names</title>
+      <link>https://wyatt-johnston.com/posts/the-birthday-problem-for-last-names/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/posts/the-birthday-problem-for-last-names/</guid>
+      <description>&lt;p&gt;How large of a group do you need so that the chances of two random people sharing a last name is 50%?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Worst Feasible Sequence AI</title>
+      <link>https://wyatt-johnston.com/posts/the-worst-feasible-sequence-ai/</link>
+      <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/posts/the-worst-feasible-sequence-ai/</guid>
+      <description>&lt;p&gt;Making the worst possible AI that can win at the game Sequence.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Making a Machine Learning Model for Tennis Betting Part 1: The Model</title>
+      <link>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</link>
+      <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</guid>
+      <description>&lt;p&gt;Creating a machine learning model that predicts tennis matches efficiently enough to bet on them profitably.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Volleyball Data Analytics App</title>
+      <link>https://wyatt-johnston.com/posts/volleyball-data-analytics-app/</link>
+      <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/posts/volleyball-data-analytics-app/</guid>
+      <description>&lt;p&gt;A Shiny app I made to investigate a volleyball team&amp;rsquo;s performance.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Ballot Stuffing and Mansplaining</title>
       <link>https://wyatt-johnston.com/posts/ballot-stuffing-and-mansplaining/</link>
       <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
@@ -23,20 +51,6 @@
       <description>&lt;p&gt;Winning ugly.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>The Worst Feasible Sequence AI</title>
-      <link>https://wyatt-johnston.com/posts/the-worst-feasible-sequence-ai/</link>
-      <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/the-worst-feasible-sequence-ai/</guid>
-      <description>&lt;p&gt;Making the worst possible AI that can win at the game Sequence.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Birthday Problem for Last Names</title>
-      <link>https://wyatt-johnston.com/posts/the-birthday-problem-for-last-names/</link>
-      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/the-birthday-problem-for-last-names/</guid>
-      <description>&lt;p&gt;How large of a group do you need so that the chances of two random people sharing a last name is 50%?&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Derangements, Stirling Numbers, and Counting</title>
       <link>https://wyatt-johnston.com/posts/derangements-stirling-numbers-and-counting/</link>
       <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
@@ -49,20 +63,6 @@
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting/</guid>
       <description>&lt;p&gt;Deploying the model built in Part 1 to a betting scheme to see what kind of money can (hypothetically) be made.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Volleyball Data Analytics App</title>
-      <link>https://wyatt-johnston.com/posts/volleyball-data-analytics-app/</link>
-      <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/volleyball-data-analytics-app/</guid>
-      <description>&lt;p&gt;A Shiny app I made to investigate a volleyball team&amp;rsquo;s performance.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Making a Machine Learning Model for Tennis Betting Part 1: The Model</title>
-      <link>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</link>
-      <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</guid>
-      <description>&lt;p&gt;Creating a machine learning model that predicts tennis matches efficiently enough to bet on them profitably.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HRV and the WHOOP Recovery Model: Estimating Feature Importance</title>
