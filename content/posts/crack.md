@@ -9,7 +9,7 @@ featured = true
 weight = 3
 math = true
 +++
-Taking a stroll through noisiness and periodic fucntions. <!--more-->
+Taking a stroll through noisiness and periodic functions. <!--more-->
 
 # Stepping on Cracks Fairly
 Whenever I walk down a sidewalk, I have a hard time not thinking about stepping on the cracks. Specifically, I like for my left and right foot to step on a crack the same amount of times. I don't completely obsess over it, but it's always somewhere between the front and back of my mind.
@@ -68,4 +68,4 @@ Here is a plot that shows a rolling average of the hit rate for the error-introd
 The system with the error maintains the average intersection rate of the system without error! By introducing some Gaussian noise, the intersection rate can be roughly maintained while removing all of the even/odd step bias. It simultaneously acts randomly and periodically!
 
 # Back to Fair Stepping
-Ultimately, this is good news for two reasons. First, it is a pretty interesting result about you can use noise to remove some bias from a system while maintaining its core periodicity. Second, it's good for those inclined to step fairly on cracks. With only a small amount of variance in your gait, which I assume most people have, you can be confident that the dispersion of crack-steps will be equal between feet - even in a moderate sample size. 
+Ultimately, this is good news for two reasons. First, it is a pretty interesting result about how you can use noise to remove some bias from a system while maintaining its core periodicity. Second, it's good for those inclined to step fairly on cracks. With only a small amount of variance in your gait, which I assume most people have, you can be confident that the dispersion of crack-steps will be equal between feet - even in a moderate sample size. 
