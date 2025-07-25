@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wyatt-johnston.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Birthday Problem for Last Names</title>
@@ -23,11 +23,11 @@
       <description>&lt;p&gt;Making the worst possible AI that can win at the game Sequence.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Making a Machine Learning Model for Tennis Betting Part 1: The Model</title>
-      <link>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</link>
-      <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</guid>
-      <description>&lt;p&gt;Creating a machine learning model that predicts tennis matches efficiently enough to bet on them profitably.&lt;/p&gt;</description>
+      <title>Stepping on Cracks and Gaussian Noise</title>
+      <link>https://wyatt-johnston.com/posts/stepping-on-cracks-and-gaussian-noise/</link>
+      <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/posts/stepping-on-cracks-and-gaussian-noise/</guid>
+      <description>&lt;p&gt;Taking a stroll through noisiness and periodic fucntions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Volleyball Data Analytics App</title>
@@ -35,6 +35,13 @@
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://wyatt-johnston.com/posts/volleyball-data-analytics-app/</guid>
       <description>&lt;p&gt;A Shiny app I made to investigate a volleyball team&amp;rsquo;s performance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Making a Machine Learning Model for Tennis Betting Part 1: The Model</title>
+      <link>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</link>
+      <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</guid>
+      <description>&lt;p&gt;Creating a machine learning model that predicts tennis matches efficiently enough to bet on them profitably.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ballot Stuffing and Mansplaining</title>

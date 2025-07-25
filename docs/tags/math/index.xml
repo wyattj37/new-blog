@@ -6,8 +6,15 @@
     <description>Recent content in Math on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wyatt-johnston.com/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stepping on Cracks and Gaussian Noise</title>
+      <link>https://wyatt-johnston.com/posts/stepping-on-cracks-and-gaussian-noise/</link>
+      <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/posts/stepping-on-cracks-and-gaussian-noise/</guid>
+      <description>&lt;p&gt;Taking a stroll through noisiness and periodic fucntions.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Derangements, Stirling Numbers, and Counting</title>
       <link>https://wyatt-johnston.com/posts/derangements-stirling-numbers-and-counting/</link>
