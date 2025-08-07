@@ -7,7 +7,7 @@ tags = [
 ]
 math = true
 featured = true
-weight = 1
+weight = 2
 +++
 How large of a group do you need so that the chances of two random people sharing a last name is 50%?  <!--more-->
 

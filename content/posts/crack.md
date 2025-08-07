@@ -6,7 +6,7 @@ tags = [
     "simulation"
 ]
 featured = true
-weight = 3
+weight = 4
 math = true
 +++
 Taking a stroll through noisiness and periodic functions. <!--more-->

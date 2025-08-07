@@ -6,8 +6,15 @@
     <description>Recent content in Card Games on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wyatt-johnston.com/tags/card-games/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Perfecting Rummikub</title>
+      <link>https://wyatt-johnston.com/posts/perfecting-rummikub/</link>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/posts/perfecting-rummikub/</guid>
+      <description>&lt;p&gt;Making the most annoying Rummikub opponent with integer programming.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Worst Feasible Sequence AI</title>
       <link>https://wyatt-johnston.com/posts/the-worst-feasible-sequence-ai/</link>

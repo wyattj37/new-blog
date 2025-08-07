@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://wyatt-johnston.com/posts/perfecting-rummikub/</loc>
+    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://wyatt-johnston.com/posts/the-birthday-problem-for-last-names/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -14,22 +17,28 @@
     <loc>https://wyatt-johnston.com/posts/volleyball-data-analytics-app/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</loc>
-    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
+    <loc>https://wyatt-johnston.com/tags/board-games/</loc>
+    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wyatt-johnston.com/tags/card-games/</loc>
+    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wyatt-johnston.com/tags/cards/</loc>
+    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wyatt-johnston.com/posts/</loc>
+    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wyatt-johnston.com/tags/</loc>
+    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wyatt-johnston.com/</loc>
+    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wyatt-johnston.com/tags/math/</loc>
     <lastmod>2025-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wyatt-johnston.com/posts/</loc>
-    <lastmod>2025-07-24T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://wyatt-johnston.com/tags/simulation/</loc>
-    <lastmod>2025-07-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wyatt-johnston.com/tags/</loc>
-    <lastmod>2025-07-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wyatt-johnston.com/</loc>
     <lastmod>2025-07-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wyatt-johnston.com/posts/ballot-stuffing-and-mansplaining/</loc>
@@ -46,15 +55,6 @@
   </url><url>
     <loc>https://wyatt-johnston.com/tags/sports/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wyatt-johnston.com/tags/board-games/</loc>
-    <lastmod>2025-03-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wyatt-johnston.com/tags/card-games/</loc>
-    <lastmod>2025-03-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wyatt-johnston.com/tags/cards/</loc>
-    <lastmod>2025-03-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wyatt-johnston.com/tags/probability/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
@@ -82,6 +82,9 @@
   </url><url>
     <loc>https://wyatt-johnston.com/tags/data-analytics/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</loc>
+    <lastmod>2024-08-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wyatt-johnston.com/tags/health/</loc>
     <lastmod>2024-07-11T00:00:00+00:00</lastmod>

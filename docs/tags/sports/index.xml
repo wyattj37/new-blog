@@ -16,13 +16,6 @@
       <description>&lt;p&gt;A Shiny app I made to investigate a volleyball team&amp;rsquo;s performance.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Making a Machine Learning Model for Tennis Betting Part 1: The Model</title>
-      <link>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</link>
-      <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</guid>
-      <description>&lt;p&gt;Creating a machine learning model that predicts tennis matches efficiently enough to bet on them profitably.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>How Badly Can You Win a Tennis Match?</title>
       <link>https://wyatt-johnston.com/posts/how-badly-can-you-win-a-tennis-match/</link>
       <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
@@ -35,6 +28,13 @@
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting/</guid>
       <description>&lt;p&gt;Deploying the model built in Part 1 to a betting scheme to see what kind of money can (hypothetically) be made.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Making a Machine Learning Model for Tennis Betting Part 1: The Model</title>
+      <link>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</link>
+      <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</guid>
+      <description>&lt;p&gt;Creating a machine learning model that predicts tennis matches efficiently enough to bet on them profitably.&lt;/p&gt;</description>
     </item>
     <item>
       <title>When to Bring Out Your Kicker (Or Runningback) on 4th &amp; Goal</title>

@@ -6,8 +6,15 @@
     <description>Recent content on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wyatt-johnston.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Perfecting Rummikub</title>
+      <link>https://wyatt-johnston.com/posts/perfecting-rummikub/</link>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/posts/perfecting-rummikub/</guid>
+      <description>&lt;p&gt;Making the most annoying Rummikub opponent with integer programming.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Birthday Problem for Last Names</title>
       <link>https://wyatt-johnston.com/posts/the-birthday-problem-for-last-names/</link>
@@ -37,13 +44,6 @@
       <description>&lt;p&gt;A Shiny app I made to investigate a volleyball team&amp;rsquo;s performance.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Making a Machine Learning Model for Tennis Betting Part 1: The Model</title>
-      <link>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</link>
-      <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</guid>
-      <description>&lt;p&gt;Creating a machine learning model that predicts tennis matches efficiently enough to bet on them profitably.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Ballot Stuffing and Mansplaining</title>
       <link>https://wyatt-johnston.com/posts/ballot-stuffing-and-mansplaining/</link>
       <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
@@ -70,6 +70,13 @@
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting/</guid>
       <description>&lt;p&gt;Deploying the model built in Part 1 to a betting scheme to see what kind of money can (hypothetically) be made.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Making a Machine Learning Model for Tennis Betting Part 1: The Model</title>
+      <link>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</link>
+      <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</guid>
+      <description>&lt;p&gt;Creating a machine learning model that predicts tennis matches efficiently enough to bet on them profitably.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HRV and the WHOOP Recovery Model: Estimating Feature Importance</title>
