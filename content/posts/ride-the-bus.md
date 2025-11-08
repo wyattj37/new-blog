@@ -5,6 +5,7 @@ date = "2024-06-30"
 tags = [
     "games"
 ]
+draft = true
 +++
 
 How many long will a person take take to ride the bus? In short: a while. <!--more-->

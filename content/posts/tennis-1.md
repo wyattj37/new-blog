@@ -6,6 +6,7 @@ tags = [
     "betting",
     "machine learning"
 ]
+draft = true
 +++
 Creating a machine learning model that predicts tennis matches efficiently enough to bet on them profitably.  <!--more-->
 

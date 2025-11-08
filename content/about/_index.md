@@ -4,7 +4,7 @@ aliases = ["about-us", "about-hugo", "contact"]
 enableComments = false
 +++
 
-Thanks for checking out my website! You'll see the main feature is a blog, which is a place for me to work on some things I find interesting. That often entails using statistics or learning methods on problems in decision making, whether it be in sports or card games or with money or wherever else. 
+Thanks for checking out my website! You'll see the main feature is a blog, which is a place for me to work on some things I find interesting. A lot of the time that entails sports or math or both.
 
 I tutor a variety of classes and it's always been something I enjoy, so if that interests you, check out the tab in the far top right.
 

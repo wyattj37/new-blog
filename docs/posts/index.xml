@@ -6,14 +6,21 @@
     <description>Recent content in Posts on Wyatt Johnston</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wyatt-johnston.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Tennis Belt</title>
+      <link>https://wyatt-johnston.com/posts/the-tennis-belt/</link>
+      <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/posts/the-tennis-belt/</guid>
+      <description>&lt;p&gt;Who is the champion of tennis as a matter of direct succession?&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Perfecting Rummikub</title>
       <link>https://wyatt-johnston.com/posts/perfecting-rummikub/</link>
       <pubDate>Sat, 02 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://wyatt-johnston.com/posts/perfecting-rummikub/</guid>
-      <description>&lt;p&gt;Making the most annoying Rummikub opponent with integer programming.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Making the best possible Rummikub player with integer programming.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Birthday Problem for Last Names</title>
@@ -34,7 +41,7 @@
       <link>https://wyatt-johnston.com/posts/stepping-on-cracks-and-gaussian-noise/</link>
       <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://wyatt-johnston.com/posts/stepping-on-cracks-and-gaussian-noise/</guid>
-      <description>&lt;p&gt;Taking a stroll through noisiness and periodic functions.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Strolling through noisiness and periodic functions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Volleyball Data Analytics App</title>
@@ -65,20 +72,6 @@
       <description>&lt;p&gt;Attempting a &amp;ldquo;deadly&amp;rdquo; probability problem with combinatorics.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Making a Machine Learning Model for Tennis Betting Part 2: The Betting</title>
-      <link>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting/</link>
-      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-2-the-betting/</guid>
-      <description>&lt;p&gt;Deploying the model built in Part 1 to a betting scheme to see what kind of money can (hypothetically) be made.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Making a Machine Learning Model for Tennis Betting Part 1: The Model</title>
-      <link>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</link>
-      <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/making-a-machine-learning-model-for-tennis-betting-part-1-the-model/</guid>
-      <description>&lt;p&gt;Creating a machine learning model that predicts tennis matches efficiently enough to bet on them profitably.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>HRV and the WHOOP Recovery Model: Estimating Feature Importance</title>
       <link>https://wyatt-johnston.com/posts/hrv-and-the-whoop-recovery-model-estimating-feature-importance/</link>
       <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
@@ -91,20 +84,6 @@
       <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
       <guid>https://wyatt-johnston.com/posts/when-to-bring-out-your-kicker-or-runningback-on-4th-goal/</guid>
       <description>&lt;p&gt;In November 2023, Texans running back Dare Ogunbowale attempted a field goal in a real NFL game. I wanted to figure out whether or not this was the right move, so I made a win probability calculator for 4th and Goal situations that could be applied to that game and any others.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Game Theory and Probabilistic Strategies in &#39;Screw the Dealer&#39;</title>
-      <link>https://wyatt-johnston.com/posts/game-theory-and-probabilistic-strategies-in-screw-the-dealer/</link>
-      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/game-theory-and-probabilistic-strategies-in-screw-the-dealer/</guid>
-      <description>&lt;p&gt;Turning a light-hearted game into a math problem.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Riding the Bus: A Ballistics Report via Monte Carlo Simulation</title>
-      <link>https://wyatt-johnston.com/posts/riding-the-bus-a-ballistics-report-via-monte-carlo-simulation/</link>
-      <pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/riding-the-bus-a-ballistics-report-via-monte-carlo-simulation/</guid>
-      <description>&lt;p&gt;How many long will a person take take to ride the bus? In short: a while.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

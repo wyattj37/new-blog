@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 <meta name="viewport" content="width=device-width,minimum-scale=1">
 <meta name="description" content="Attempting a &ldquo;deadly&rdquo; probability problem with combinatorics.">
-<meta name="generator" content="Hugo 0.128.0">
+<meta name="generator" content="Hugo 0.152.2">
 
 
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -23,8 +23,6 @@
 
  
   
-  
-    
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-WN3L3N0N7J"></script>
       <script>
         var doNotTrack = false;
@@ -39,10 +37,6 @@
           gtag('config', 'G-WN3L3N0N7J');
         }
       </script>
-    
-  
-
-
 
 
 
@@ -138,134 +132,134 @@ $$</p>
 <p>In this way, the problem resembles finding <a href="https://en.wikipedia.org/wiki/Derangement" target="_blank" rel="noopener">derangements</a>, or &ldquo;permutations of the elements of a set in which no element appears in its original position.&rdquo; But this only gives us the number of ways to sort n elements into n sets with one element each, and we have more elements than sets which of course can contain multiple elements. So the answer to counting our possible arrangements lies somewhere in the middle of these two methods.</p>
 <h1 id="attempting-a-solution">Attempting a Solution <a href="#attempting-a-solution" class="anchor">🔗</a></h1><p>In order to find all the arrangements that work, it would make sense to find all possible arrangements, which I mentioned was $$ k! S(N, k) $$ and then subtract the arrangements that do not work. The arrangements that do not work are the ones in which a set contains the same labeled element (self-shot). Let&rsquo;s walk through an example and see how we might approach this. Here is what it looks like for N = 5, k = 3.</p>
 <table>
-<thead>
-<tr>
-<th>Choice 1</th>
-<th>Choice 2</th>
-<th>Choice 3</th>
-<th>Options</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>1</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>2</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>3</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>4</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>5</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Choice 1</th>
+          <th>Choice 2</th>
+          <th>Choice 3</th>
+          <th>Options</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>5</td>
+      </tr>
+  </tbody>
 </table>
 <p>Let&rsquo;s consider the case of 1 self-shot: we will place 1 into Choice 1 to represent this.</p>
 <table>
-<thead>
-<tr>
-<th>Choice 1</th>
-<th>Choice 2</th>
-<th>Choice 3</th>
-<th>Options</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>2</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>3</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>4</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>5</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Choice 1</th>
+          <th>Choice 2</th>
+          <th>Choice 3</th>
+          <th>Options</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>5</td>
+      </tr>
+  </tbody>
 </table>
 <p>How many ways can we now fill up the rest of the choice columns so that they each have at least one entry? It seems like we are back to Stirling numbers of the second kind: we need to fill the other k = 2 bins with the remaining N = 4 options. That would, however, only leave us with the cases where exactly option 1 is in the choice 1 column. Additionally, we are faced with the same problem once again in that S(4,2) will give us options in which 2 is in the choice 2 column, or 3 is in the choice 3 column, and we are only considering the case of 1 violation.</p>
 <p>Things get messy from there. Let&rsquo;s try again.</p>
 <h1 id="re-attempting-a-solution">Re-attempting a Solution <a href="#re-attempting-a-solution" class="anchor">🔗</a></h1><p>This time, let&rsquo;s turn to derangements and try to count all ways that we can create a valid arrangement. After some analysis, the arrangements can be broken up into how many choices are only filled with &ldquo;free&rdquo; options, that is, options that do not have a corresponding choice column. The case where there are no choices filled with only free options might look something like this:</p>
 <table>
-<thead>
-<tr>
-<th>Choice 1</th>
-<th>Choice 2</th>
-<th>Choice 3</th>
-<th>Options</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td>1</td>
-<td></td>
-</tr>
-<tr>
-<td>2</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>3</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>4</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>5</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Choice 1</th>
+          <th>Choice 2</th>
+          <th>Choice 3</th>
+          <th>Options</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td></td>
+          <td></td>
+          <td>1</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>3</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>5</td>
+      </tr>
+  </tbody>
 </table>
 <p>And then we can place options 4 and 5 however we please. How can we make the arrangement of 1, 2, and 3? The derangements of 3 items, or (D(3)). So the number of valid solutions from here comes to</p>
 <p>$$
@@ -277,46 +271,46 @@ D(k) \cdot k^{N-k}
 $$</p>
 <p>Alright, how about whenever 1 choice is filled with only &ldquo;free&rdquo; options? Consider if we give choice 3 this condition. First, we must choose at least one free option to fill its column, of which there are (N-k) options. Let&rsquo;s choose option 5. Options 1 and 2 are now constrained to only the remaining choices, which in this case are also 1 and 2. We are actually just making another derangement out of the remaining non-free options, of which there are (D(k - 1)) possibilities. In this case, there is only one of these. Now our table looks like this:</p>
 <table>
-<thead>
-<tr>
-<th>Choice 1</th>
-<th>Choice 2</th>
-<th>Choice 3</th>
-<th>Options</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td>1</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>2</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>3</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>4</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>5</td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Choice 1</th>
+          <th>Choice 2</th>
+          <th>Choice 3</th>
+          <th>Options</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td></td>
+          <td>1</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td>5</td>
+          <td></td>
+      </tr>
+  </tbody>
 </table>
 <p>We are left with option 3, which can go to any of the (k - 1) = 2, remaining choices, and 4, which can go to any of the k = 3 remaining choices. All in all, the total options are:</p>
 <p>$$

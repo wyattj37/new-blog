@@ -9,7 +9,7 @@ featured = true
 weight = 4
 math = true
 +++
-Taking a stroll through noisiness and periodic functions. <!--more-->
+Strolling through noisiness and periodic functions. <!--more-->
 
 # Stepping on Cracks Fairly
 Whenever I walk down a sidewalk, I have a hard time not thinking about stepping on the cracks. Specifically, I like for my left and right foot to step on a crack the same amount of times. I don't completely obsess over it, but it's always somewhere between the front and back of my mind.

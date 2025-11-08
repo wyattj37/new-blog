@@ -5,6 +5,7 @@ tags = [
     "games"
 ]
 math = true
+draft = true
 +++
 Turning a light-hearted game into a math problem.
 

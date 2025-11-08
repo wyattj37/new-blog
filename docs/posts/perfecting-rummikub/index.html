@@ -6,8 +6,8 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 <meta name="viewport" content="width=device-width,minimum-scale=1">
-<meta name="description" content="Making the most annoying Rummikub opponent with integer programming.">
-<meta name="generator" content="Hugo 0.128.0">
+<meta name="description" content="Making the best possible Rummikub player with integer programming.">
+<meta name="generator" content="Hugo 0.152.2">
 
 
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -23,8 +23,6 @@
 
  
   
-  
-    
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-WN3L3N0N7J"></script>
       <script>
         var doNotTrack = false;
@@ -39,10 +37,6 @@
           gtag('config', 'G-WN3L3N0N7J');
         }
       </script>
-    
-  
-
-
 
 
 
@@ -113,7 +107,7 @@
 
 
     <div class="content">
-      <p>Making the most annoying Rummikub opponent with integer programming.</p>
+      <p>Making the best possible Rummikub player with integer programming.</p>
 <h1 id="addressing-the-problem">Addressing the Problem <a href="#addressing-the-problem" class="anchor">🔗</a></h1><p><a href="https://en.wikipedia.org/wiki/Rummikub" target="_blank" rel="noopener">Rummikub</a> is an awfully fun game, and, coincidentally, awfully well-suited to be posed as an integer programming problem. Specifically, it is a set partioning problem<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> with a few adjustments. All the available tiles form one large set, and the rules for forming partitions are the rules which define runs and groups. The objective to be maximized in forming these partitions is the number of tiles used from the player&rsquo;s rack. The next section will go into describing this much more explicitly.</p>
 <h1 id="definitions">Definitions <a href="#definitions" class="anchor">🔗</a></h1><p>First, let&rsquo;s denote $S$ as the set of all valid groups in Rummikub. So if $$ S = (s_1, s_2, s_3, \ldots )$$ the contents would look something like $$s_1 = (\text{Red 1, Red 2, Red 3})$$ $$s_2 = (\text{Yellow 5, Black 5, Red 5})$$ $$s_3 = (\text{Yellow 10, wild, Yellow 11, Yellow 12})$$ and so on for all possible valid sets.</p>
 <p>As a note, we only need to account for runs up to length 5, because any run of length 6 or more can just be split into smaller runs that are already included in $S$. As a second note, without wild tiles the number of distinct valid groups is 65, and the number of distinct valid runs is 120. When wilds are included, however, it brings the size of $S$ to 1646 members. This sounds about right, considering you are increasing the size by $_n P _2$ for each subset of size $n$.</p>

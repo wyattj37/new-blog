@@ -10,7 +10,7 @@ math = true
 featured = true
 weight = 1
 +++
-Making the most annoying Rummikub opponent with integer programming.
+Making the best possible Rummikub player with integer programming.
 <!--more-->
 
 # Addressing the Problem

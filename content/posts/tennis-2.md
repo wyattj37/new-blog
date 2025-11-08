@@ -6,6 +6,7 @@ tags = [
     "betting",
     "machine learning"
 ]
+draft = true
 +++
 Deploying the model built in Part 1 to a betting scheme to see what kind of money can (hypothetically) be made. <!--more-->
 

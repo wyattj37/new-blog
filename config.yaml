@@ -14,7 +14,8 @@ hasCJKLanguage: true
 permalinks:
   posts: /posts/:title/
 
-paginate: 4
+pagination:
+  paperSize: 4
 
 googleAnalytics: G-WN3L3N0N7J
 disqusShortname: your-disqus-shortname
@@ -32,17 +33,6 @@ markup:
     renderer:
       unsafe: true
 
-# Social links in footer, support github,twitter,stackoverflow,facebook
-social:
-  # e.g.
-  github: https://github.com/wyattj37
-  linkedin: https://linkedin.com/in/wyatt-d-johnston
-  email: mailto:wyattdj2@illinois.edu
-
-  #twitter: your-twitter-link
-  #stackoverflow: your-stackoverflow-link
-  # facebook: your-facebook-link
-
 
 # Site parameters
 params:
@@ -52,7 +42,16 @@ params:
   bio: PhD Student in ORIE @ UT Austin
   # Site Description, used in HTML meat
   description: My Blog
+  
+  social:
+    # e.g.
+    github: https://github.com/wyattj37
+    linkedin: https://linkedin.com/in/wyatt-d-johnston
+    email: mailto:wyattdj2@illinois.edu
 
+    #twitter: your-twitter-link
+    #stackoverflow: your-stackoverflow-link
+  # facebook: your-facebook-link
 
   ###########################################
   # Optional Configuration
