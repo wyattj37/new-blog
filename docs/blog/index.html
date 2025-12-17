@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="light">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Blog | Wyatt Johnston</title>
+<meta name="keywords" content="">
+<meta name="description" content="Found below are some math and/or programming problems that I find interesting.">
+<meta name="author" content="Wyatt Johnston">
+<link rel="canonical" href="https://wyatt-johnston.com/blog/">
+<link crossorigin="anonymous" href="https://wyatt-johnston.com/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://wyatt-johnston.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://wyatt-johnston.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://wyatt-johnston.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://wyatt-johnston.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://wyatt-johnston.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://wyatt-johnston.com/blog/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://wyatt-johnston.com/blog/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    }
+
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.css" integrity="sha384-Pu5+C18nP5dwykLJOhd2U4Xen7rjScHN/qusop27hdd2drI+lL5KvX7YntvT8yew" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.js" integrity="sha384-2B8pfmZZ6JlVoScJm/5hQfNS2TI/6hPqDZInzzPc8oHpN5SgeNOf4LzREO6p5YtZ" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WN3L3N0N7J"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WN3L3N0N7J');
+        }
+      </script><meta property="og:url" content="https://wyatt-johnston.com/blog/">
+  <meta property="og:site_name" content="Wyatt Johnston">
+  <meta property="og:title" content="Blog">
+  <meta property="og:description" content="Found below are some math and/or programming problems that I find interesting.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Blog">
+<meta name="twitter:description" content="PhD Student in ORIE @ UT Austin">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog",
+      "item": "https://wyatt-johnston.com/blog/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://wyatt-johnston.com/" accesskey="h" title="Wyatt Johnston (Alt + H)">
+                <img src="https://wyatt-johnston.com/favicon.ico" alt="" aria-label="logo"
+                    height="44">Wyatt Johnston</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://wyatt-johnston.com/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://wyatt-johnston.com/blog/" title="Blog">
+                    <span class="active">Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://wyatt-johnston.com/research/" title="Research">
+                    <span>Research</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://wyatt-johnston.com/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://wyatt-johnston.com/crossword/" title="Crossword">
+                    <span>Crossword</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://wyatt-johnston.com/tutoring/" title="Tutoring">
+                    <span>Tutoring</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://wyatt-johnston.com/cv.pdf" title="CV">
+                    <span>CV</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    Blog
+  </h1>
+</header>
+<div class="post-content"><p>Found below are some math and/or programming problems that I find interesting.</p>
+
+
+</div>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Rummikub Solver
+    </h2>
+  </header>
+  <footer class="entry-footer"><span title='2025-08-02 00:00:00 +0000 UTC'>August 2, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to The Rummikub Solver" href="https://wyatt-johnston.com/blog/rummikub/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Birthday Problem for Last Names
+    </h2>
+  </header>
+  <footer class="entry-footer"><span title='2025-03-01 00:00:00 +0000 UTC'>March 1, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to The Birthday Problem for Last Names" href="https://wyatt-johnston.com/blog/surnames/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Worst Feasible Sequence AI
+    </h2>
+  </header>
+  <footer class="entry-footer"><span title='2025-03-24 00:00:00 +0000 UTC'>March 24, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to The Worst Feasible Sequence AI" href="https://wyatt-johnston.com/blog/sequence/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Stepping on Cracks and Gaussian Noise
+    </h2>
+  </header>
+  <footer class="entry-footer"><span title='2025-07-24 00:00:00 +0000 UTC'>July 24, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Stepping on Cracks and Gaussian Noise" href="https://wyatt-johnston.com/blog/crack/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How Badly Can You Win a Tennis Match?
+    </h2>
+  </header>
+  <footer class="entry-footer"><span title='2025-05-28 00:00:00 +0000 UTC'>May 28, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to How Badly Can You Win a Tennis Match?" href="https://wyatt-johnston.com/blog/tennis-points/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">HRV and the WHOOP Recovery Model: Estimating Feature Importance
+    </h2>
+  </header>
+  <footer class="entry-footer"><span title='2024-07-11 00:00:00 +0000 UTC'>July 11, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to HRV and the WHOOP Recovery Model: Estimating Feature Importance" href="https://wyatt-johnston.com/blog/whoop/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">When to Bring Out Your Kicker (Or Runningback) on 4th &amp; Goal
+    </h2>
+  </header>
+  <footer class="entry-footer"><span title='2024-07-09 00:00:00 +0000 UTC'>July 9, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to When to Bring Out Your Kicker (Or Runningback) on 4th & Goal" href="https://wyatt-johnston.com/blog/kicking/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://wyatt-johnston.com/">Wyatt Johnston</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><div class="footer-social-icons" style="margin-top: 1rem; text-align: center;">
+  <a href="mailto:wyattdj2@illinois.edu" target="_blank" aria-label="Email" style="margin: 0 0.5rem;">
+    
+  </a>
+  <a href="https://github.com/wyattj37" target="_blank" aria-label="GitHub" style="margin: 0 0.5rem;">
+    
+  </a>
+  <a href="https://linkedin.com/in/wyatt-d-johnston" target="_blank" aria-label="LinkedIn" style="margin: 0 0.5rem;">
+    
+  </a>
+</div>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

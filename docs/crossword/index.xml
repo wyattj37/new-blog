@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Crossword Puzzles on Wyatt Johnston</title>
+    <link>https://wyatt-johnston.com/crossword/</link>
+    <description>Recent content in Crossword Puzzles on Wyatt Johnston</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-us</language>
+    <atom:link href="https://wyatt-johnston.com/crossword/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&#39;PM&#39; (15x15, Themed)</title>
+      <link>https://wyatt-johnston.com/crossword/pm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/crossword/pm/</guid>
+      <description>&lt;p&gt;You can download the grid below as a PDF &lt;a href=&#34;https://wyatt-johnston.com/crosswords/PM.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- Show the blank crossword PNG --&gt;
+&lt;img src=&#34;https://wyatt-johnston.com/crosswords/PM.png&#34; alt=&#34;Crossword Puzzle&#34; style=&#34;width: 100%; max-width: 600px; display: block; margin: auto;&#34;&gt;
+&lt;!-- Hidden solution section --&gt;
+&lt;div style=&#34;text-align: center; margin-top: 1rem;&#34;&gt;
+  &lt;button id=&#34;show-solution-btn&#34; style=&#34;padding: 0.5rem 1rem; cursor: pointer;&#34;&gt;Show Solution&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;solution-container&#34; style=&#34;display: none; text-align: center; margin-top: 1rem;&#34;&gt;
+  &lt;img src=&#34;https://wyatt-johnston.com/crosswords/PM_solution.png&#34; alt=&#34;Crossword Solution&#34; style=&#34;display: block; margin: auto; width: 100%; max-width: 400px;&#34;&gt;
+&lt;/div&gt;
+&lt;script&gt;
+  const btn = document.getElementById(&#34;show-solution-btn&#34;);
+  const solution = document.getElementById(&#34;solution-container&#34;);
+
+  btn.addEventListener(&#34;click&#34;, () =&gt; {
+    if (solution.style.display === &#34;none&#34;) {
+      solution.style.display = &#34;block&#34;;
+      btn.textContent = &#34;Hide Solution&#34;;
+    } else {
+      solution.style.display = &#34;none&#34;;
+      btn.textContent = &#34;CLICK HERE TO SHOW SOLUTION&#34;;
+    }
+  });
+&lt;/script&gt;</description>
+    </item>
+    <item>
+      <title>&#39;Grand Number&#39; (15x15, Themed)</title>
+      <link>https://wyatt-johnston.com/crossword/grand-number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/crossword/grand-number/</guid>
+      <description>&lt;p&gt;You can download the grid below as a PDF &lt;a href=&#34;https://wyatt-johnston.com/crosswords/grand_number.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- Show the blank crossword PNG --&gt;
+&lt;img src=&#34;https://wyatt-johnston.com/crosswords/grand_number.png&#34; alt=&#34;Crossword Puzzle&#34; style=&#34;width: 100%; max-width: 600px; display: block; margin: auto;&#34;&gt;
+&lt;!-- Hidden solution section --&gt;
+&lt;div style=&#34;text-align: center; margin-top: 1rem;&#34;&gt;
+  &lt;button id=&#34;show-solution-btn&#34; style=&#34;padding: 0.5rem 1rem; cursor: pointer;&#34;&gt;Show Solution&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;solution-container&#34; style=&#34;display: none; text-align: center; margin-top: 1rem;&#34;&gt;
+  &lt;img src=&#34;https://wyatt-johnston.com/crosswords/grand_number_solution.png&#34; alt=&#34;Crossword Solution&#34; style=&#34;display: block; margin: auto; width: 100%; max-width: 400px;&#34;&gt;
+&lt;/div&gt;
+&lt;script&gt;
+  const btn = document.getElementById(&#34;show-solution-btn&#34;);
+  const solution = document.getElementById(&#34;solution-container&#34;);
+
+  btn.addEventListener(&#34;click&#34;, () =&gt; {
+    if (solution.style.display === &#34;none&#34;) {
+      solution.style.display = &#34;block&#34;;
+      btn.textContent = &#34;Hide Solution&#34;;
+    } else {
+      solution.style.display = &#34;none&#34;;
+      btn.textContent = &#34;CLICK HERE TO SHOW SOLUTION&#34;;
+    }
+  });
+&lt;/script&gt;</description>
+    </item>
+    <item>
+      <title>&#39;Judicial Mandate&#39; (15x15, Themed)</title>
+      <link>https://wyatt-johnston.com/crossword/judicial-mandate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/crossword/judicial-mandate/</guid>
+      <description>&lt;p&gt;You can download the grid below as a PDF &lt;a href=&#34;https://wyatt-johnston.com/crosswords/judicial_mandate.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;. This is the first full crossword I ever created, so it may be a bit weak but it has a sentimental place for me.&lt;/p&gt;
+&lt;!-- Show the blank crossword PNG --&gt;
+&lt;img src=&#34;https://wyatt-johnston.com/crosswords/judicial_mandate.png&#34; alt=&#34;Crossword Puzzle&#34; style=&#34;width: 100%; max-width: 600px; display: block; margin: auto;&#34;&gt;
+&lt;!-- Hidden solution section --&gt;
+&lt;div style=&#34;text-align: center; margin-top: 1rem;&#34;&gt;
+  &lt;button id=&#34;show-solution-btn&#34; style=&#34;padding: 0.5rem 1rem; cursor: pointer;&#34;&gt;Show Solution&lt;/button&gt;
+&lt;/div&gt;
+&lt;div id=&#34;solution-container&#34; style=&#34;display: none; text-align: center; margin-top: 1rem;&#34;&gt;
+  &lt;img src=&#34;https://wyatt-johnston.com/crosswords/judicial_mandate_solution.png&#34; alt=&#34;Crossword Solution&#34; style=&#34;display: block; margin: auto; width: 100%; max-width: 400px;&#34;&gt;
+&lt;/div&gt;
+&lt;script&gt;
+  const btn = document.getElementById(&#34;show-solution-btn&#34;);
+  const solution = document.getElementById(&#34;solution-container&#34;);
+
+  btn.addEventListener(&#34;click&#34;, () =&gt; {
+    if (solution.style.display === &#34;none&#34;) {
+      solution.style.display = &#34;block&#34;;
+      btn.textContent = &#34;Hide Solution&#34;;
+    } else {
+      solution.style.display = &#34;none&#34;;
+      btn.textContent = &#34;CLICK HERE TO SHOW SOLUTION&#34;;
+    }
+  });
+&lt;/script&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="light">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Derangements, Stirling Numbers, and Counting | Wyatt Johnston</title>
+<meta name="keywords" content="combinatorics, math">
+<meta name="description" content="Attempting a &ldquo;deadly&rdquo; probability problem with combinatorics.">
+<meta name="author" content="Wyatt Johnston">
+<link rel="canonical" href="http://localhost:1313/blog/derangements/">
+<link crossorigin="anonymous" href="http://localhost:1313/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/derangements/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    }
+
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.css" integrity="sha384-Pu5+C18nP5dwykLJOhd2U4Xen7rjScHN/qusop27hdd2drI+lL5KvX7YntvT8yew" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.js" integrity="sha384-2B8pfmZZ6JlVoScJm/5hQfNS2TI/6hPqDZInzzPc8oHpN5SgeNOf4LzREO6p5YtZ" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Wyatt Johnston (Alt + H)">Wyatt Johnston</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/crossword/" title="Crossword">
+                    <span>Crossword</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tutoring/" title="Tutoring">
+                    <span>Tutoring</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/cv.pdf" title="CV">
+                    <span>CV</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Derangements, Stirling Numbers, and Counting
+    </h1>
+    <div class="post-meta"><span title='2024-10-03 00:00:00 +0000 UTC'>October 3, 2024</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Attempting a &ldquo;deadly&rdquo; probability problem with combinatorics.</p>
+<h1 id="the-problem">The Problem<a hidden class="anchor" aria-hidden="true" href="#the-problem">#</a></h1>
+<p>I stumbled across the website Brain Stellar, a collection of strategy and probability puzzles. I saw that a particular problem, <a href="https://brainstellar.com/puzzles/1008">here</a>, was one of four marked as &ldquo;deadly&rdquo;. In addition, no solution was given, only an incomplete attempt by the author. After quite a bit of trouble here&rsquo;s what I have to show.</p>
+<h1 id="my-approach">My Approach<a hidden class="anchor" aria-hidden="true" href="#my-approach">#</a></h1>
+<p>The aim of the problem is to find the probability that starting with N shooters, we end up with 1 survivor. We will call this probability P(N). This probability is the sum of P over all possible states we can move to from N, multiplied by the probability that we will move to that state. We will call that probability, of moving from state N to state N - k, p(N - k). For example, in the case N = 4, there will be at most 4 people shot, k = 4, and at least 2 people shot (no self-shots allowed), k = 2. So:</p>
+<p>$$
+P(4) = P(3)p(4 - 1) + P(2)p(4 - 2) + P(1)p(4 - 3) + P(0)p(4 - 4)
+$$</p>
+<p>Note that the base cases are:</p>
+<p>One survivor:
+$$
+P(1) = 1
+$$</p>
+<p>No survivors:
+$$
+P(0) = 0
+$$</p>
+<p>And in the case of 2 shooters, they must both shoot each other.
+$$
+P(2) = 0
+$$</p>
+<p>Therefore, in order to calculate P(N), we must first calculate P(3), P(4), &hellip;, P(N-1).</p>
+<p>Because P(N) will be found iteratively, the trouble comes in calculating p(N - k). In order to find p(N - k), we need to find all possible ways that the N people can shoot k, and then divide by the total arrangement of shootings. The total arrangement is simple enough; there are N shooters and N - 1 possible targets for each, or $$N^{(N-1)}$$ But how many ways can N people shoot k of themselves? There&rsquo;s the rub.</p>
+<h1 id="derangements-and-stirling-numbers">Derangements and Stirling Numbers<a hidden class="anchor" aria-hidden="true" href="#derangements-and-stirling-numbers">#</a></h1>
+<p>We can think about the problem as having N distinct objects and sorting them into k distinct non-empty sets. Luckily, there are <a href="https://en.wikipedia.org/wiki/Stirling_numbers_of_the_second_kind">Stirling numbers of the second kind</a>, which describe how many ways to sort N distinct objects into k non-empty sets. All that we need to do to adjust this to make the k sets distinct is to assign each of them a label. That&rsquo;s easy enough: we are choosing k assignments for k sets, and we can multiply our S(N,k) (denoting the Stirling numbers of the second kind) by k!. However, there is still one more pesky condition: no self-shots are allowed.</p>
+<p>In this way, the problem resembles finding <a href="https://en.wikipedia.org/wiki/Derangement">derangements</a>, or &ldquo;permutations of the elements of a set in which no element appears in its original position.&rdquo; But this only gives us the number of ways to sort n elements into n sets with one element each, and we have more elements than sets which of course can contain multiple elements. So the answer to counting our possible arrangements lies somewhere in the middle of these two methods.</p>
+<h1 id="attempting-a-solution">Attempting a Solution<a hidden class="anchor" aria-hidden="true" href="#attempting-a-solution">#</a></h1>
+<p>In order to find all the arrangements that work, it would make sense to find all possible arrangements, which I mentioned was $$ k! S(N, k) $$ and then subtract the arrangements that do not work. The arrangements that do not work are the ones in which a set contains the same labeled element (self-shot). Let&rsquo;s walk through an example and see how we might approach this. Here is what it looks like for N = 5, k = 3.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Choice 1</th>
+          <th>Choice 2</th>
+          <th>Choice 3</th>
+          <th>Options</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>5</td>
+      </tr>
+  </tbody>
+</table>
+<p>Let&rsquo;s consider the case of 1 self-shot: we will place 1 into Choice 1 to represent this.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Choice 1</th>
+          <th>Choice 2</th>
+          <th>Choice 3</th>
+          <th>Options</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>5</td>
+      </tr>
+  </tbody>
+</table>
+<p>How many ways can we now fill up the rest of the choice columns so that they each have at least one entry? It seems like we are back to Stirling numbers of the second kind: we need to fill the other k = 2 bins with the remaining N = 4 options. That would, however, only leave us with the cases where exactly option 1 is in the choice 1 column. Additionally, we are faced with the same problem once again in that S(4,2) will give us options in which 2 is in the choice 2 column, or 3 is in the choice 3 column, and we are only considering the case of 1 violation.</p>
+<p>Things get messy from there. Let&rsquo;s try again.</p>
+<h1 id="re-attempting-a-solution">Re-attempting a Solution<a hidden class="anchor" aria-hidden="true" href="#re-attempting-a-solution">#</a></h1>
+<p>This time, let&rsquo;s turn to derangements and try to count all ways that we can create a valid arrangement. After some analysis, the arrangements can be broken up into how many choices are only filled with &ldquo;free&rdquo; options, that is, options that do not have a corresponding choice column. The case where there are no choices filled with only free options might look something like this:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Choice 1</th>
+          <th>Choice 2</th>
+          <th>Choice 3</th>
+          <th>Options</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td></td>
+          <td></td>
+          <td>1</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>3</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>5</td>
+      </tr>
+  </tbody>
+</table>
+<p>And then we can place options 4 and 5 however we please. How can we make the arrangement of 1, 2, and 3? The derangements of 3 items, or (D(3)). So the number of valid solutions from here comes to</p>
+<p>$$
+D(3) \cdot 3^2
+$$</p>
+<p>Written more generally:</p>
+<p>$$
+D(k) \cdot k^{N-k}
+$$</p>
+<p>Alright, how about whenever 1 choice is filled with only &ldquo;free&rdquo; options? Consider if we give choice 3 this condition. First, we must choose at least one free option to fill its column, of which there are (N-k) options. Let&rsquo;s choose option 5. Options 1 and 2 are now constrained to only the remaining choices, which in this case are also 1 and 2. We are actually just making another derangement out of the remaining non-free options, of which there are (D(k - 1)) possibilities. In this case, there is only one of these. Now our table looks like this:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Choice 1</th>
+          <th>Choice 2</th>
+          <th>Choice 3</th>
+          <th>Options</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td></td>
+          <td>1</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>3</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>4</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td>5</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<p>We are left with option 3, which can go to any of the (k - 1) = 2, remaining choices, and 4, which can go to any of the k = 3 remaining choices. All in all, the total options are:</p>
+<p>$$
+(N-k) \cdot D(k-1) \cdot (k-1) \cdot k
+$$</p>
+<p>For the case where we are limiting i choices to be only filled with free options, this expression comes to:</p>
+<p>$$
+(k - i)^i \cdot \text{Perm}(N-k, i) \cdot k^{(N - k - i)} \cdot \left( D(k - i) + D(k - 2i) \cdot (k-2)^i + D(k - 3i) \cdot (k-3)^i + \ldots \right)
+$$</p>
+<p>We also need to consider that originally we chose a group of k out of N to be the ones shot, which brings us to:</p>
+<p>$$
+\binom{N}{k} \cdot (k - i)^i \cdot \text{Perm}(N-k, i) \cdot k^{(N - k - i)} \cdot \left( D(k - i) + D(k - 2i) \cdot (k-2)^i + D(k - 3i) \cdot (k-3)^i + \ldots \right)
+$$</p>
+<h1 id="counting-duplicates">Counting Duplicates<a hidden class="anchor" aria-hidden="true" href="#counting-duplicates">#</a></h1>
+<p>This formula will work just fine for calculating the P(N) for k = 2,3,4,5,6. However, after that, it begins to break down. This is because there are duplicate cases when it comes to choosing spots for the free options and non-free options excluded from derangements. Therefore, the next step is to count these duplicates and remove them from the total count.</p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/combinatorics/">Combinatorics</a></li>
+      <li><a href="http://localhost:1313/tags/math/">Math</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Wyatt Johnston</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

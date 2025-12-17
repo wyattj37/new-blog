@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Simulation on Wyatt Johnston</title>
     <link>https://wyatt-johnston.com/tags/simulation/</link>
     <description>Recent content in Simulation on Wyatt Johnston</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 24 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wyatt-johnston.com/tags/simulation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stepping on Cracks and Gaussian Noise</title>
-      <link>https://wyatt-johnston.com/posts/stepping-on-cracks-and-gaussian-noise/</link>
+      <link>https://wyatt-johnston.com/blog/crack/</link>
       <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/stepping-on-cracks-and-gaussian-noise/</guid>
-      <description>&lt;p&gt;Strolling through noisiness and periodic functions.&lt;/p&gt;</description>
+      <guid>https://wyatt-johnston.com/blog/crack/</guid>
+      <description>&lt;h3 id=&#34;stepping-on-cracks-fairly&#34;&gt;Stepping on Cracks Fairly&lt;/h3&gt;
+&lt;p&gt;Whenever I walk down a sidewalk, I have a hard time not thinking about stepping on the cracks. Specifically, I like for my left and right foot to step on a crack the same amount of times. I don&amp;rsquo;t completely obsess over it, but it&amp;rsquo;s always somewhere between the front and back of my mind.&lt;/p&gt;
+&lt;p&gt;When I was on a walk earlier today, it was closer to the front. I made an exaggerated step with my right leg to extend my gait and find a crack where my right foot would land - evening up the crack tally between legs. As I made that step, I began to wonder if you could enumerate the number of crack steps during a walk. At first pass it seemed plausible: your foot size is fixed, your gait is (mostly) fixed, and the distance between cracks is (once again, mostly) fixed. I evenly crack-stepped home and got out the notepad.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

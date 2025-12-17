@@ -1,40 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Sports on Wyatt Johnston</title>
     <link>https://wyatt-johnston.com/tags/sports/</link>
     <description>Recent content in Sports on Wyatt Johnston</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 07 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wyatt-johnston.com/tags/sports/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Tennis Belt</title>
-      <link>https://wyatt-johnston.com/posts/the-tennis-belt/</link>
+      <link>https://wyatt-johnston.com/projects/tennis-belt/</link>
       <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/the-tennis-belt/</guid>
-      <description>&lt;p&gt;Who is the champion of tennis as a matter of direct succession?&lt;/p&gt;</description>
+      <guid>https://wyatt-johnston.com/projects/tennis-belt/</guid>
+      <description>&lt;p&gt;Who is the champion of tennis as a matter of direct succession? You can find the website I&amp;rsquo;ve made &lt;a href=&#34;https://tennis-belt.com/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Inspired by the &lt;a href=&#34;https://www.cfb-belt.com/&#34;&gt;College Football belt&lt;/a&gt;, I started my own tracker for the men and women&amp;rsquo;s tennis belt. Essentially, the first champion on tour is given the belt. When that player is beaten, the winning player takes the belt. As long as the belt-holder wins, they keep the belt until someone comes and usurps them. And so it travels around between the players. It&amp;rsquo;s as simple as that.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Volleyball Data Analytics App</title>
-      <link>https://wyatt-johnston.com/posts/volleyball-data-analytics-app/</link>
+      <link>https://wyatt-johnston.com/projects/volleyball/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/volleyball-data-analytics-app/</guid>
-      <description>&lt;p&gt;A Shiny app I made to investigate a volleyball team&amp;rsquo;s performance.&lt;/p&gt;</description>
+      <guid>https://wyatt-johnston.com/projects/volleyball/</guid>
+      <description>&lt;h3 id=&#34;check-out-the-app&#34;&gt;Check Out the App&lt;/h3&gt;
+&lt;p&gt;You can find the link to the app &lt;a href=&#34;https://wyattjohn.shinyapps.io/fake_vb/&#34;&gt;here&lt;/a&gt;. It serves track data for a college volleyball team.&lt;/p&gt;
+&lt;p&gt;The keen eye might notice there are only four players, two of which have been dead for centuries and none of which play college volleyball. I scrambled some real games played and created the two of us as players to demonstrate how the app works. Just imagine that the pages include lots of real players from lots of real college teams. I stripped the actual data used on the app because the team I worked with will be using it hopefully to their competitive advantage.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How Badly Can You Win a Tennis Match?</title>
-      <link>https://wyatt-johnston.com/posts/how-badly-can-you-win-a-tennis-match/</link>
+      <link>https://wyatt-johnston.com/blog/tennis-points/</link>
       <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/how-badly-can-you-win-a-tennis-match/</guid>
-      <description>&lt;p&gt;Winning ugly.&lt;/p&gt;</description>
+      <guid>https://wyatt-johnston.com/blog/tennis-points/</guid>
+      <description>&lt;p&gt;On winning ugly.&lt;/p&gt;
+&lt;h3 id=&#34;linearity-of-scoring-in-sports&#34;&gt;Linearity of Scoring in Sports&lt;/h3&gt;
+&lt;p&gt;People who enjoy tennis are likely to know that you don&amp;rsquo;t have to win more points than your opponent to win a given match. Tennis is scored non-linearly, meaning the points you win don&amp;rsquo;t have a direct, linear relationship with the outcome of the match. In basketball, a linearly-scored game, if you have more points than your oponnent at the end of regulation, then you win. In tennis, on the other hand, individual points will only win you games, which win you sets, which &lt;em&gt;actually&lt;/em&gt; win you matches.&lt;/p&gt;</description>
     </item>
     <item>
       <title>When to Bring Out Your Kicker (Or Runningback) on 4th &amp; Goal</title>
-      <link>https://wyatt-johnston.com/posts/when-to-bring-out-your-kicker-or-runningback-on-4th-goal/</link>
+      <link>https://wyatt-johnston.com/blog/kicking/</link>
       <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/when-to-bring-out-your-kicker-or-runningback-on-4th-goal/</guid>
-      <description>&lt;p&gt;In November 2023, Texans running back Dare Ogunbowale attempted a field goal in a real NFL game. I wanted to figure out whether or not this was the right move, so I made a win probability calculator for 4th and Goal situations that could be applied to that game and any others.&lt;/p&gt;</description>
+      <guid>https://wyatt-johnston.com/blog/kicking/</guid>
+      <description>&lt;p&gt;In November 2023, Texans running back Dare Ogunbowale attempted a field goal in a real NFL game. I wanted to figure out whether or not this was the right move, so I made a win probability calculator for 4th and Goal situations that could be applied to that game and any others.&lt;/p&gt;
+&lt;h3 id=&#34;the-texans-game&#34;&gt;The Texans Game&lt;/h3&gt;
+&lt;p&gt;With 14:11 to go in the 4th quarter, the Texans are down 1 to the Buccaneers. They face 4th and goal from the 9 yard line. The Texans kicker is out with an injury, so their options are between trotting out running back Dare Ogunbowale to attempt a 26 yarder, or go for the touchdown. Using Pro Football Reference’s win &lt;a href=&#34;https://www.pro-football-reference.com/boxscores/win_prob.cgi&#34;&gt;probability calculator&lt;/a&gt;, the probabilities for a Texans win given the different outcomes are as follows:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

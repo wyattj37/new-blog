@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Data Analytics on Wyatt Johnston</title>
     <link>https://wyatt-johnston.com/tags/data-analytics/</link>
     <description>Recent content in Data Analytics on Wyatt Johnston</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 20 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wyatt-johnston.com/tags/data-analytics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Volleyball Data Analytics App</title>
-      <link>https://wyatt-johnston.com/posts/volleyball-data-analytics-app/</link>
+      <link>https://wyatt-johnston.com/projects/volleyball/</link>
       <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/volleyball-data-analytics-app/</guid>
-      <description>&lt;p&gt;A Shiny app I made to investigate a volleyball team&amp;rsquo;s performance.&lt;/p&gt;</description>
+      <guid>https://wyatt-johnston.com/projects/volleyball/</guid>
+      <description>&lt;h3 id=&#34;check-out-the-app&#34;&gt;Check Out the App&lt;/h3&gt;
+&lt;p&gt;You can find the link to the app &lt;a href=&#34;https://wyattjohn.shinyapps.io/fake_vb/&#34;&gt;here&lt;/a&gt;. It serves track data for a college volleyball team.&lt;/p&gt;
+&lt;p&gt;The keen eye might notice there are only four players, two of which have been dead for centuries and none of which play college volleyball. I scrambled some real games played and created the two of us as players to demonstrate how the app works. Just imagine that the pages include lots of real players from lots of real college teams. I stripped the actual data used on the app because the team I worked with will be using it hopefully to their competitive advantage.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

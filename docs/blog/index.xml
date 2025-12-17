@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blog on Wyatt Johnston</title>
+    <link>https://wyatt-johnston.com/blog/</link>
+    <description>Recent content in Blog on Wyatt Johnston</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://wyatt-johnston.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Rummikub Solver</title>
+      <link>https://wyatt-johnston.com/blog/rummikub/</link>
+      <pubDate>Sat, 02 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/blog/rummikub/</guid>
+      <description>&lt;h3 id=&#34;addressing-the-problem&#34;&gt;Addressing the Problem&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Rummikub&#34; target=&#34;_blank&#34;&gt;Rummikub&lt;/a&gt; is quite a fun game; if you haven&amp;rsquo;t played it, you should. If you have played, you might relate to the feeling of staring at the board and wondering if you truly don&amp;rsquo;t have a move, or if a move is out there and you just can&amp;rsquo;t find it. To fix this, I figured I&amp;rsquo;d build a tool to solve a given board state, and then I&amp;rsquo;ll at least know after-the-fact what the best move would have been.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Birthday Problem for Last Names</title>
+      <link>https://wyatt-johnston.com/blog/surnames/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/blog/surnames/</guid>
+      <description>&lt;p&gt;How large of a group do you need so that the chances of two random people sharing a last name is 50%?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Worst Feasible Sequence AI</title>
+      <link>https://wyatt-johnston.com/blog/sequence/</link>
+      <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/blog/sequence/</guid>
+      <description>&lt;h3 id=&#34;reasonable-expectations&#34;&gt;Reasonable Expectations&lt;/h3&gt;
+&lt;p&gt;When I first started to make this post, my plan was something much more involved. I was going to replicate the strategies used by the labs that made bots like Pluribus (for poker) and AlphaGo (for go) for the board game Sequence (see &lt;a href=&#34;https://en.wikipedia.org/wiki/Sequence_(game)&#34;&gt;here&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;In order to do that, I would need to make a fully functioning Sequence game with all the logic, make the computer play itself over and over for millions of games, record the moves and board states to create training data, use some neural network to evaluate potential moves along with a Monte Carlo Tree Search, and probably many other complicated steps and headaches along the way.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Stepping on Cracks and Gaussian Noise</title>
+      <link>https://wyatt-johnston.com/blog/crack/</link>
+      <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/blog/crack/</guid>
+      <description>&lt;h3 id=&#34;stepping-on-cracks-fairly&#34;&gt;Stepping on Cracks Fairly&lt;/h3&gt;
+&lt;p&gt;Whenever I walk down a sidewalk, I have a hard time not thinking about stepping on the cracks. Specifically, I like for my left and right foot to step on a crack the same amount of times. I don&amp;rsquo;t completely obsess over it, but it&amp;rsquo;s always somewhere between the front and back of my mind.&lt;/p&gt;
+&lt;p&gt;When I was on a walk earlier today, it was closer to the front. I made an exaggerated step with my right leg to extend my gait and find a crack where my right foot would land - evening up the crack tally between legs. As I made that step, I began to wonder if you could enumerate the number of crack steps during a walk. At first pass it seemed plausible: your foot size is fixed, your gait is (mostly) fixed, and the distance between cracks is (once again, mostly) fixed. I evenly crack-stepped home and got out the notepad.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How Badly Can You Win a Tennis Match?</title>
+      <link>https://wyatt-johnston.com/blog/tennis-points/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/blog/tennis-points/</guid>
+      <description>&lt;p&gt;On winning ugly.&lt;/p&gt;
+&lt;h3 id=&#34;linearity-of-scoring-in-sports&#34;&gt;Linearity of Scoring in Sports&lt;/h3&gt;
+&lt;p&gt;People who enjoy tennis are likely to know that you don&amp;rsquo;t have to win more points than your opponent to win a given match. Tennis is scored non-linearly, meaning the points you win don&amp;rsquo;t have a direct, linear relationship with the outcome of the match. In basketball, a linearly-scored game, if you have more points than your oponnent at the end of regulation, then you win. In tennis, on the other hand, individual points will only win you games, which win you sets, which &lt;em&gt;actually&lt;/em&gt; win you matches.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HRV and the WHOOP Recovery Model: Estimating Feature Importance</title>
+      <link>https://wyatt-johnston.com/blog/whoop/</link>
+      <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/blog/whoop/</guid>
+      <description>&lt;p&gt;Heart rate variability (HRV) is the primary metric that the WHOOP fitness band uses to calculate your recovery. In this article I look at just how much HRV contributes to recovery, plus how a high HRV variance can make things tricky.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-a-whoop-recovery-score&#34;&gt;What is a WHOOP Recovery Score&lt;/h3&gt;
+&lt;p&gt;The WHOOP fitness band is a product that tracks your activity throughout the day by measuring primarily your heart rate. In addition, and more importantly, it tracks your recovery during sleep. The WHOOP website (and my personal experience) will tell you HRV is the primary contributer to calculating recovery. What exactly HRV is and why it&amp;rsquo;s so important is something I surely will explain worse than WHOOP themselves, so find out more about that &lt;a href=&#34;https://www.whoop.com/us/en/thelocker/heart-rate-variability-hrv/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>When to Bring Out Your Kicker (Or Runningback) on 4th &amp; Goal</title>
+      <link>https://wyatt-johnston.com/blog/kicking/</link>
+      <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/blog/kicking/</guid>
+      <description>&lt;p&gt;In November 2023, Texans running back Dare Ogunbowale attempted a field goal in a real NFL game. I wanted to figure out whether or not this was the right move, so I made a win probability calculator for 4th and Goal situations that could be applied to that game and any others.&lt;/p&gt;
+&lt;h3 id=&#34;the-texans-game&#34;&gt;The Texans Game&lt;/h3&gt;
+&lt;p&gt;With 14:11 to go in the 4th quarter, the Texans are down 1 to the Buccaneers. They face 4th and goal from the 9 yard line. The Texans kicker is out with an injury, so their options are between trotting out running back Dare Ogunbowale to attempt a 26 yarder, or go for the touchdown. Using Pro Football Reference’s win &lt;a href=&#34;https://www.pro-football-reference.com/boxscores/win_prob.cgi&#34;&gt;probability calculator&lt;/a&gt;, the probabilities for a Texans win given the different outcomes are as follows:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

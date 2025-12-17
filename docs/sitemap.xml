@@ -2,25 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wyatt-johnston.com/posts/the-tennis-belt/</loc>
+    <loc>https://wyatt-johnston.com/projects/tennis-belt/</loc>
     <lastmod>2025-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wyatt-johnston.com/posts/perfecting-rummikub/</loc>
+    <loc>https://wyatt-johnston.com/blog/rummikub/</loc>
     <lastmod>2025-08-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wyatt-johnston.com/posts/the-birthday-problem-for-last-names/</loc>
+    <loc>https://wyatt-johnston.com/crossword/pm/</loc>
+  </url><url>
+    <loc>https://wyatt-johnston.com/blog/surnames/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wyatt-johnston.com/posts/the-worst-feasible-sequence-ai/</loc>
+    <loc>https://wyatt-johnston.com/crossword/grand-number/</loc>
+  </url><url>
+    <loc>https://wyatt-johnston.com/blog/sequence/</loc>
     <lastmod>2025-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wyatt-johnston.com/posts/stepping-on-cracks-and-gaussian-noise/</loc>
+    <loc>https://wyatt-johnston.com/crossword/judicial-mandate/</loc>
+  </url><url>
+    <loc>https://wyatt-johnston.com/blog/crack/</loc>
     <lastmod>2025-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wyatt-johnston.com/posts/volleyball-data-analytics-app/</loc>
+    <loc>https://wyatt-johnston.com/projects/volleyball/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wyatt-johnston.com/posts/</loc>
+    <loc>https://wyatt-johnston.com/</loc>
+    <lastmod>2025-11-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wyatt-johnston.com/projects/</loc>
     <lastmod>2025-11-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wyatt-johnston.com/tags/sports/</loc>
@@ -32,8 +41,8 @@
     <loc>https://wyatt-johnston.com/tags/tennis/</loc>
     <lastmod>2025-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wyatt-johnston.com/</loc>
-    <lastmod>2025-11-07T00:00:00+00:00</lastmod>
+    <loc>https://wyatt-johnston.com/blog/</loc>
+    <lastmod>2025-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wyatt-johnston.com/tags/board-games/</loc>
     <lastmod>2025-08-02T00:00:00+00:00</lastmod>
@@ -50,16 +59,7 @@
     <loc>https://wyatt-johnston.com/tags/simulation/</loc>
     <lastmod>2025-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wyatt-johnston.com/posts/ballot-stuffing-and-mansplaining/</loc>
-    <lastmod>2025-07-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wyatt-johnston.com/tags/browser-automation/</loc>
-    <lastmod>2025-07-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wyatt-johnston.com/tags/web-scraping/</loc>
-    <lastmod>2025-07-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wyatt-johnston.com/posts/how-badly-can-you-win-a-tennis-match/</loc>
+    <loc>https://wyatt-johnston.com/blog/tennis-points/</loc>
     <lastmod>2025-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wyatt-johnston.com/tags/probability/</loc>
@@ -68,22 +68,13 @@
     <loc>https://wyatt-johnston.com/tags/statistics/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wyatt-johnston.com/tutoring/</loc>
-    <lastmod>2025-02-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wyatt-johnston.com/tags/combinatorics/</loc>
-    <lastmod>2024-10-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wyatt-johnston.com/posts/derangements-stirling-numbers-and-counting/</loc>
-    <lastmod>2024-10-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://wyatt-johnston.com/tags/data-analytics/</loc>
     <lastmod>2024-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wyatt-johnston.com/tags/health/</loc>
     <lastmod>2024-07-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wyatt-johnston.com/posts/hrv-and-the-whoop-recovery-model-estimating-feature-importance/</loc>
+    <loc>https://wyatt-johnston.com/blog/whoop/</loc>
     <lastmod>2024-07-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wyatt-johnston.com/tags/machine-learning/</loc>
@@ -92,11 +83,15 @@
     <loc>https://wyatt-johnston.com/tags/football/</loc>
     <lastmod>2024-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wyatt-johnston.com/posts/when-to-bring-out-your-kicker-or-runningback-on-4th-goal/</loc>
+    <loc>https://wyatt-johnston.com/blog/kicking/</loc>
     <lastmod>2024-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wyatt-johnston.com/about/</loc>
-  </url><url>
     <loc>https://wyatt-johnston.com/categories/</loc>
+  </url><url>
+    <loc>https://wyatt-johnston.com/crossword/</loc>
+  </url><url>
+    <loc>https://wyatt-johnston.com/research/</loc>
+  </url><url>
+    <loc>https://wyatt-johnston.com/tutoring/</loc>
   </url>
 </urlset>

@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tennis on Wyatt Johnston</title>
     <link>https://wyatt-johnston.com/tags/tennis/</link>
     <description>Recent content in Tennis on Wyatt Johnston</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 07 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wyatt-johnston.com/tags/tennis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Tennis Belt</title>
-      <link>https://wyatt-johnston.com/posts/the-tennis-belt/</link>
+      <link>https://wyatt-johnston.com/projects/tennis-belt/</link>
       <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/the-tennis-belt/</guid>
-      <description>&lt;p&gt;Who is the champion of tennis as a matter of direct succession?&lt;/p&gt;</description>
+      <guid>https://wyatt-johnston.com/projects/tennis-belt/</guid>
+      <description>&lt;p&gt;Who is the champion of tennis as a matter of direct succession? You can find the website I&amp;rsquo;ve made &lt;a href=&#34;https://tennis-belt.com/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Inspired by the &lt;a href=&#34;https://www.cfb-belt.com/&#34;&gt;College Football belt&lt;/a&gt;, I started my own tracker for the men and women&amp;rsquo;s tennis belt. Essentially, the first champion on tour is given the belt. When that player is beaten, the winning player takes the belt. As long as the belt-holder wins, they keep the belt until someone comes and usurps them. And so it travels around between the players. It&amp;rsquo;s as simple as that.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

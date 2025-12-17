@@ -1,91 +1,120 @@
 baseURL: https://wyatt-johnston.com
 languageCode: en-us
 title: Wyatt Johnston
-theme: mini
+theme: PaperMod
 publishDir: "docs"
-canonifyurls: true
+canonifyURLs: true
 
-# Default content language, support en (English) / zh (Chinese) / nl (Dutch) / fr (French) / es (Spanish) / da (Danish), default 'en'
 defaultContentLanguage: en
-
-# !!! exampleSite only, you may need to delete the line: `themesDir: ../../` 
-
 hasCJKLanguage: true
-permalinks:
-  posts: /posts/:title/
 
 pagination:
   paperSize: 4
 
 googleAnalytics: G-WN3L3N0N7J
-disqusShortname: your-disqus-shortname
 
-# Hugo Configure Markup
-# More info: https://gohugo.io/getting-started/configuration-markup#
+# =============================
+# Menu
+# =============================
+menu:
+  main:
+    - name: About
+      url: /
+      weight: 1
+
+    - name: Blog
+      url: /blog/
+      weight: 2
+    
+    - name: Research
+      url: /research/
+      weight: 2.5
+
+    - name: Projects
+      url: /projects/
+      weight: 3
+
+    - name: Crossword
+      url: /crossword/
+      weight: 4
+
+    - name: Tutoring
+      url: /tutoring/
+      weight: 5
+
+    - name: CV
+      url: "/cv.pdf"
+      weight: 6
+
+# =============================
+# Markup
+# =============================
 markup:
   highlight:
     guessSyntax: true
     style: emacs
-  tableOfContents:
-    enabled: false
-  # needed to render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
   goldmark:
     renderer:
       unsafe: true
+      extensions:
+        passthrough:
+          enable: true
+          delimiters:
+            block:
+              - ['$$', '$$']
+            inline:
+              - ['$', '$']
 
-
-# Site parameters
+# =============================
+# PaperMod Parameters
+# =============================
 params:
-  # Site Author
   author: Wyatt Johnston
-  # Author biography
-  bio: PhD Student in ORIE @ UT Austin
-  # Site Description, used in HTML meat
-  description: My Blog
-  
-  social:
-    # e.g.
-    github: https://github.com/wyattj37
-    linkedin: https://linkedin.com/in/wyatt-d-johnston
-    email: mailto:wyattdj2@illinois.edu
+  description: "PhD Student in ORIE @ UT Austin"
+  hideAuthor: true
 
-    #twitter: your-twitter-link
-    #stackoverflow: your-stackoverflow-link
-  # facebook: your-facebook-link
+  label:
+    text: Wyatt Johnston
+    icon: "favicon.ico"
+    iconHeight: 44
 
-  ###########################################
-  # Optional Configuration
-  ###########################################
+  # Home page behavior
+  disableSpecial1stPost: true
+  hideSummary: true
+  showRecentPosts: false
 
-  # To enable RSS, you could set `enableRSS: true`, default is `true`
-  # enableRSS: true
-  # To enable comments, you may need to set `disqusShortname`
-  enableComments: false
-  # To enable comments, you may need to set `googleAnalytics`
-  enableGoogleAnalytics: true
-  # To enable table of content, you could set `showToc: true`, default is `false`
-  showToc: true
-  # To hidden powerBy message in the page footer, you could set: `showPowerBy: false`, default is `true`
-  showPowerBy: true
-  # To enable math typesetting , you could set `math: true`, default is `false`
+  # UI / Layout
+  showToc: false
   math: true
-  # To hidden post summary in home page, you could set `hiddenPostSummaryInHomePage: true`, default is `false`
-  hiddenPostSummaryInHomePage: false
-  # Website copyright, default: '© Copyright 2021 ❤️ {params.author}'
-  copyright: '' 
+  showReadingTime: false
+  showBreadCrumbs: false
+  showCodeCopyButtons: true
+  defaultTheme: "light"
 
-  # Extra links in navigation
-  links:
-    # e.g.
-    - name: Tutoring
-      path: /tutoring
+  # Footer
+  showPoweredBy: false
+  copyright: ""
 
-  # You can put your custom css and js to `static` directory, or use remote css and js files which start with `http://` or `https://`
+  # Profile (optional; nice for About page)
+  profileMode:
+    enabled: false
+
+  # Social icons (PaperMod style)
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/wyattj37"
+    - name: "linkedin"
+      url: "https://linkedin.com/in/wyatt-d-johnston"
+    - name: "email"
+      url: "mailto:wyattdj2@illinois.edu"
+
+  # Assets
+  assets:
+    disableHLJS: true
+    favicon: "favicon.ico"
+
+  # Custom CSS / JS
   customCSS:
-    ## e.g.
-    # - css/custom.css # local css in `static/css/custom.css`
-    # - https://example.com/custom.css # remote css
+    # - css/custom.css
   customJS:
-    ## e.g.
-    # - js/custom.js # local js in `static/js/custom.js`
-    # - https://example.com/custom.js # remote js
+    # - js/custom.js

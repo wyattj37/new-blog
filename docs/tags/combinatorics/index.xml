@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Combinatorics on Wyatt Johnston</title>
-    <link>https://wyatt-johnston.com/tags/combinatorics/</link>
+    <link>http://localhost:1313/tags/combinatorics/</link>
     <description>Recent content in Combinatorics on Wyatt Johnston</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 03 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://wyatt-johnston.com/tags/combinatorics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/combinatorics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Derangements, Stirling Numbers, and Counting</title>
-      <link>https://wyatt-johnston.com/posts/derangements-stirling-numbers-and-counting/</link>
+      <link>http://localhost:1313/blog/derangements/</link>
       <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/derangements-stirling-numbers-and-counting/</guid>
+      <guid>http://localhost:1313/blog/derangements/</guid>
       <description>&lt;p&gt;Attempting a &amp;ldquo;deadly&amp;rdquo; probability problem with combinatorics.&lt;/p&gt;</description>
     </item>
   </channel>

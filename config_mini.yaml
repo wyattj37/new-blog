@@ -1,0 +1,87 @@
+baseURL: https://wyatt-johnston.com
+languageCode: en-us
+title: Wyatt Johnston
+theme: mini
+publishDir: "docs"
+canonifyurls: true
+
+# Default content language, support en (English) / zh (Chinese) / nl (Dutch) / fr (French) / es (Spanish) / da (Danish), default 'en'
+defaultContentLanguage: en
+
+# !!! exampleSite only, you may need to delete the line: `themesDir: ../../` 
+
+hasCJKLanguage: true
+permalinks:
+  posts: /posts/:title/
+
+pagination:
+  paperSize: 4
+
+googleAnalytics: G-WN3L3N0N7J
+disqusShortname: your-disqus-shortname
+
+# Hugo Configure Markup
+# More info: https://gohugo.io/getting-started/configuration-markup#
+markup:
+  highlight:
+    guessSyntax: true
+    style: emacs
+  tableOfContents:
+    enabled: false
+  # needed to render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
+  goldmark:
+    renderer:
+      unsafe: true
+
+
+# Site parameters
+params:
+  # Site Author
+  author: Wyatt Johnston
+  # Author biography
+  bio: PhD Student in ORIE @ UT Austin
+  # Site Description, used in HTML meat
+  description: My Blog
+
+  social:
+    # e.g.
+    github: https://github.com/wyattj37
+    linkedin: https://linkedin.com/in/wyatt-d-johnston
+    email: mailto:wyattdj2@illinois.edu
+
+  ###########################################
+  # Optional Configuration
+  ###########################################
+
+  # To enable RSS, you could set `enableRSS: true`, default is `true`
+  # enableRSS: true
+  # To enable comments, you may need to set `disqusShortname`
+  enableComments: false
+  # To enable comments, you may need to set `googleAnalytics`
+  enableGoogleAnalytics: true
+  # To enable table of content, you could set `showToc: true`, default is `false`
+  showToc: true
+  # To hidden powerBy message in the page footer, you could set: `showPowerBy: false`, default is `true`
+  showPowerBy: true
+  # To enable math typesetting , you could set `math: true`, default is `false`
+  math: true
+  # To hidden post summary in home page, you could set `hiddenPostSummaryInHomePage: true`, default is `false`
+  hiddenPostSummaryInHomePage: false
+  # Website copyright, default: '© Copyright 2021 ❤️ {params.author}'
+  copyright: '' 
+
+  # Extra links in navigation
+  links:
+    # e.g.
+    - name: Tutoring
+      path: /tutoring
+
+  # You can put your custom css and js to `static` directory, or use remote css and js files which start with `http://` or `https://`
+  customCSS:
+    ## e.g.
+    # - css/custom.css # local css in `static/css/custom.css`
+    # - https://example.com/custom.css # remote css
+  customJS:
+    ## e.g.
+    # - js/custom.js # local js in `static/js/custom.js`
+    # - https://example.com/custom.js # remote js

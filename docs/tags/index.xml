@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Wyatt Johnston</title>
     <link>https://wyatt-johnston.com/tags/</link>
     <description>Recent content in Tags on Wyatt Johnston</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 07 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wyatt-johnston.com/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -58,20 +58,6 @@
       <description></description>
     </item>
     <item>
-      <title>Browser Automation</title>
-      <link>https://wyatt-johnston.com/tags/browser-automation/</link>
-      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/tags/browser-automation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Web Scraping</title>
-      <link>https://wyatt-johnston.com/tags/web-scraping/</link>
-      <pubDate>Wed, 16 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/tags/web-scraping/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Probability</title>
       <link>https://wyatt-johnston.com/tags/probability/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
@@ -83,13 +69,6 @@
       <link>https://wyatt-johnston.com/tags/statistics/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://wyatt-johnston.com/tags/statistics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Combinatorics</title>
-      <link>https://wyatt-johnston.com/tags/combinatorics/</link>
-      <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/tags/combinatorics/</guid>
       <description></description>
     </item>
     <item>

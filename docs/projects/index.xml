@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Projects on Wyatt Johnston</title>
+    <link>https://wyatt-johnston.com/projects/</link>
+    <description>Recent content in Projects on Wyatt Johnston</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://wyatt-johnston.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Tennis Belt</title>
+      <link>https://wyatt-johnston.com/projects/tennis-belt/</link>
+      <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/projects/tennis-belt/</guid>
+      <description>&lt;p&gt;Who is the champion of tennis as a matter of direct succession? You can find the website I&amp;rsquo;ve made &lt;a href=&#34;https://tennis-belt.com/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Inspired by the &lt;a href=&#34;https://www.cfb-belt.com/&#34;&gt;College Football belt&lt;/a&gt;, I started my own tracker for the men and women&amp;rsquo;s tennis belt. Essentially, the first champion on tour is given the belt. When that player is beaten, the winning player takes the belt. As long as the belt-holder wins, they keep the belt until someone comes and usurps them. And so it travels around between the players. It&amp;rsquo;s as simple as that.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Volleyball Data Analytics App</title>
+      <link>https://wyatt-johnston.com/projects/volleyball/</link>
+      <pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/projects/volleyball/</guid>
+      <description>&lt;h3 id=&#34;check-out-the-app&#34;&gt;Check Out the App&lt;/h3&gt;
+&lt;p&gt;You can find the link to the app &lt;a href=&#34;https://wyattjohn.shinyapps.io/fake_vb/&#34;&gt;here&lt;/a&gt;. It serves track data for a college volleyball team.&lt;/p&gt;
+&lt;p&gt;The keen eye might notice there are only four players, two of which have been dead for centuries and none of which play college volleyball. I scrambled some real games played and created the two of us as players to demonstrate how the app works. Just imagine that the pages include lots of real players from lots of real college teams. I stripped the actual data used on the app because the team I worked with will be using it hopefully to their competitive advantage.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

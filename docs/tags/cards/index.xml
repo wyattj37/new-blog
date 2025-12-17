@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Cards on Wyatt Johnston</title>
     <link>https://wyatt-johnston.com/tags/cards/</link>
     <description>Recent content in Cards on Wyatt Johnston</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 02 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wyatt-johnston.com/tags/cards/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Perfecting Rummikub</title>
-      <link>https://wyatt-johnston.com/posts/perfecting-rummikub/</link>
+      <title>The Rummikub Solver</title>
+      <link>https://wyatt-johnston.com/blog/rummikub/</link>
       <pubDate>Sat, 02 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/perfecting-rummikub/</guid>
-      <description>&lt;p&gt;Making the best possible Rummikub player with integer programming.&lt;/p&gt;</description>
+      <guid>https://wyatt-johnston.com/blog/rummikub/</guid>
+      <description>&lt;h3 id=&#34;addressing-the-problem&#34;&gt;Addressing the Problem&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Rummikub&#34; target=&#34;_blank&#34;&gt;Rummikub&lt;/a&gt; is quite a fun game; if you haven&amp;rsquo;t played it, you should. If you have played, you might relate to the feeling of staring at the board and wondering if you truly don&amp;rsquo;t have a move, or if a move is out there and you just can&amp;rsquo;t find it. To fix this, I figured I&amp;rsquo;d build a tool to solve a given board state, and then I&amp;rsquo;ll at least know after-the-fact what the best move would have been.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Worst Feasible Sequence AI</title>
-      <link>https://wyatt-johnston.com/posts/the-worst-feasible-sequence-ai/</link>
+      <link>https://wyatt-johnston.com/blog/sequence/</link>
       <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/posts/the-worst-feasible-sequence-ai/</guid>
-      <description>&lt;p&gt;Making the worst possible AI that can win at the game Sequence.&lt;/p&gt;</description>
+      <guid>https://wyatt-johnston.com/blog/sequence/</guid>
+      <description>&lt;h3 id=&#34;reasonable-expectations&#34;&gt;Reasonable Expectations&lt;/h3&gt;
+&lt;p&gt;When I first started to make this post, my plan was something much more involved. I was going to replicate the strategies used by the labs that made bots like Pluribus (for poker) and AlphaGo (for go) for the board game Sequence (see &lt;a href=&#34;https://en.wikipedia.org/wiki/Sequence_(game)&#34;&gt;here&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;In order to do that, I would need to make a fully functioning Sequence game with all the logic, make the computer play itself over and over for millions of games, record the moves and board states to create training data, use some neural network to evaluate potential moves along with a Monte Carlo Tree Search, and probably many other complicated steps and headaches along the way.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
