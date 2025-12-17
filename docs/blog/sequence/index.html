@@ -56,92 +56,16 @@ In order to do that, I would need to make a fully functioning Sequence game with
     });
 </script>
 
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WN3L3N0N7J"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-WN3L3N0N7J');
-        }
-      </script><meta property="og:url" content="https://wyatt-johnston.com/blog/sequence/">
-  <meta property="og:site_name" content="Wyatt Johnston">
-  <meta property="og:title" content="The Worst Feasible Sequence AI">
-  <meta property="og:description" content="Reasonable Expectations When I first started to make this post, my plan was something much more involved. I was going to replicate the strategies used by the labs that made bots like Pluribus (for poker) and AlphaGo (for go) for the board game Sequence (see here).
-In order to do that, I would need to make a fully functioning Sequence game with all the logic, make the computer play itself over and over for millions of games, record the moves and board states to create training data, use some neural network to evaluate potential moves along with a Monte Carlo Tree Search, and probably many other complicated steps and headaches along the way.">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="blog">
-    <meta property="article:published_time" content="2025-03-24T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-03-24T00:00:00+00:00">
-    <meta property="article:tag" content="Cards">
-    <meta property="article:tag" content="Card Games">
-    <meta property="article:tag" content="Board Games">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="The Worst Feasible Sequence AI">
-<meta name="twitter:description" content="Reasonable Expectations
-When I first started to make this post, my plan was something much more involved. I was going to replicate the strategies used by the labs that made bots like Pluribus (for poker) and AlphaGo (for go) for the board game Sequence (see here).
-In order to do that, I would need to make a fully functioning Sequence game with all the logic, make the computer play itself over and over for millions of games, record the moves and board states to create training data, use some neural network to evaluate potential moves along with a Monte Carlo Tree Search, and probably many other complicated steps and headaches along the way.">
+
+<meta property="og:title" content="Wyatt Johnston" />
+<meta property="og:description" content="PhD student in Operations Research at UT Austin" />
+<meta property="og:image" content="https://wyatt-johnston.com/images/preview.png" />
+<meta property="og:url" content="https://wyatt-johnston.com/" />
+<meta property="og:type" content="website" />
 
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Blog",
-      "item": "https://wyatt-johnston.com/blog/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "The Worst Feasible Sequence AI",
-      "item": "https://wyatt-johnston.com/blog/sequence/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "The Worst Feasible Sequence AI",
-  "name": "The Worst Feasible Sequence AI",
-  "description": "Reasonable Expectations When I first started to make this post, my plan was something much more involved. I was going to replicate the strategies used by the labs that made bots like Pluribus (for poker) and AlphaGo (for go) for the board game Sequence (see here).\nIn order to do that, I would need to make a fully functioning Sequence game with all the logic, make the computer play itself over and over for millions of games, record the moves and board states to create training data, use some neural network to evaluate potential moves along with a Monte Carlo Tree Search, and probably many other complicated steps and headaches along the way.\n",
-  "keywords": [
-    "cards", "card games", "board games"
-  ],
-  "articleBody": "Reasonable Expectations When I first started to make this post, my plan was something much more involved. I was going to replicate the strategies used by the labs that made bots like Pluribus (for poker) and AlphaGo (for go) for the board game Sequence (see here).\nIn order to do that, I would need to make a fully functioning Sequence game with all the logic, make the computer play itself over and over for millions of games, record the moves and board states to create training data, use some neural network to evaluate potential moves along with a Monte Carlo Tree Search, and probably many other complicated steps and headaches along the way.\nThat stuff is interesting and all, but I realized it would entail months of work for a game that just isn’t that hard. In fact, if I had 5 minutes to explain the game to a complete beginner, then showed them a hand and a random board state, they would probably make a move that is at least fine. Also, the outcome of the game has a large luck component based on the number of Jacks (wild cards) that a player is dealt.\nGiven the simplicity and luck factor, what I guessed is that you could probably make an “AI” that wins at least some games against humans without being robust at all - maybe just a handful of rules. And that is what I have set out to do: make the worst feasible Sequence AI.\nThe Rules The first of two rules will be dedicated to using Jacks (wild cards).\nThe program will use a two-eyed Jack (offensive wild card) if and only if it completes a sequence. The second rule concerns the placement of all other cards:\nThe card will be used which has the largest score in its surrounding 4x4 box of squares. I will go into further detail what I mean by “score” in the next section, but I assure you it is not complicated.\nThe Implementation (All Offense) I will be using a 2D array the same size as the board to represent the Sequence board. The values of the squares (places in the 2D array) can have the following values:\n1 = own chip already placed there / free space\n-1 = opponent chip already placed there\n0 = empty\n.33 = potential to be filled based on card in possession\nThe aforementioned “score” will be calculated as the sum of the squares in the surrounding 4x4 box WITHOUT taking into account the opponent’s chips. For now, I am foregoing any sort of defensive measure, including One-Eyed jacks that can remove opposing chips.\nThere was some work involved in finding one-away sequences and full sequences, and some slight headaches converting cards to board positions, especially since every card appears twice. Besides those items and calculating the score for each card, there isn’t much else.\nOne last note: once the bot plays a sequence, it turns all of those spaces into a -1 value. Otherwise I’m guessing it would just keep playing around the chips that are no longer relevant.\nTwo Games Later Couple of bugs to deal with these first two games. Mostly to do with duplicate cards. First, whenever a card is played which there are multiple of in the hand, both cards are deleted. For instance if there are two 3 of Clubs and one is played, both are deleted. That should be an easy enough to fix. Another is that when a card is picked up that it already played, it will try and play in the same spot again. Once again, simple oversight.\nA bigger issue came to my attention when the bot wouldn’t play the game-winning Two-Eyed Jack because it overlapped with a previous sequence. Now the fact it got a sequence at all is a massive win. But this situation happens fairly often and it will take some work to address. Each new sequence can contain exactly one chip from a previous sequence. So I will change the “old sequence” chips to be a value of -2 and then adjust the logic to account for that.\nFour Games Later That’s a W folks. It wasn’t a clean win, but as I suspected with the Two-Eyed Jack advantage it got the job done. Even with a bug I forgot to fix that kept the winning move from being played for 3 or 4 turns. Once I fix that I’ll upload to my GitHub with instructions how to use it - it’s a little janky but the computer really does do all the decision making.\nExample Outputs Below is a picture of a typical turn of the game.\n“Play Ks1” indicates the user plays the King of Spades on the top half of the board. 10d1 is entered to indicate the 10 of Diamonds was drawn afterwards. “2h2” is entered to indicate the opponent played the 2 of Hearts in the bottom half of the board in response.\nIn the board, you’ll notice all the 1’s indicate chips that are previously played, -1’s are opponent chips, 0’s are empty, and .33’s are empty but the user has a card that could be played there.\nHere is another example of a turn, except this time the opponent played a one-eyed jack:\nWhenever the “Where?” input is entered, the square that used to contain a user chip will return back to a 0 or .33, depending if that card is held by the user.\n",
-  "wordCount" : "915",
-  "inLanguage": "en",
-  "datePublished": "2025-03-24T00:00:00Z",
-  "dateModified": "2025-03-24T00:00:00Z",
-  "author":{
-    "@type": "Person",
-    "name": "Wyatt Johnston"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://wyatt-johnston.com/blog/sequence/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Wyatt Johnston",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://wyatt-johnston.com/favicon.ico"
-    }
-  }
-}
-</script>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://wyatt-johnston.com/images/preview.png" />
 </head>
 <body id="top">
     <header class="header">
