@@ -25,20 +25,64 @@
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Rummikub&#34; target=&#34;_blank&#34;&gt;Rummikub&lt;/a&gt; is quite a fun game; if you haven&amp;rsquo;t played it, you should. If you have played, you might relate to the feeling of staring at the board and wondering if you truly don&amp;rsquo;t have a move, or if a move is out there and you just can&amp;rsquo;t find it. To fix this, I figured I&amp;rsquo;d build a tool to solve a given board state, and then I&amp;rsquo;ll at least know after-the-fact what the best move would have been.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>&#39;Conflicts&#39; (15x15, Themed)</title>
+      <link>https://wyatt-johnston.com/crossword/conflicts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/crossword/conflicts/</guid>
+      <description>You can download the grid below as a PDF
+&lt;a href=&#34;https://wyatt-johnston.com/crosswords/conflicts.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;,
+or as a .puz file
+&lt;a href=&#34;https://wyatt-johnston.com/crosswords/conflicts.puz&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.
+
+
+&lt;img src=&#34;https://wyatt-johnston.com/crosswords/conflicts.png&#34; alt=&#34;Crossword Puzzle&#34; style=&#34;width: 100%; max-width: 600px; display: block; margin: auto;&#34;&gt;
+
+
+&lt;div style=&#34;text-align: center; margin-top: 1rem;&#34;&gt;
+  &lt;button id=&#34;show-solution-btn&#34; style=&#34;padding: 0.5rem 1rem; cursor: pointer;&#34;&gt;Show Solution&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;solution-container&#34; style=&#34;display: none; text-align: center; margin-top: 1rem;&#34;&gt;
+  &lt;img src=&#34;https://wyatt-johnston.com/crosswords/conflicts_solution.png&#34; alt=&#34;Crossword Solution&#34; style=&#34;display: block; margin: auto; width: 100%; max-width: 400px;&#34;&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  const btn = document.getElementById(&#34;show-solution-btn&#34;);
+  const solution = document.getElementById(&#34;solution-container&#34;);
+
+  btn.addEventListener(&#34;click&#34;, () =&gt; {
+    if (solution.style.display === &#34;none&#34;) {
+      solution.style.display = &#34;block&#34;;
+      btn.textContent = &#34;Hide Solution&#34;;
+    } else {
+      solution.style.display = &#34;none&#34;;
+      btn.textContent = &#34;CLICK HERE TO SHOW SOLUTION&#34;;
+    }
+  });
+&lt;/script&gt;</description>
+    </item>
+    <item>
       <title>&#39;PM&#39; (15x15, Themed)</title>
       <link>https://wyatt-johnston.com/crossword/pm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wyatt-johnston.com/crossword/pm/</guid>
-      <description>&lt;p&gt;You can download the grid below as a PDF &lt;a href=&#34;https://wyatt-johnston.com/crosswords/PM.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;!-- Show the blank crossword PNG --&gt;
+      <description>You can download the grid below as a PDF
+&lt;a href=&#34;https://wyatt-johnston.com/crosswords/PM.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;,
+or as a .puz file
+&lt;a href=&#34;https://wyatt-johnston.com/crosswords/PM.puz&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.
+
+
 &lt;img src=&#34;https://wyatt-johnston.com/crosswords/PM.png&#34; alt=&#34;Crossword Puzzle&#34; style=&#34;width: 100%; max-width: 600px; display: block; margin: auto;&#34;&gt;
-&lt;!-- Hidden solution section --&gt;
+
+
 &lt;div style=&#34;text-align: center; margin-top: 1rem;&#34;&gt;
   &lt;button id=&#34;show-solution-btn&#34; style=&#34;padding: 0.5rem 1rem; cursor: pointer;&#34;&gt;Show Solution&lt;/button&gt;
 &lt;/div&gt;
+
 &lt;div id=&#34;solution-container&#34; style=&#34;display: none; text-align: center; margin-top: 1rem;&#34;&gt;
   &lt;img src=&#34;https://wyatt-johnston.com/crosswords/PM_solution.png&#34; alt=&#34;Crossword Solution&#34; style=&#34;display: block; margin: auto; width: 100%; max-width: 400px;&#34;&gt;
 &lt;/div&gt;
+
 &lt;script&gt;
   const btn = document.getElementById(&#34;show-solution-btn&#34;);
   const solution = document.getElementById(&#34;solution-container&#34;);
@@ -62,20 +106,64 @@
       <description>&lt;p&gt;How large of a group do you need so that the chances of two random people sharing a last name is 50%?&lt;/p&gt;</description>
     </item>
     <item>
-      <title>&#39;Grand Number&#39; (15x15, Themed)</title>
-      <link>https://wyatt-johnston.com/crossword/grand-number/</link>
+      <title>&#39;Beautiful Game&#39; (15x15, Themed)</title>
+      <link>https://wyatt-johnston.com/crossword/beautiful-game/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/crossword/grand-number/</guid>
-      <description>&lt;p&gt;You can download the grid below as a PDF &lt;a href=&#34;https://wyatt-johnston.com/crosswords/grand_number.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;!-- Show the blank crossword PNG --&gt;
-&lt;img src=&#34;https://wyatt-johnston.com/crosswords/grand_number.png&#34; alt=&#34;Crossword Puzzle&#34; style=&#34;width: 100%; max-width: 600px; display: block; margin: auto;&#34;&gt;
-&lt;!-- Hidden solution section --&gt;
+      <guid>https://wyatt-johnston.com/crossword/beautiful-game/</guid>
+      <description>You can download the grid below as a PDF
+&lt;a href=&#34;https://wyatt-johnston.com/crosswords/beautiful_game.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;,
+or as a .puz file
+&lt;a href=&#34;https://wyatt-johnston.com/crosswords/beautiful_game.puz&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.
+
+
+&lt;img src=&#34;https://wyatt-johnston.com/crosswords/beautiful_game.png&#34; alt=&#34;Crossword Puzzle&#34; style=&#34;width: 100%; max-width: 600px; display: block; margin: auto;&#34;&gt;
+
+
 &lt;div style=&#34;text-align: center; margin-top: 1rem;&#34;&gt;
   &lt;button id=&#34;show-solution-btn&#34; style=&#34;padding: 0.5rem 1rem; cursor: pointer;&#34;&gt;Show Solution&lt;/button&gt;
 &lt;/div&gt;
+
 &lt;div id=&#34;solution-container&#34; style=&#34;display: none; text-align: center; margin-top: 1rem;&#34;&gt;
-  &lt;img src=&#34;https://wyatt-johnston.com/crosswords/grand_number_solution.png&#34; alt=&#34;Crossword Solution&#34; style=&#34;display: block; margin: auto; width: 100%; max-width: 400px;&#34;&gt;
+  &lt;img src=&#34;https://wyatt-johnston.com/crosswords/beautiful_game_solution.png&#34; alt=&#34;Crossword Solution&#34; style=&#34;display: block; margin: auto; width: 100%; max-width: 400px;&#34;&gt;
 &lt;/div&gt;
+
+&lt;script&gt;
+  const btn = document.getElementById(&#34;show-solution-btn&#34;);
+  const solution = document.getElementById(&#34;solution-container&#34;);
+
+  btn.addEventListener(&#34;click&#34;, () =&gt; {
+    if (solution.style.display === &#34;none&#34;) {
+      solution.style.display = &#34;block&#34;;
+      btn.textContent = &#34;Hide Solution&#34;;
+    } else {
+      solution.style.display = &#34;none&#34;;
+      btn.textContent = &#34;CLICK HERE TO SHOW SOLUTION&#34;;
+    }
+  });
+&lt;/script&gt;</description>
+    </item>
+    <item>
+      <title>&#39;Snowstorm Complaint&#39; (15x15, Themed)</title>
+      <link>https://wyatt-johnston.com/crossword/snowstorm-complaint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/crossword/snowstorm-complaint/</guid>
+      <description>You can download the grid below as a PDF
+&lt;a href=&#34;https://wyatt-johnston.com/crosswords/snowstorm_complaint.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;,
+or as a .puz file
+&lt;a href=&#34;https://wyatt-johnston.com/crosswords/snowstorm_complaint.puz&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.
+
+
+&lt;img src=&#34;https://wyatt-johnston.com/crosswords/snowstorm_complaint.png&#34; alt=&#34;Crossword Puzzle&#34; style=&#34;width: 100%; max-width: 600px; display: block; margin: auto;&#34;&gt;
+
+
+&lt;div style=&#34;text-align: center; margin-top: 1rem;&#34;&gt;
+  &lt;button id=&#34;show-solution-btn&#34; style=&#34;padding: 0.5rem 1rem; cursor: pointer;&#34;&gt;Show Solution&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;solution-container&#34; style=&#34;display: none; text-align: center; margin-top: 1rem;&#34;&gt;
+  &lt;img src=&#34;https://wyatt-johnston.com/crosswords/snowstorm_complaint_solution.png&#34; alt=&#34;Crossword Solution&#34; style=&#34;display: block; margin: auto; width: 100%; max-width: 400px;&#34;&gt;
+&lt;/div&gt;
+
 &lt;script&gt;
   const btn = document.getElementById(&#34;show-solution-btn&#34;);
   const solution = document.getElementById(&#34;solution-container&#34;);
@@ -101,20 +189,27 @@
 &lt;p&gt;In order to do that, I would need to make a fully functioning Sequence game with all the logic, make the computer play itself over and over for millions of games, record the moves and board states to create training data, use some neural network to evaluate potential moves along with a Monte Carlo Tree Search, and probably many other complicated steps and headaches along the way.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>&#39;Judicial Mandate&#39; (15x15, Themed)</title>
-      <link>https://wyatt-johnston.com/crossword/judicial-mandate/</link>
+      <title>&#39;Grand Number&#39; (15x15, Themed)</title>
+      <link>https://wyatt-johnston.com/crossword/grand-number/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://wyatt-johnston.com/crossword/judicial-mandate/</guid>
-      <description>&lt;p&gt;You can download the grid below as a PDF &lt;a href=&#34;https://wyatt-johnston.com/crosswords/judicial_mandate.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;. This is the first full crossword I ever created, so it may be a bit weak but it has a sentimental place for me.&lt;/p&gt;
-&lt;!-- Show the blank crossword PNG --&gt;
-&lt;img src=&#34;https://wyatt-johnston.com/crosswords/judicial_mandate.png&#34; alt=&#34;Crossword Puzzle&#34; style=&#34;width: 100%; max-width: 600px; display: block; margin: auto;&#34;&gt;
-&lt;!-- Hidden solution section --&gt;
+      <guid>https://wyatt-johnston.com/crossword/grand-number/</guid>
+      <description>You can download the grid below as a PDF
+&lt;a href=&#34;https://wyatt-johnston.com/crosswords/grand_number.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;,
+or as a .puz file
+&lt;a href=&#34;https://wyatt-johnston.com/crosswords/grand_number.puz&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.
+
+
+&lt;img src=&#34;https://wyatt-johnston.com/crosswords/grand_number.png&#34; alt=&#34;Crossword Puzzle&#34; style=&#34;width: 100%; max-width: 600px; display: block; margin: auto;&#34;&gt;
+
+
 &lt;div style=&#34;text-align: center; margin-top: 1rem;&#34;&gt;
   &lt;button id=&#34;show-solution-btn&#34; style=&#34;padding: 0.5rem 1rem; cursor: pointer;&#34;&gt;Show Solution&lt;/button&gt;
 &lt;/div&gt;
+
 &lt;div id=&#34;solution-container&#34; style=&#34;display: none; text-align: center; margin-top: 1rem;&#34;&gt;
-  &lt;img src=&#34;https://wyatt-johnston.com/crosswords/judicial_mandate_solution.png&#34; alt=&#34;Crossword Solution&#34; style=&#34;display: block; margin: auto; width: 100%; max-width: 400px;&#34;&gt;
+  &lt;img src=&#34;https://wyatt-johnston.com/crosswords/grand_number_solution.png&#34; alt=&#34;Crossword Solution&#34; style=&#34;display: block; margin: auto; width: 100%; max-width: 400px;&#34;&gt;
 &lt;/div&gt;
+
 &lt;script&gt;
   const btn = document.getElementById(&#34;show-solution-btn&#34;);
   const solution = document.getElementById(&#34;solution-container&#34;);
@@ -138,6 +233,46 @@
       <description>&lt;h3 id=&#34;stepping-on-cracks-fairly&#34;&gt;Stepping on Cracks Fairly&lt;/h3&gt;
 &lt;p&gt;Whenever I walk down a sidewalk, I have a hard time not thinking about stepping on the cracks. Specifically, I like for my left and right foot to step on a crack the same amount of times. I don&amp;rsquo;t completely obsess over it, but it&amp;rsquo;s always somewhere between the front and back of my mind.&lt;/p&gt;
 &lt;p&gt;When I was on a walk earlier today, it was closer to the front. I made an exaggerated step with my right leg to extend my gait and find a crack where my right foot would land - evening up the crack tally between legs. As I made that step, I began to wonder if you could enumerate the number of crack steps during a walk. At first pass it seemed plausible: your foot size is fixed, your gait is (mostly) fixed, and the distance between cracks is (once again, mostly) fixed. I evenly crack-stepped home and got out the notepad.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>&#39;Judicial Mandate&#39; (15x15, Themed)</title>
+      <link>https://wyatt-johnston.com/crossword/judicial-mandate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/crossword/judicial-mandate/</guid>
+      <description>&lt;p&gt;This is the first full crossword that I ever created. It was harder than I thought it would be.&lt;/p&gt;
+
+
+You can download the grid below as a PDF
+&lt;a href=&#34;https://wyatt-johnston.com/crosswords/judicial_mandate.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;,
+or as a .puz file
+&lt;a href=&#34;https://wyatt-johnston.com/crosswords/judicial_mandate.puz&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.
+
+
+&lt;img src=&#34;https://wyatt-johnston.com/crosswords/judicial_mandate.png&#34; alt=&#34;Crossword Puzzle&#34; style=&#34;width: 100%; max-width: 600px; display: block; margin: auto;&#34;&gt;
+
+
+&lt;div style=&#34;text-align: center; margin-top: 1rem;&#34;&gt;
+  &lt;button id=&#34;show-solution-btn&#34; style=&#34;padding: 0.5rem 1rem; cursor: pointer;&#34;&gt;Show Solution&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;solution-container&#34; style=&#34;display: none; text-align: center; margin-top: 1rem;&#34;&gt;
+  &lt;img src=&#34;https://wyatt-johnston.com/crosswords/judicial_mandate_solution.png&#34; alt=&#34;Crossword Solution&#34; style=&#34;display: block; margin: auto; width: 100%; max-width: 400px;&#34;&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  const btn = document.getElementById(&#34;show-solution-btn&#34;);
+  const solution = document.getElementById(&#34;solution-container&#34;);
+
+  btn.addEventListener(&#34;click&#34;, () =&gt; {
+    if (solution.style.display === &#34;none&#34;) {
+      solution.style.display = &#34;block&#34;;
+      btn.textContent = &#34;Hide Solution&#34;;
+    } else {
+      solution.style.display = &#34;none&#34;;
+      btn.textContent = &#34;CLICK HERE TO SHOW SOLUTION&#34;;
+    }
+  });
+&lt;/script&gt;</description>
     </item>
     <item>
       <title>Volleyball Data Analytics App</title>
