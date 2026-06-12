@@ -10,13 +10,18 @@
 <meta name="description" content="This is the first full crossword that I ever created. It was harder than I thought it would be.
 
 
-You can download the grid below as a PDF
+
+
+
+
+
+
+
+
+You can also download the grid below as a PDF
 here,
 or as a .puz file
 here.
-
-
-
 
 
 
@@ -167,15 +172,22 @@ here.
 </div>
   </header> 
   <div class="post-content"><p>This is the first full crossword that I ever created. It was harder than I thought it would be.</p>
+<!-- Include the CryptoJS library for hashing the user id before sending it to the PuzzleMe server. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<!-- Include the javascript library for embedding this puzzle. -->
+<script id="pm-script" src="https://puzzleme.amuselabs.com/pmm/js/puzzleme-embed.js"></script>
+<!-- Specify the Amuse Labs server name from where the puzzles will be served and trigger the embed flow. -->
+<script>
+    PM_Config.PM_BasePath = "https://puzzleme.amuselabs.com/pmm/";
+</script>
+<!-- Specifies the puzzle to be embedded on the page. -->
+<div class="pm-embed-div" data-id="9a93cf04" data-set="c0222f5f40b2d9e49384cab67275a3c0d9743346901697b4e3e418f49e841e17" data-puzzletype="crossword" data-height="700px" data-mobilemargin="10px"></div>
 
 
-You can download the grid below as a PDF
+You can also download the grid below as a PDF
 <a href="https://wyatt-johnston.com/crosswords/judicial_mandate.pdf" target="_blank">here</a>,
 or as a .puz file
 <a href="https://wyatt-johnston.com/crosswords/judicial_mandate.puz" target="_blank">here</a>.
-
-
-<img src="https://wyatt-johnston.com/crosswords/judicial_mandate.png" alt="Crossword Puzzle" style="width: 100%; max-width: 600px; display: block; margin: auto;">
 
 
 <div style="text-align: center; margin-top: 1rem;">

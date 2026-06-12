@@ -12,13 +12,22 @@
       <link>https://wyatt-johnston.com/crossword/pm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wyatt-johnston.com/crossword/pm/</guid>
-      <description>You can download the grid below as a PDF
+      <description>&lt;!-- Include the CryptoJS library for hashing the user id before sending it to the PuzzleMe server. --&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js&#34;&gt;&lt;/script&gt;
+&lt;!-- Include the javascript library for embedding this puzzle. --&gt;
+&lt;script id=&#34;pm-script&#34; src=&#34;https://puzzleme.amuselabs.com/pmm/js/puzzleme-embed.js&#34;&gt;&lt;/script&gt;
+&lt;!-- Specify the Amuse Labs server name from where the puzzles will be served and trigger the embed flow. --&gt;
+&lt;script&gt;
+    PM_Config.PM_BasePath = &#34;https://puzzleme.amuselabs.com/pmm/&#34;;
+&lt;/script&gt;
+&lt;!-- Specifies the puzzle to be embedded on the page. --&gt;
+&lt;div class=&#34;pm-embed-div&#34; data-id=&#34;6de5205d&#34; data-set=&#34;c0222f5f40b2d9e49384cab67275a3c0d9743346901697b4e3e418f49e841e17&#34; data-puzzletype=&#34;crossword&#34; data-height=&#34;700px&#34; data-mobilemargin=&#34;10px&#34;&gt;&lt;/div&gt;
+
+
+You can also download the grid below as a PDF
 &lt;a href=&#34;https://wyatt-johnston.com/crosswords/PM.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;,
 or as a .puz file
 &lt;a href=&#34;https://wyatt-johnston.com/crosswords/PM.puz&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.
-
-
-&lt;img src=&#34;https://wyatt-johnston.com/crosswords/PM.png&#34; alt=&#34;Crossword Puzzle&#34; style=&#34;width: 100%; max-width: 600px; display: block; margin: auto;&#34;&gt;
 
 
 &lt;div style=&#34;text-align: center; margin-top: 1rem;&#34;&gt;
@@ -49,13 +58,22 @@ or as a .puz file
       <link>https://wyatt-johnston.com/crossword/beautiful-game/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wyatt-johnston.com/crossword/beautiful-game/</guid>
-      <description>You can download the grid below as a PDF
+      <description>&lt;!-- Include the CryptoJS library for hashing the user id before sending it to the PuzzleMe server. --&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js&#34;&gt;&lt;/script&gt;
+&lt;!-- Include the javascript library for embedding this puzzle. --&gt;
+&lt;script id=&#34;pm-script&#34; src=&#34;https://puzzleme.amuselabs.com/pmm/js/puzzleme-embed.js&#34;&gt;&lt;/script&gt;
+&lt;!-- Specify the Amuse Labs server name from where the puzzles will be served and trigger the embed flow. --&gt;
+&lt;script&gt;
+    PM_Config.PM_BasePath = &#34;https://puzzleme.amuselabs.com/pmm/&#34;;
+&lt;/script&gt;
+&lt;!-- Specifies the puzzle to be embedded on the page. --&gt;
+&lt;div style=&#34;position: relative; text-align: center;&#34;&gt;&lt;div class=&#34;pm-embed-div&#34; data-id=&#34;3347e020&#34; data-set=&#34;c0222f5f40b2d9e49384cab67275a3c0d9743346901697b4e3e418f49e841e17&#34; data-puzzletype=&#34;crossword&#34; data-height=&#34;700px&#34; data-mobilemargin=&#34;10px&#34;&gt;&lt;/div&gt;
+
+
+You can also download the grid below as a PDF
 &lt;a href=&#34;https://wyatt-johnston.com/crosswords/beautiful_game.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;,
 or as a .puz file
 &lt;a href=&#34;https://wyatt-johnston.com/crosswords/beautiful_game.puz&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.
-
-
-&lt;img src=&#34;https://wyatt-johnston.com/crosswords/beautiful_game.png&#34; alt=&#34;Crossword Puzzle&#34; style=&#34;width: 100%; max-width: 600px; display: block; margin: auto;&#34;&gt;
 
 
 &lt;div style=&#34;text-align: center; margin-top: 1rem;&#34;&gt;
@@ -86,13 +104,22 @@ or as a .puz file
       <link>https://wyatt-johnston.com/crossword/snowstorm-complaint/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wyatt-johnston.com/crossword/snowstorm-complaint/</guid>
-      <description>You can download the grid below as a PDF
+      <description>&lt;!-- Include the CryptoJS library for hashing the user id before sending it to the PuzzleMe server. --&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js&#34;&gt;&lt;/script&gt;
+&lt;!-- Include the javascript library for embedding this puzzle. --&gt;
+&lt;script id=&#34;pm-script&#34; src=&#34;https://puzzleme.amuselabs.com/pmm/js/puzzleme-embed.js&#34;&gt;&lt;/script&gt;
+&lt;!-- Specify the Amuse Labs server name from where the puzzles will be served and trigger the embed flow. --&gt;
+&lt;script&gt;
+    PM_Config.PM_BasePath = &#34;https://puzzleme.amuselabs.com/pmm/&#34;;
+&lt;/script&gt;
+&lt;!-- Specifies the puzzle to be embedded on the page. --&gt;
+&lt;div class=&#34;pm-embed-div&#34; data-id=&#34;dbde9060&#34; data-set=&#34;c0222f5f40b2d9e49384cab67275a3c0d9743346901697b4e3e418f49e841e17&#34; data-puzzletype=&#34;crossword&#34; data-height=&#34;700px&#34; data-mobilemargin=&#34;10px&#34;&gt;&lt;/div&gt;
+
+
+You can also download the grid below as a PDF
 &lt;a href=&#34;https://wyatt-johnston.com/crosswords/snowstorm_complaint.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;,
 or as a .puz file
 &lt;a href=&#34;https://wyatt-johnston.com/crosswords/snowstorm_complaint.puz&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.
-
-
-&lt;img src=&#34;https://wyatt-johnston.com/crosswords/snowstorm_complaint.png&#34; alt=&#34;Crossword Puzzle&#34; style=&#34;width: 100%; max-width: 600px; display: block; margin: auto;&#34;&gt;
 
 
 &lt;div style=&#34;text-align: center; margin-top: 1rem;&#34;&gt;
@@ -123,13 +150,22 @@ or as a .puz file
       <link>https://wyatt-johnston.com/crossword/grand-number/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wyatt-johnston.com/crossword/grand-number/</guid>
-      <description>You can download the grid below as a PDF
+      <description>&lt;!-- Include the CryptoJS library for hashing the user id before sending it to the PuzzleMe server. --&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js&#34;&gt;&lt;/script&gt;
+&lt;!-- Include the javascript library for embedding this puzzle. --&gt;
+&lt;script id=&#34;pm-script&#34; src=&#34;https://puzzleme.amuselabs.com/pmm/js/puzzleme-embed.js&#34;&gt;&lt;/script&gt;
+&lt;!-- Specify the Amuse Labs server name from where the puzzles will be served and trigger the embed flow. --&gt;
+&lt;script&gt;
+    PM_Config.PM_BasePath = &#34;https://puzzleme.amuselabs.com/pmm/&#34;;
+&lt;/script&gt;
+&lt;!-- Specifies the puzzle to be embedded on the page. --&gt;
+&lt;div class=&#34;pm-embed-div&#34; data-id=&#34;354ed035&#34; data-set=&#34;c0222f5f40b2d9e49384cab67275a3c0d9743346901697b4e3e418f49e841e17&#34; data-puzzletype=&#34;crossword&#34; data-height=&#34;700px&#34; data-mobilemargin=&#34;10px&#34;&gt;&lt;/div&gt;
+
+
+You can also download the grid below as a PDF
 &lt;a href=&#34;https://wyatt-johnston.com/crosswords/grand_number.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;,
 or as a .puz file
 &lt;a href=&#34;https://wyatt-johnston.com/crosswords/grand_number.puz&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.
-
-
-&lt;img src=&#34;https://wyatt-johnston.com/crosswords/grand_number.png&#34; alt=&#34;Crossword Puzzle&#34; style=&#34;width: 100%; max-width: 600px; display: block; margin: auto;&#34;&gt;
 
 
 &lt;div style=&#34;text-align: center; margin-top: 1rem;&#34;&gt;
@@ -161,15 +197,22 @@ or as a .puz file
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wyatt-johnston.com/crossword/judicial-mandate/</guid>
       <description>&lt;p&gt;This is the first full crossword that I ever created. It was harder than I thought it would be.&lt;/p&gt;
+&lt;!-- Include the CryptoJS library for hashing the user id before sending it to the PuzzleMe server. --&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js&#34;&gt;&lt;/script&gt;
+&lt;!-- Include the javascript library for embedding this puzzle. --&gt;
+&lt;script id=&#34;pm-script&#34; src=&#34;https://puzzleme.amuselabs.com/pmm/js/puzzleme-embed.js&#34;&gt;&lt;/script&gt;
+&lt;!-- Specify the Amuse Labs server name from where the puzzles will be served and trigger the embed flow. --&gt;
+&lt;script&gt;
+    PM_Config.PM_BasePath = &#34;https://puzzleme.amuselabs.com/pmm/&#34;;
+&lt;/script&gt;
+&lt;!-- Specifies the puzzle to be embedded on the page. --&gt;
+&lt;div class=&#34;pm-embed-div&#34; data-id=&#34;9a93cf04&#34; data-set=&#34;c0222f5f40b2d9e49384cab67275a3c0d9743346901697b4e3e418f49e841e17&#34; data-puzzletype=&#34;crossword&#34; data-height=&#34;700px&#34; data-mobilemargin=&#34;10px&#34;&gt;&lt;/div&gt;
 
 
-You can download the grid below as a PDF
+You can also download the grid below as a PDF
 &lt;a href=&#34;https://wyatt-johnston.com/crosswords/judicial_mandate.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;,
 or as a .puz file
 &lt;a href=&#34;https://wyatt-johnston.com/crosswords/judicial_mandate.puz&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.
-
-
-&lt;img src=&#34;https://wyatt-johnston.com/crosswords/judicial_mandate.png&#34; alt=&#34;Crossword Puzzle&#34; style=&#34;width: 100%; max-width: 600px; display: block; margin: auto;&#34;&gt;
 
 
 &lt;div style=&#34;text-align: center; margin-top: 1rem;&#34;&gt;
