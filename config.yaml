@@ -38,9 +38,9 @@ menu:
       url: /crossword/
       weight: 4
 
-    - name: Tutoring
-      url: /tutoring/
-      weight: 5
+    # - name: Tutoring
+    #   url: /tutoring/
+    #   weight: 5
 
     - name: CV
       url: "/cv.pdf"

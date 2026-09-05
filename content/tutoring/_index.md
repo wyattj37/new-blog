@@ -1,6 +1,6 @@
 +++
 title = "Tutoring"
-draft = false
+draft = true
 +++
 
 I've spent a lot of time tutoring over the last 6 years. It's something I enjoy, and I think I've gotten pretty decent at it over time. I worked 6 semesters as a tutor in my undergrad's engineering department, but I've had plenty of sessions working outside of college. If you, or someone you know, want some extra help in any of the subjects below, feel free to reach out.
