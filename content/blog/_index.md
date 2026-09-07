@@ -3,4 +3,4 @@ title = "Blog"
 layout = "list"
 +++
 
-Found below are some math and/or programming problems that I find interesting.
+Below are some problems that I found interesting and wrote up my thoughts on.

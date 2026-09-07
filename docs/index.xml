@@ -6,8 +6,22 @@
     <description>Recent content on Wyatt Johnston</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wyatt-johnston.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>When to Challenge a Pitch in Baseball</title>
+      <link>https://wyatt-johnston.com/blog/baseball/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://wyatt-johnston.com/blog/baseball/</guid>
+      <description>&lt;p&gt;For some reason I put this together as a nice $\LaTeX$ PDF. Not entirely sure why, but that is how it exists now. Perhaps because it got a bit lengthy and involved.&lt;/p&gt;
+&lt;p&gt;Speaking of lengthy and involved, here&amp;rsquo;s the TLDR of 3 main points I think are interesting:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;How confident should you be that your challenge will succeed to pull the trigger? You need to be about 50% sure.&lt;/li&gt;
+&lt;li&gt;Shown in Figure 2, human umpire accuracy isn&amp;rsquo;t all that it&amp;rsquo;s cracked up to be. Sure, they may get 90% of all calls correct, but on the close calls, they are hardly better flipping a coin.&lt;/li&gt;
+&lt;li&gt;Having rules where you &lt;em&gt;never&lt;/em&gt; challenge is a bad policy. It may seem like a good way to avoid burning a challenge in a low-leverage situation, but in reality you need to be able to capitalize on a bad call whenever it happens.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you&amp;rsquo;re still wanting 12 more pages of insight, continue on ahead.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Tennis Belt</title>
       <link>https://wyatt-johnston.com/projects/tennis-belt/</link>
